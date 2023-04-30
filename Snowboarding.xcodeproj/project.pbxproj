@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C1900C429F533F500555DDF /* ResortInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1900C329F533F500555DDF /* ResortInformationView.swift */; };
+		0C1900C629F536DF00555DDF /* ResortInformationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1900C529F536DF00555DDF /* ResortInformationController.swift */; };
+		0C1DC26D29AB92DF004F3FDC /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1DC26C29AB92DF004F3FDC /* CustomTextField.swift */; };
+		0C1DC26F29ABB802004F3FDC /* CustomButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1DC26E29ABB802004F3FDC /* CustomButtons.swift */; };
+		0C43E8D229FD3B6400C3980D /* ChoiceOfSkiResortCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C43E8D129FD3B6400C3980D /* ChoiceOfSkiResortCell.swift */; };
+		0C49815629FAC75C00877CBC /* ChoiceOfSkiResort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C49815529FAC75C00877CBC /* ChoiceOfSkiResort.swift */; };
+		0C584F8C29B4C89100A5A8EC /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C584F8B29B4C89100A5A8EC /* AlertManager.swift */; };
+		0C850E8C29AE446E00C6AB10 /* WebViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C850E8B29AE446E00C6AB10 /* WebViewerController.swift */; };
+		0C87396029BDB61B0007CFC3 /* LoginUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C87395F29BDB61B0007CFC3 /* LoginUserRequest.swift */; };
+		0C87396229BDDCF00007CFC3 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C87396129BDDCF00007CFC3 /* Validator.swift */; };
+		0CA50CB229D2D3F70094C74C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA50CB129D2D3F70094C74C /* HomeView.swift */; };
+		0CA50CB429D2E6330094C74C /* CuslomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA50CB329D2E6330094C74C /* CuslomLabel.swift */; };
+		0CD0FAA229AB3667000E76E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD0FAA129AB3667000E76E8 /* AppDelegate.swift */; };
+		0CD0FAA429AB3667000E76E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD0FAA329AB3667000E76E8 /* SceneDelegate.swift */; };
+		0CD0FAAB29AB3668000E76E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CD0FAAA29AB3668000E76E8 /* Assets.xcassets */; };
+		0CD0FAAE29AB3668000E76E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CD0FAAC29AB3668000E76E8 /* LaunchScreen.storyboard */; };
+		0CD0FAB929AB36F5000E76E8 /* RegiserUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD0FAB829AB36F5000E76E8 /* RegiserUserRequest.swift */; };
+		0CD0FABB29AB3739000E76E8 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD0FABA29AB3739000E76E8 /* AuthService.swift */; };
+		0CD0FABD29AB3888000E76E8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CD0FABC29AB3888000E76E8 /* GoogleService-Info.plist */; };
+		0CD0FABF29AB49F2000E76E8 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD0FABE29AB49F2000E76E8 /* LoginController.swift */; };
+		0CD0FAC129AB4A20000E76E8 /* ForgotPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD0FAC029AB4A20000E76E8 /* ForgotPasswordController.swift */; };
+		0CD0FAC529AB4A4F000E76E8 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD0FAC429AB4A4F000E76E8 /* RegisterController.swift */; };
+		0CD0FAC729AB4A5E000E76E8 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD0FAC629AB4A5E000E76E8 /* HomeController.swift */; };
+		0CD0FACC29AB4CAA000E76E8 /* AuthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD0FACB29AB4CAA000E76E8 /* AuthHeaderView.swift */; };
+		0CE600EE29C0DD7F00D058DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CE600ED29C0DD7F00D058DD /* Main.storyboard */; };
+		0CF2F41629E1429800C82D57 /* SkiResorts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF2F41529E1429800C82D57 /* SkiResorts.swift */; };
+		0CFDA63729BE223A00B7C6C4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFDA63629BE223A00B7C6C4 /* User.swift */; };
+		18EC958763DF0063B8735734 /* Pods_Snowboarding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F8F5A93243A745DEEFB6C7 /* Pods_Snowboarding.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C1900C329F533F500555DDF /* ResortInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortInformationView.swift; sourceTree = "<group>"; };
+		0C1900C529F536DF00555DDF /* ResortInformationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortInformationController.swift; sourceTree = "<group>"; };
+		0C1DC26C29AB92DF004F3FDC /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		0C1DC26E29ABB802004F3FDC /* CustomButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtons.swift; sourceTree = "<group>"; };
+		0C43E8D129FD3B6400C3980D /* ChoiceOfSkiResortCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceOfSkiResortCell.swift; sourceTree = "<group>"; };
+		0C49815529FAC75C00877CBC /* ChoiceOfSkiResort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceOfSkiResort.swift; sourceTree = "<group>"; };
+		0C584F8B29B4C89100A5A8EC /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		0C850E8B29AE446E00C6AB10 /* WebViewerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewerController.swift; sourceTree = "<group>"; };
+		0C87395F29BDB61B0007CFC3 /* LoginUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUserRequest.swift; sourceTree = "<group>"; };
+		0C87396129BDDCF00007CFC3 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		0CA50CB129D2D3F70094C74C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		0CA50CB329D2E6330094C74C /* CuslomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuslomLabel.swift; sourceTree = "<group>"; };
+		0CD0FA9E29AB3667000E76E8 /* Snowboarding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snowboarding.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CD0FAA129AB3667000E76E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0CD0FAA329AB3667000E76E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0CD0FAAA29AB3668000E76E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0CD0FAAD29AB3668000E76E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0CD0FAAF29AB3668000E76E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CD0FAB829AB36F5000E76E8 /* RegiserUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegiserUserRequest.swift; sourceTree = "<group>"; };
+		0CD0FABA29AB3739000E76E8 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		0CD0FABC29AB3888000E76E8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0CD0FABE29AB49F2000E76E8 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		0CD0FAC029AB4A20000E76E8 /* ForgotPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordController.swift; sourceTree = "<group>"; };
+		0CD0FAC429AB4A4F000E76E8 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		0CD0FAC629AB4A5E000E76E8 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		0CD0FACB29AB4CAA000E76E8 /* AuthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderView.swift; sourceTree = "<group>"; };
+		0CE600ED29C0DD7F00D058DD /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		0CF2F41529E1429800C82D57 /* SkiResorts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkiResorts.swift; sourceTree = "<group>"; };
+		0CFDA63629BE223A00B7C6C4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		454B9077E1DF4F4E603BD546 /* Pods-Snowboarding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snowboarding.release.xcconfig"; path = "Target Support Files/Pods-Snowboarding/Pods-Snowboarding.release.xcconfig"; sourceTree = "<group>"; };
+		55F8F5A93243A745DEEFB6C7 /* Pods_Snowboarding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snowboarding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F29C4B658E0D97FC44893A82 /* Pods-Snowboarding.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snowboarding.debug.xcconfig"; path = "Target Support Files/Pods-Snowboarding/Pods-Snowboarding.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0CD0FA9B29AB3667000E76E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18EC958763DF0063B8735734 /* Pods_Snowboarding.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CD0FA9529AB3667000E76E8 = {
+			isa = PBXGroup;
+			children = (
+				0CD0FAA029AB3667000E76E8 /* Snowboarding */,
+				0CD0FA9F29AB3667000E76E8 /* Products */,
+				4F05A5A18E032C46E36A8DA1 /* Pods */,
+				2590FC643BDDFDF06AB00859 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0CD0FA9F29AB3667000E76E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0CD0FA9E29AB3667000E76E8 /* Snowboarding.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0CD0FAA029AB3667000E76E8 /* Snowboarding */ = {
+			isa = PBXGroup;
+			children = (
+				0CD0FAAA29AB3668000E76E8 /* Assets.xcassets */,
+				0CD0FAAF29AB3668000E76E8 /* Info.plist */,
+				0CD0FABC29AB3888000E76E8 /* GoogleService-Info.plist */,
+				0CD0FAA129AB3667000E76E8 /* AppDelegate.swift */,
+				0CD0FAA329AB3667000E76E8 /* SceneDelegate.swift */,
+				0C850E8B29AE446E00C6AB10 /* WebViewerController.swift */,
+				0C584F8B29B4C89100A5A8EC /* AlertManager.swift */,
+				0CD0FAC829AB4C23000E76E8 /* Views */,
+				0CD0FAB629AB3688000E76E8 /* Controller */,
+				0CD0FAB529AB3679000E76E8 /* Model */,
+				0CD0FAB729AB36A8000E76E8 /* Support */,
+			);
+			path = Snowboarding;
+			sourceTree = "<group>";
+		};
+		0CD0FAB529AB3679000E76E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0CD0FABA29AB3739000E76E8 /* AuthService.swift */,
+				0CD0FAB829AB36F5000E76E8 /* RegiserUserRequest.swift */,
+				0C87395F29BDB61B0007CFC3 /* LoginUserRequest.swift */,
+				0CFDA63629BE223A00B7C6C4 /* User.swift */,
+				0C87396129BDDCF00007CFC3 /* Validator.swift */,
+				0CF2F41529E1429800C82D57 /* SkiResorts.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0CD0FAB629AB3688000E76E8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0CD0FABE29AB49F2000E76E8 /* LoginController.swift */,
+				0CD0FAC429AB4A4F000E76E8 /* RegisterController.swift */,
+				0CD0FAC029AB4A20000E76E8 /* ForgotPasswordController.swift */,
+				0CD0FAC629AB4A5E000E76E8 /* HomeController.swift */,
+				0C1900C529F536DF00555DDF /* ResortInformationController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0CD0FAB729AB36A8000E76E8 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				0CD0FAAC29AB3668000E76E8 /* LaunchScreen.storyboard */,
+				0CE600ED29C0DD7F00D058DD /* Main.storyboard */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		0CD0FAC829AB4C23000E76E8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0CD0FACB29AB4CAA000E76E8 /* AuthHeaderView.swift */,
+				0C1DC26C29AB92DF004F3FDC /* CustomTextField.swift */,
+				0C1DC26E29ABB802004F3FDC /* CustomButtons.swift */,
+				0CA50CB329D2E6330094C74C /* CuslomLabel.swift */,
+				0CA50CB129D2D3F70094C74C /* HomeView.swift */,
+				0C49815529FAC75C00877CBC /* ChoiceOfSkiResort.swift */,
+				0C43E8D129FD3B6400C3980D /* ChoiceOfSkiResortCell.swift */,
+				0C1900C329F533F500555DDF /* ResortInformationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2590FC643BDDFDF06AB00859 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55F8F5A93243A745DEEFB6C7 /* Pods_Snowboarding.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F05A5A18E032C46E36A8DA1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F29C4B658E0D97FC44893A82 /* Pods-Snowboarding.debug.xcconfig */,
+				454B9077E1DF4F4E603BD546 /* Pods-Snowboarding.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0CD0FA9D29AB3667000E76E8 /* Snowboarding */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CD0FAB229AB3668000E76E8 /* Build configuration list for PBXNativeTarget "Snowboarding" */;
+			buildPhases = (
+				5DBF8A2D64767B64CFE50237 /* [CP] Check Pods Manifest.lock */,
+				0CD0FA9A29AB3667000E76E8 /* Sources */,
+				0CD0FA9B29AB3667000E76E8 /* Frameworks */,
+				0CD0FA9C29AB3667000E76E8 /* Resources */,
+				5C8075407886653F6767BB40 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Snowboarding;
+			productName = Snowboarding;
+			productReference = 0CD0FA9E29AB3667000E76E8 /* Snowboarding.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0CD0FA9629AB3667000E76E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					0CD0FA9D29AB3667000E76E8 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 0CD0FA9929AB3667000E76E8 /* Build configuration list for PBXProject "Snowboarding" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0CD0FA9529AB3667000E76E8;
+			productRefGroup = 0CD0FA9F29AB3667000E76E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0CD0FA9D29AB3667000E76E8 /* Snowboarding */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0CD0FA9C29AB3667000E76E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CD0FAAE29AB3668000E76E8 /* LaunchScreen.storyboard in Resources */,
+				0CD0FABD29AB3888000E76E8 /* GoogleService-Info.plist in Resources */,
+				0CD0FAAB29AB3668000E76E8 /* Assets.xcassets in Resources */,
+				0CE600EE29C0DD7F00D058DD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5C8075407886653F6767BB40 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Snowboarding/Pods-Snowboarding-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Snowboarding/Pods-Snowboarding-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Snowboarding/Pods-Snowboarding-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5DBF8A2D64767B64CFE50237 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Snowboarding-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0CD0FA9A29AB3667000E76E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C49815629FAC75C00877CBC /* ChoiceOfSkiResort.swift in Sources */,
+				0CD0FABF29AB49F2000E76E8 /* LoginController.swift in Sources */,
+				0C850E8C29AE446E00C6AB10 /* WebViewerController.swift in Sources */,
+				0C1DC26F29ABB802004F3FDC /* CustomButtons.swift in Sources */,
+				0CD0FAC129AB4A20000E76E8 /* ForgotPasswordController.swift in Sources */,
+				0CFDA63729BE223A00B7C6C4 /* User.swift in Sources */,
+				0CA50CB429D2E6330094C74C /* CuslomLabel.swift in Sources */,
+				0C1900C429F533F500555DDF /* ResortInformationView.swift in Sources */,
+				0CA50CB229D2D3F70094C74C /* HomeView.swift in Sources */,
+				0C1900C629F536DF00555DDF /* ResortInformationController.swift in Sources */,
+				0C87396029BDB61B0007CFC3 /* LoginUserRequest.swift in Sources */,
+				0CD0FAB929AB36F5000E76E8 /* RegiserUserRequest.swift in Sources */,
+				0C43E8D229FD3B6400C3980D /* ChoiceOfSkiResortCell.swift in Sources */,
+				0C584F8C29B4C89100A5A8EC /* AlertManager.swift in Sources */,
+				0C87396229BDDCF00007CFC3 /* Validator.swift in Sources */,
+				0CD0FAC529AB4A4F000E76E8 /* RegisterController.swift in Sources */,
+				0C1DC26D29AB92DF004F3FDC /* CustomTextField.swift in Sources */,
+				0CD0FACC29AB4CAA000E76E8 /* AuthHeaderView.swift in Sources */,
+				0CD0FAC729AB4A5E000E76E8 /* HomeController.swift in Sources */,
+				0CD0FABB29AB3739000E76E8 /* AuthService.swift in Sources */,
+				0CD0FAA229AB3667000E76E8 /* AppDelegate.swift in Sources */,
+				0CD0FAA429AB3667000E76E8 /* SceneDelegate.swift in Sources */,
+				0CF2F41629E1429800C82D57 /* SkiResorts.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0CD0FAAC29AB3668000E76E8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0CD0FAAD29AB3668000E76E8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0CD0FAB029AB3668000E76E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0CD0FAB129AB3668000E76E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0CD0FAB329AB3668000E76E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F29C4B658E0D97FC44893A82 /* Pods-Snowboarding.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8YUV48A6RV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Snowboarding/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.Snowboarding;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0CD0FAB429AB3668000E76E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 454B9077E1DF4F4E603BD546 /* Pods-Snowboarding.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8YUV48A6RV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Snowboarding/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.Snowboarding;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0CD0FA9929AB3667000E76E8 /* Build configuration list for PBXProject "Snowboarding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CD0FAB029AB3668000E76E8 /* Debug */,
+				0CD0FAB129AB3668000E76E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CD0FAB229AB3668000E76E8 /* Build configuration list for PBXNativeTarget "Snowboarding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CD0FAB329AB3668000E76E8 /* Debug */,
+				0CD0FAB429AB3668000E76E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0CD0FA9629AB3667000E76E8 /* Project object */;
+}
