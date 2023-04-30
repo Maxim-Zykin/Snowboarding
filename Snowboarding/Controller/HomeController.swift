@@ -54,7 +54,7 @@ class HomeController: UIViewController {
             self.skiResort.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 30),
             self.skiResort.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -30),
             
-            self.resort.topAnchor.constraint(equalTo: skiResort.bottomAnchor, constant: 10),
+            self.resort.topAnchor.constraint(equalTo: skiResort.bottomAnchor, constant: 30),
             self.resort.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 20),
             self.resort.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -20),
             self.resort.heightAnchor.constraint(equalTo: self.view.heightAnchor)

@@ -54,7 +54,7 @@ class ChoiceOfSkiResortCell: UICollectionViewCell {
         resortImage.topAnchor.constraint(equalTo: topAnchor).isActive = true
         resortImage.heightAnchor.constraint(equalTo: heightAnchor).isActive = true
          
-        resortLabel.topAnchor.constraint(equalTo: resortImage.bottomAnchor, constant: -70).isActive = true
+        resortLabel.topAnchor.constraint(equalTo: resortImage.bottomAnchor, constant: -65).isActive = true
         resortLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 0).isActive = true
         resortLabel.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
     }
