@@ -14,17 +14,15 @@ class ChoiceOfSkiResort: UICollectionView, UICollectionViewDelegate, UICollectio
     init() {
         let layout = UICollectionViewFlowLayout()
         super.init(frame: .zero, collectionViewLayout: layout)
-        
         layout.scrollDirection = .vertical
         backgroundColor = .white
         
         delegate = self
         dataSource = self
         
-        register(ChoiceOfSkiResortCell.self, forCellWithReuseIdentifier: ChoiceOfSkiResortCell.cellID)
-        
         showsHorizontalScrollIndicator = false
         showsVerticalScrollIndicator = false
+        register(ChoiceOfSkiResortCell.self, forCellWithReuseIdentifier: ChoiceOfSkiResortCell.cellID)
     }
     
     required init?(coder: NSCoder) {
@@ -52,14 +50,15 @@ class ChoiceOfSkiResort: UICollectionView, UICollectionViewDelegate, UICollectio
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 15
+        return 30
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 25
+        return 20
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(cells[indexPath.row].name)
     }
 }
+

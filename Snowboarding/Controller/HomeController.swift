@@ -21,8 +21,11 @@ class HomeController: UIViewController {
     }()
     //Choose a ski resort
     private let skiResort = CuslomLabel(text: "Выбери горнолыжный курорт:", size: 24)
+    
     private let resort = ChoiceOfSkiResort()
     
+    var cells = [SkiResorts]()
+
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,8 +58,8 @@ class HomeController: UIViewController {
             self.skiResort.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -30),
             
             self.resort.topAnchor.constraint(equalTo: skiResort.bottomAnchor, constant: 30),
-            self.resort.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 20),
-            self.resort.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -20),
+            self.resort.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 25),
+            self.resort.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -25),
             self.resort.heightAnchor.constraint(equalTo: self.view.heightAnchor)
         ])
     }
@@ -75,12 +78,10 @@ class HomeController: UIViewController {
         }
     }
     
-    @objc private func testBut() {
-        let vc = ResortInformationController()
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
-    
-    
+//    @objc private func testBut() {
+//        let vc = ResortInformationController()
+//        self.navigationController?.pushViewController(vc, animated: true)
+//    }
     
     private func fetchUser() {
         AuthService.shared.fetchUser { [weak self] user, error in

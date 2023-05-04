@@ -21,3 +21,4 @@ struct SkiResorts {
         return [sheregesh, rosaKhutor, arhyz, dombai]
     }
 }
+

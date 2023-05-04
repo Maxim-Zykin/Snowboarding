@@ -62,7 +62,7 @@ class ChoiceOfSkiResortCell: UICollectionViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         self.layer.cornerRadius = 5
-        self.layer.shadowRadius = 2
+        self.layer.shadowRadius = 5
         layer.shadowOpacity = 0.2
         layer.shadowOffset = CGSize(width: 3, height: 5)
         self.clipsToBounds = false

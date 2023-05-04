@@ -19,6 +19,7 @@
 		0C87396229BDDCF00007CFC3 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C87396129BDDCF00007CFC3 /* Validator.swift */; };
 		0CA50CB229D2D3F70094C74C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA50CB129D2D3F70094C74C /* HomeView.swift */; };
 		0CA50CB429D2E6330094C74C /* CuslomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA50CB329D2E6330094C74C /* CuslomLabel.swift */; };
+		0CAF328B2A010C4400BB261F /* SheregeshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF328A2A010C4400BB261F /* SheregeshViewController.swift */; };
 		0CD0FAA229AB3667000E76E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD0FAA129AB3667000E76E8 /* AppDelegate.swift */; };
 		0CD0FAA429AB3667000E76E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD0FAA329AB3667000E76E8 /* SceneDelegate.swift */; };
 		0CD0FAAB29AB3668000E76E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CD0FAAA29AB3668000E76E8 /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 		0C87396129BDDCF00007CFC3 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		0CA50CB129D2D3F70094C74C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0CA50CB329D2E6330094C74C /* CuslomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuslomLabel.swift; sourceTree = "<group>"; };
+		0CAF328A2A010C4400BB261F /* SheregeshViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheregeshViewController.swift; sourceTree = "<group>"; };
 		0CD0FA9E29AB3667000E76E8 /* Snowboarding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snowboarding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CD0FAA129AB3667000E76E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CD0FAA329AB3667000E76E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				0CD0FAC029AB4A20000E76E8 /* ForgotPasswordController.swift */,
 				0CD0FAC629AB4A5E000E76E8 /* HomeController.swift */,
 				0C1900C529F536DF00555DDF /* ResortInformationController.swift */,
+				0CAF328A2A010C4400BB261F /* SheregeshViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				0CD0FAC729AB4A5E000E76E8 /* HomeController.swift in Sources */,
 				0CD0FABB29AB3739000E76E8 /* AuthService.swift in Sources */,
 				0CD0FAA229AB3667000E76E8 /* AppDelegate.swift in Sources */,
+				0CAF328B2A010C4400BB261F /* SheregeshViewController.swift in Sources */,
 				0CD0FAA429AB3667000E76E8 /* SceneDelegate.swift in Sources */,
 				0CF2F41629E1429800C82D57 /* SkiResorts.swift in Sources */,
 			);
