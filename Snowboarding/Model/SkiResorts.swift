@@ -22,3 +22,26 @@ struct SkiResorts {
     }
 }
 
+public struct AllSkiResorts {
+    let name: String
+    let image: UIImage
+}
+
+public struct SkiResortsGroup {
+  public let sky: [AllSkiResorts]
+}
+
+extension SkiResortsGroup{
+
+    public static func skiShow() -> SkiResortsGroup{
+
+        let products = [
+            AllSkiResorts(name: "Шерегеш", image: UIImage(named: "sheregeshLogo")!),
+            AllSkiResorts(name: "Роза Хутор", image: UIImage(named: "rosakhutorLogo")!),
+            AllSkiResorts(name: "Архыз", image: UIImage(named: "arhyz")!),
+            AllSkiResorts(name: "Домбай", image: UIImage(named: "dombai")!)
+        ]
+
+        return SkiResortsGroup(sky: products)
+    }
+}

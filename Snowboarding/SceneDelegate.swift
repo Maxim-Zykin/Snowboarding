@@ -31,7 +31,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             self.goToController(with: LoginController())
         } else {
             // Go to home in screen
-            self.goToController(with: HomeController())
+            self.goToController(with: HomeViewController())
         }
     }
     

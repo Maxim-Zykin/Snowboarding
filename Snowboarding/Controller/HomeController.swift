@@ -32,6 +32,8 @@ class HomeController: UIViewController {
         setupUI()
         fetchUser()
         resort.set(cells: SkiResorts.fetchSkiResorts())
+        
+
     }
     
     // MARK: - UI Setup
@@ -97,4 +99,3 @@ class HomeController: UIViewController {
         }
     }
 }
-

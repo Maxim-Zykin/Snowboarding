@@ -48,18 +48,28 @@ class ChoiceOfSkiResortCell: UICollectionViewCell {
         self.addSubview(resortLabel)
         resortImage.translatesAutoresizingMaskIntoConstraints = false
         resortLabel.translatesAutoresizingMaskIntoConstraints = false
-        
+
         resortImage.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
         resortImage.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         resortImage.topAnchor.constraint(equalTo: topAnchor).isActive = true
         resortImage.heightAnchor.constraint(equalTo: heightAnchor).isActive = true
-         
+
         resortLabel.topAnchor.constraint(equalTo: resortImage.bottomAnchor, constant: -65).isActive = true
         resortLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 0).isActive = true
         resortLabel.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
     }
     
     override func layoutSubviews() {
+//        resortLabel.frame = CGRect(x: 5,
+//                                   y: contentView.frame.size.height-50,
+//                                   width: contentView.frame.size.width-10,
+//                                   height: 50)
+//
+//        resortImage.frame = CGRect(x: 5,
+//                                   y: 0,
+//                                   width: contentView.frame.size.width-10,
+//                                   height: contentView.frame.size.height-10)
+        
         super.layoutSubviews()
         self.layer.cornerRadius = 5
         self.layer.shadowRadius = 5

@@ -59,6 +59,8 @@ class ChoiceOfSkiResort: UICollectionView, UICollectionViewDelegate, UICollectio
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(cells[indexPath.row].name)
+//                let vc = ResortInformationController()
+//                self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 

@@ -17,6 +17,8 @@
 		0C850E8C29AE446E00C6AB10 /* WebViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C850E8B29AE446E00C6AB10 /* WebViewerController.swift */; };
 		0C87396029BDB61B0007CFC3 /* LoginUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C87395F29BDB61B0007CFC3 /* LoginUserRequest.swift */; };
 		0C87396229BDDCF00007CFC3 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C87396129BDDCF00007CFC3 /* Validator.swift */; };
+		0C899C792A03E8820038542E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C899C782A03E8820038542E /* HomeViewController.swift */; };
+		0C899C7B2A03ECB50038542E /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C899C7A2A03ECB50038542E /* Collection.swift */; };
 		0CA50CB229D2D3F70094C74C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA50CB129D2D3F70094C74C /* HomeView.swift */; };
 		0CA50CB429D2E6330094C74C /* CuslomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA50CB329D2E6330094C74C /* CuslomLabel.swift */; };
 		0CAF328B2A010C4400BB261F /* SheregeshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF328A2A010C4400BB261F /* SheregeshViewController.swift */; };
@@ -49,6 +51,8 @@
 		0C850E8B29AE446E00C6AB10 /* WebViewerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewerController.swift; sourceTree = "<group>"; };
 		0C87395F29BDB61B0007CFC3 /* LoginUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUserRequest.swift; sourceTree = "<group>"; };
 		0C87396129BDDCF00007CFC3 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		0C899C782A03E8820038542E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0C899C7A2A03ECB50038542E /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		0CA50CB129D2D3F70094C74C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0CA50CB329D2E6330094C74C /* CuslomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuslomLabel.swift; sourceTree = "<group>"; };
 		0CAF328A2A010C4400BB261F /* SheregeshViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheregeshViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +146,7 @@
 				0CD0FAC429AB4A4F000E76E8 /* RegisterController.swift */,
 				0CD0FAC029AB4A20000E76E8 /* ForgotPasswordController.swift */,
 				0CD0FAC629AB4A5E000E76E8 /* HomeController.swift */,
+				0C899C782A03E8820038542E /* HomeViewController.swift */,
 				0C1900C529F536DF00555DDF /* ResortInformationController.swift */,
 				0CAF328A2A010C4400BB261F /* SheregeshViewController.swift */,
 			);
@@ -165,6 +170,7 @@
 				0C1DC26E29ABB802004F3FDC /* CustomButtons.swift */,
 				0CA50CB329D2E6330094C74C /* CuslomLabel.swift */,
 				0CA50CB129D2D3F70094C74C /* HomeView.swift */,
+				0C899C7A2A03ECB50038542E /* Collection.swift */,
 				0C49815529FAC75C00877CBC /* ChoiceOfSkiResort.swift */,
 				0C43E8D129FD3B6400C3980D /* ChoiceOfSkiResortCell.swift */,
 				0C1900C329F533F500555DDF /* ResortInformationView.swift */,
@@ -305,6 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C899C792A03E8820038542E /* HomeViewController.swift in Sources */,
 				0C49815629FAC75C00877CBC /* ChoiceOfSkiResort.swift in Sources */,
 				0CD0FABF29AB49F2000E76E8 /* LoginController.swift in Sources */,
 				0C850E8C29AE446E00C6AB10 /* WebViewerController.swift in Sources */,
@@ -323,6 +330,7 @@
 				0CD0FAC529AB4A4F000E76E8 /* RegisterController.swift in Sources */,
 				0C1DC26D29AB92DF004F3FDC /* CustomTextField.swift in Sources */,
 				0CD0FACC29AB4CAA000E76E8 /* AuthHeaderView.swift in Sources */,
+				0C899C7B2A03ECB50038542E /* Collection.swift in Sources */,
 				0CD0FAC729AB4A5E000E76E8 /* HomeController.swift in Sources */,
 				0CD0FABB29AB3739000E76E8 /* AuthService.swift in Sources */,
 				0CD0FAA229AB3667000E76E8 /* AppDelegate.swift in Sources */,
