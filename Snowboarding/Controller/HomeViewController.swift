@@ -23,26 +23,31 @@ class HomeViewController: UIViewController {
         label.numberOfLines = 2
         return label
     }()
+    
     //Choose a ski resort
     private let skiResort = CuslomLabel(text: "Выбери горнолыжный курорт:", size: 24)
     
-    var cells = [SkiResorts]()
+//    var cells = [SkiResorts]()
 
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupCollection()
+        setupUI()
+        fetchUser()
+    }
+
+    private func setupCollection() {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
-        layout.itemSize = CGSize(width: 150, height: 100)
+        layout.itemSize = CGSize(width: 160, height: 105)
+        layout.minimumLineSpacing = 20
         collection = UICollectionView(frame: .zero, collectionViewLayout: layout)
         guard let collection = collection else { return }
         collection.register(ChoiceOfSkiResortCell.self, forCellWithReuseIdentifier: ChoiceOfSkiResortCell.cellID)
         collection.delegate = self
         collection.dataSource = self
         //collection.frame = view.bounds
-        setupUI()
-        fetchUser()
-        //setup()
     }
     
     // MARK: - UI Setup
@@ -50,6 +55,7 @@ class HomeViewController: UIViewController {
         
         self.view.backgroundColor = .systemBackground
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(didTapLogout))
+        self.navigationItem.backButtonTitle = "Назад"
         
         self.view.addSubview(label)
         self.view.addSubview(skiResort)
@@ -111,11 +117,6 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
-//    func setup() {
-//        myCollection.delegate = self
-//        myCollection.dataSource = self
-//    }
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         shopModel.sky.count
     }
@@ -131,18 +132,35 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         let size = (collectionView.frame.size.width - 1) / 2
         return CGSize(width: size, height: 10)
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 30
+        return 90
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 20
+        return 80
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(shopModel.sky[indexPath.row].name)
-                let vc = ResortInformationController()
-                self.navigationController?.pushViewController(vc, animated: true)
+        var correct = indexPath.row
+        switch correct {
+        case 0:
+            let vc = SheregeshController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        case 1:
+            let vc = RosaKhutorController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        case 2:
+            let vc = ArhyzController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        case 3:
+            let vc = DombaiController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        default:
+            break
+        }
+//                let vc = SheregeshController()
+//                self.navigationController?.pushViewController(vc, animated: true)
     }
 }

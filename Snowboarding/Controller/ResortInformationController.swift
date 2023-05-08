@@ -25,7 +25,7 @@ class ResortInformationController: UIViewController {
     @objc func choiceSegment(sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {
         case 0:
-            print("0")
+            HomeViewController()
         case 1:
             print("1")
         case 2:

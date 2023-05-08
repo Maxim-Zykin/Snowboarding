@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SheregeshViewController: UIViewController {
+class SheregeshController: UIViewController {
 
     let segment = ResortInformationView()
     
@@ -15,6 +15,8 @@ class SheregeshViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         navigationItem.title = "Шерегеш"
+        //navigationItem.leftBarButtonItem?.title = "Назад"
+
     }
     
     private func setupUI() {
