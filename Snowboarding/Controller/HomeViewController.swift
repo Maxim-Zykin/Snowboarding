@@ -25,7 +25,7 @@ class HomeViewController: UIViewController {
     }()
     
     //Choose a ski resort
-    private let skiResort = CuslomLabel(text: "Выбери горнолыжный курорт:", size: 24)
+    private let skiResort = CustomLabel(text: "Выбери горнолыжный курорт:", size: 24)
     
 //    var cells = [SkiResorts]()
 
@@ -94,12 +94,7 @@ class HomeViewController: UIViewController {
             }
         }
     }
-    
-//    @objc private func testBut() {
-//        let vc = ResortInformationController()
-//        self.navigationController?.pushViewController(vc, animated: true)
-//    }
-    
+
     private func fetchUser() {
         AuthService.shared.fetchUser { [weak self] user, error in
             guard let self = self else { return }
@@ -143,7 +138,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(shopModel.sky[indexPath.row].name)
-        var correct = indexPath.row
+        let correct = indexPath.row
         switch correct {
         case 0:
             let vc = SheregeshController()
@@ -160,7 +155,5 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         default:
             break
         }
-//                let vc = SheregeshController()
-//                self.navigationController?.pushViewController(vc, animated: true)
     }
 }

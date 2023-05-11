@@ -87,7 +87,7 @@ class AuthHeaderView: UIView {
             
             self.subTitleLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 12),
             self.subTitleLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            self.subTitleLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            self.subTitleLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor)
         ])
     }
 

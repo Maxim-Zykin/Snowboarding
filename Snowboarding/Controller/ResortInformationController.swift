@@ -9,6 +9,8 @@ import UIKit
 
 class ResortInformationController: UIViewController {
     
+   //private var resortInformation = UIViewController()
+
     private var segmentCo: UISegmentedControl = {
         var segment = UISegmentedControl()
         segment = .init(items: ["О курорте", "Цены", "Режим работы"])
@@ -22,10 +24,17 @@ class ResortInformationController: UIViewController {
         segmentCo.addTarget(self, action: #selector(choiceSegment), for: .valueChanged)
     }
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+    
     @objc func choiceSegment(sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {
         case 0:
-            HomeViewController()
+            let vc = SheregeshInformation()
+            self.navigationController?.topViewController
+            print("1")
         case 1:
             print("1")
         case 2:
@@ -37,34 +46,18 @@ class ResortInformationController: UIViewController {
     private func setupUI() {
         self.view.backgroundColor = .white
         self.view.addSubview(segmentCo)
+ 
         self.segmentCo.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
             self.segmentCo.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 100),
             self.segmentCo.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 30),
             self.segmentCo.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -30),
+
         ])
     }
 }
     
-//    private let pesorth = ResortInformationView(items: ["О курорте", "Цены", "Режим работы"])
-//
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        setupUI()
-//
-//    }
-//
-//    private func setupUI() {
-//        self.view.backgroundColor = .white
-//        self.view.addSubview(pesorth)
-//        self.pesorth.translatesAutoresizingMaskIntoConstraints = false
-////
-////        NSLayoutConstraint.activate([
-////            self.pesorth.topAnchor.constraint(equalTo: self.view.layoutMarginsGuide.topAnchor),
-////            self.pesorth.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 30),
-////            self.pesorth.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -30),
-////        ])
-//
-//    }
-//}
+extension ResortInformationController {
+    
+}

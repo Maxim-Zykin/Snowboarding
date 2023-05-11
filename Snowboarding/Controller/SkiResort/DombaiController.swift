@@ -9,23 +9,43 @@ import UIKit
 
 class DombaiController: UIViewController {
 
-    let segment = ResortInformationView()
+    private var segmentCo: UISegmentedControl = {
+        var segment = UISegmentedControl()
+        segment = .init(items: ["О курорте", "Цены", "Режим работы"])
+        segment.selectedSegmentIndex = 0
+        return segment
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        navigationItem.title = "Домбаи"
+        segmentCo.addTarget(self, action: #selector(choiceSegment), for: .valueChanged)
+        navigationItem.title = "Домбай"
+    }
+    
+    @objc func choiceSegment(sender: UISegmentedControl) {
+        switch sender.selectedSegmentIndex {
+        case 0:
+            print("1")
+        case 1:
+            print("1")
+        case 2:
+            print("2")
+        default: return
+        }
     }
     
     private func setupUI() {
         self.view.backgroundColor = .white
-        self.view.addSubview(segment)
-        self.segment.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addSubview(segmentCo)
+ 
+        self.segmentCo.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            self.segment.topAnchor.constraint(equalTo: self.view.topAnchor),
-            self.segment.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 30),
-            self.segment.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -30),
+            self.segmentCo.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 100),
+            self.segmentCo.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 30),
+            self.segmentCo.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -30),
+
         ])
     }
 }
