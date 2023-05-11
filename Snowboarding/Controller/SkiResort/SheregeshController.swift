@@ -26,6 +26,7 @@ class SheregeshController: UIViewController {
     @objc func choiceSegment(sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {
         case 0:
+            //should be shown SheregeshInformation
             print("1")
         case 1:
             print("1")
