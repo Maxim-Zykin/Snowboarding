@@ -10,7 +10,7 @@
 		0C030F3B2A08F54C00ED5DFD /* RosaKhutorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C030F3A2A08F54C00ED5DFD /* RosaKhutorController.swift */; };
 		0C030F3D2A08F56900ED5DFD /* ArhyzController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C030F3C2A08F56900ED5DFD /* ArhyzController.swift */; };
 		0C030F3F2A08F58700ED5DFD /* DombaiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C030F3E2A08F58700ED5DFD /* DombaiController.swift */; };
-		0C1900C429F533F500555DDF /* ResortInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1900C329F533F500555DDF /* ResortInformationView.swift */; };
+		0C122F8A2A0CDE34009988A1 /* SheregeshInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C122F892A0CDE34009988A1 /* SheregeshInfo.swift */; };
 		0C1900C629F536DF00555DDF /* ResortInformationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1900C529F536DF00555DDF /* ResortInformationController.swift */; };
 		0C1DC26D29AB92DF004F3FDC /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1DC26C29AB92DF004F3FDC /* CustomTextField.swift */; };
 		0C1DC26F29ABB802004F3FDC /* CustomButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1DC26E29ABB802004F3FDC /* CustomButtons.swift */; };
@@ -22,7 +22,6 @@
 		0C899C792A03E8820038542E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C899C782A03E8820038542E /* HomeViewController.swift */; };
 		0CA50CB429D2E6330094C74C /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA50CB329D2E6330094C74C /* CustomLabel.swift */; };
 		0CAF328B2A010C4400BB261F /* SheregeshController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF328A2A010C4400BB261F /* SheregeshController.swift */; };
-		0CD0277D2A0B877B00449B41 /* SheregeshInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD0277C2A0B877B00449B41 /* SheregeshInformation.swift */; };
 		0CD0FAA229AB3667000E76E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD0FAA129AB3667000E76E8 /* AppDelegate.swift */; };
 		0CD0FAA429AB3667000E76E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD0FAA329AB3667000E76E8 /* SceneDelegate.swift */; };
 		0CD0FAAB29AB3668000E76E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CD0FAAA29AB3668000E76E8 /* Assets.xcassets */; };
@@ -44,7 +43,7 @@
 		0C030F3A2A08F54C00ED5DFD /* RosaKhutorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosaKhutorController.swift; sourceTree = "<group>"; };
 		0C030F3C2A08F56900ED5DFD /* ArhyzController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArhyzController.swift; sourceTree = "<group>"; };
 		0C030F3E2A08F58700ED5DFD /* DombaiController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DombaiController.swift; sourceTree = "<group>"; };
-		0C1900C329F533F500555DDF /* ResortInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortInformationView.swift; sourceTree = "<group>"; };
+		0C122F892A0CDE34009988A1 /* SheregeshInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheregeshInfo.swift; sourceTree = "<group>"; };
 		0C1900C529F536DF00555DDF /* ResortInformationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortInformationController.swift; sourceTree = "<group>"; };
 		0C1DC26C29AB92DF004F3FDC /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		0C1DC26E29ABB802004F3FDC /* CustomButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtons.swift; sourceTree = "<group>"; };
@@ -56,7 +55,6 @@
 		0C899C782A03E8820038542E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0CA50CB329D2E6330094C74C /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		0CAF328A2A010C4400BB261F /* SheregeshController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheregeshController.swift; sourceTree = "<group>"; };
-		0CD0277C2A0B877B00449B41 /* SheregeshInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheregeshInformation.swift; sourceTree = "<group>"; };
 		0CD0FA9E29AB3667000E76E8 /* Snowboarding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snowboarding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CD0FAA129AB3667000E76E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CD0FAA329AB3667000E76E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,7 +95,6 @@
 				0C030F3A2A08F54C00ED5DFD /* RosaKhutorController.swift */,
 				0C030F3C2A08F56900ED5DFD /* ArhyzController.swift */,
 				0C030F3E2A08F58700ED5DFD /* DombaiController.swift */,
-				0C030F612A0A148500ED5DFD /* Information */,
 			);
 			path = SkiResort;
 			sourceTree = "<group>";
@@ -105,7 +102,7 @@
 		0C030F612A0A148500ED5DFD /* Information */ = {
 			isa = PBXGroup;
 			children = (
-				0CD0277C2A0B877B00449B41 /* SheregeshInformation.swift */,
+				0C122F892A0CDE34009988A1 /* SheregeshInfo.swift */,
 			);
 			path = Information;
 			sourceTree = "<group>";
@@ -189,7 +186,7 @@
 				0C1DC26E29ABB802004F3FDC /* CustomButtons.swift */,
 				0CA50CB329D2E6330094C74C /* CustomLabel.swift */,
 				0C43E8D129FD3B6400C3980D /* ChoiceOfSkiResortCell.swift */,
-				0C1900C329F533F500555DDF /* ResortInformationView.swift */,
+				0C030F612A0A148500ED5DFD /* Information */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -328,7 +325,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C899C792A03E8820038542E /* HomeViewController.swift in Sources */,
-				0CD0277D2A0B877B00449B41 /* SheregeshInformation.swift in Sources */,
 				0C030F3F2A08F58700ED5DFD /* DombaiController.swift in Sources */,
 				0CD0FABF29AB49F2000E76E8 /* LoginController.swift in Sources */,
 				0C850E8C29AE446E00C6AB10 /* WebViewerController.swift in Sources */,
@@ -337,7 +333,6 @@
 				0CFDA63729BE223A00B7C6C4 /* User.swift in Sources */,
 				0C030F3D2A08F56900ED5DFD /* ArhyzController.swift in Sources */,
 				0CA50CB429D2E6330094C74C /* CustomLabel.swift in Sources */,
-				0C1900C429F533F500555DDF /* ResortInformationView.swift in Sources */,
 				0C1900C629F536DF00555DDF /* ResortInformationController.swift in Sources */,
 				0C87396029BDB61B0007CFC3 /* LoginUserRequest.swift in Sources */,
 				0CD0FAB929AB36F5000E76E8 /* RegiserUserRequest.swift in Sources */,
@@ -351,6 +346,7 @@
 				0C030F3B2A08F54C00ED5DFD /* RosaKhutorController.swift in Sources */,
 				0CD0FAA229AB3667000E76E8 /* AppDelegate.swift in Sources */,
 				0CAF328B2A010C4400BB261F /* SheregeshController.swift in Sources */,
+				0C122F8A2A0CDE34009988A1 /* SheregeshInfo.swift in Sources */,
 				0CD0FAA429AB3667000E76E8 /* SceneDelegate.swift in Sources */,
 				0CF2F41629E1429800C82D57 /* SkiResorts.swift in Sources */,
 			);

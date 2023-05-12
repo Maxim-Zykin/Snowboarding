@@ -32,8 +32,7 @@ class ResortInformationController: UIViewController {
     @objc func choiceSegment(sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {
         case 0:
-            let vc = SheregeshInformation()
-            self.navigationController?.topViewController
+
             print("1")
         case 1:
             print("1")
@@ -59,5 +58,20 @@ class ResortInformationController: UIViewController {
 }
     
 extension ResortInformationController {
-    
+    func add(_ child: UIViewController) {
+    addChild(child)
+    view.addSubview(child.view)
+    child.didMove(toParent: self)
+    }
+    func remove() {
+    // Just to be safe, we check that this view controller
+    // is actually added to a parent before removing it.
+    guard parent != nil else {
+    return
+    }
+    willMove(toParent: nil)
+    view.removeFromSuperview()
+    removeFromParent()
+    }
+
 }

@@ -43,7 +43,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 
                 let nav = UINavigationController(rootViewController: viewController)
                 nav.modalPresentationStyle = .fullScreen
-                //nav.navigationBar.backgroundColor = UIColor.blue
 
                 self?.window?.rootViewController = nav
                 
