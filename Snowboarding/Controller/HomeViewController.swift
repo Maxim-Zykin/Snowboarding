@@ -21,11 +21,12 @@ class HomeViewController: UIViewController {
         label.font = .systemFont(ofSize: 26, weight: .semibold)
         label.text = "Привет"
         label.numberOfLines = 2
+        label.textColor = .black
         return label
     }()
     
     //Choose a ski resort
-    private let skiResort = CustomLabel(text: "Выбери горнолыжный курорт:", size: 24)
+    private let skiResort = CustomLabel(text: "Выбери горнолыжный курорт:", size: 24, color: .black)
     
 //    var cells = [SkiResorts]()
 
@@ -47,14 +48,16 @@ class HomeViewController: UIViewController {
         collection.register(ChoiceOfSkiResortCell.self, forCellWithReuseIdentifier: ChoiceOfSkiResortCell.cellID)
         collection.delegate = self
         collection.dataSource = self
+        collection.backgroundColor = .white
         //collection.frame = view.bounds
     }
     
     // MARK: - UI Setup
     private func setupUI() {
         
-        self.view.backgroundColor = .systemBackground
+        self.view.backgroundColor = .white
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(didTapLogout))
+        
         self.navigationItem.backButtonTitle = "Назад"
         
         self.view.addSubview(label)
@@ -75,8 +78,8 @@ class HomeViewController: UIViewController {
             self.skiResort.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -30),
             
             self.collection!.topAnchor.constraint(equalTo: skiResort.bottomAnchor, constant: 30),
-            self.collection!.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 25),
-            self.collection!.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -25),
+            self.collection!.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 20),
+            self.collection!.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -20),
             self.collection!.heightAnchor.constraint(equalTo: self.view.heightAnchor)
         ])
     }

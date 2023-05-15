@@ -1,21 +1,21 @@
 //
-//  SheregeshInfo.swift
+//  RosaKhutorInfo.swift
 //  Snowboarding
 //
-//  Created by Максим Зыкин on 11.05.2023.
+//  Created by Максим Зыкин on 14.05.2023.
 //
 
 import UIKit
 
-class SheregeshInfo: UIView {
+class RosaKhutorInfo: UIView {
 
-    // MARK: - UI Components
-    private let aboutResort = CustomLabel(text: "Шерегеш находится на юге Кемеровской области, в Горной Шории — красивой и дикой гористой местности на стыке Саян, Алтая и Кузнецкого Алатау.", textAlignment: .left, size: 20, color: .black, numberOfLines: 10)
+    // MARK: - Variables
+    private let imageRosaKhutor = UIImageView()
+    private let aboutResort = CustomLabel(text: "Роза Хутор — круглогодичный горный курорт, расположенный на берегах реки Мзымта и горных склонах к югу от неё в Адлерском районе Сочи.",  textAlignment: .left, size: 20, color: .black, numberOfLines: 20)
     
-    private let allTracks = CustomLabel(text: "Всего трасс: 16", textAlignment: .left, size: 20, color: .black)
-    private let heightDifference = CustomLabel(text: "Перепад высот: 630 м", textAlignment: .left, size: 20, color: .black)
-    private let totalLengthOfTracks = CustomLabel(text: "Общая длина трасс: 35 км", textAlignment: .left, size: 20, color: .black)
-    private var imageSheregesh = UIImageView()
+    private let allTracks = CustomLabel(text: "Всего трасс: 72", textAlignment: .left, size: 20, color: .black)
+    private let heightDifference = CustomLabel(text: "Перепад высот: 1569 м", textAlignment: .left, size: 20, color: .black)
+    private let totalLengthOfTracks = CustomLabel(text: "Общая длина трасс: 106 км", textAlignment: .left, size: 20, color: .black)
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -26,30 +26,31 @@ class SheregeshInfo: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    
     // MARK: - UI Setup
     private func setupUI() {
         self.backgroundColor = .systemBackground
-        self.imageSheregesh.image = UIImage(named: "sheregeshLogo")
+        self.imageRosaKhutor.image = UIImage(named: "rosakhutorLogo")
 
-        self.addSubview(imageSheregesh)
+        self.addSubview(imageRosaKhutor)
         self.addSubview(aboutResort)
         self.addSubview(allTracks)
         self.addSubview(heightDifference)
         self.addSubview(totalLengthOfTracks)
         
-        imageSheregesh.translatesAutoresizingMaskIntoConstraints = false
+        imageRosaKhutor.translatesAutoresizingMaskIntoConstraints = false
         aboutResort.translatesAutoresizingMaskIntoConstraints = false
         allTracks.translatesAutoresizingMaskIntoConstraints = false
         heightDifference.translatesAutoresizingMaskIntoConstraints = false
         totalLengthOfTracks.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            self.imageSheregesh.topAnchor.constraint(equalTo: self.layoutMarginsGuide.topAnchor),
-            self.imageSheregesh.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            self.imageSheregesh.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-            self.imageSheregesh.heightAnchor.constraint(equalToConstant: 200),
+            self.imageRosaKhutor.topAnchor.constraint(equalTo: self.layoutMarginsGuide.topAnchor),
+            self.imageRosaKhutor.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            self.imageRosaKhutor.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            self.imageRosaKhutor.heightAnchor.constraint(equalToConstant: 200),
             
-            self.aboutResort.topAnchor.constraint(equalTo: imageSheregesh.bottomAnchor, constant: 20),
+            self.aboutResort.topAnchor.constraint(equalTo: imageRosaKhutor.bottomAnchor, constant: 20),
             self.aboutResort.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 30),
             self.aboutResort.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -30),
             
@@ -67,5 +68,7 @@ class SheregeshInfo: UIView {
         ])
     }
     
+    // MARK: - Selectors
+      
 
 }

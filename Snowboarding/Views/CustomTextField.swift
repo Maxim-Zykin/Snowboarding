@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CustomTextField: UITextField {
+class CustomTextField: UITextField, UITextFieldDelegate {
 
     enum CustomTextFieldType {
         case userName
@@ -21,7 +21,7 @@ class CustomTextField: UITextField {
         self.authFiledType = filedTypr
         super.init(frame: .zero)
         
-        self.backgroundColor = .secondarySystemBackground
+        self.backgroundColor = .lightGray
         self.layer.cornerRadius = 10
         
         self.returnKeyType = .done
@@ -34,6 +34,7 @@ class CustomTextField: UITextField {
         switch filedTypr{
         case .userName:
             self.placeholder = "User Name"
+            
         case .email:
             self.placeholder = "E-mail"
             self.keyboardType = .emailAddress
@@ -48,4 +49,5 @@ class CustomTextField: UITextField {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+
 }

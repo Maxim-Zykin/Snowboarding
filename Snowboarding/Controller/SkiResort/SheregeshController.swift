@@ -16,6 +16,19 @@ class SheregeshController: UIViewController {
         return segment
     }()
     
+    private var scrollView: UIScrollView = {
+        let view = UIScrollView()
+        view.showsVerticalScrollIndicator = true
+        view.isDirectionalLockEnabled = true
+        view.showsHorizontalScrollIndicator = false
+        return view
+    }()
+    
+    let contentView: UIView = {
+        let view = UIView()
+        return view
+    }()
+    
     let sheregeshInfo = SheregeshInfo()
     
     override func viewDidLoad() {
@@ -41,20 +54,44 @@ class SheregeshController: UIViewController {
     
     private func setupUI() {
         self.view.backgroundColor = .white
+        self.view.addSubview(scrollView)
+        self.scrollView.addSubview(contentView)
         self.view.addSubview(segmentCo)
         self.view.addSubview(sheregeshInfo)
- 
+        
+        self.scrollView.translatesAutoresizingMaskIntoConstraints = false
+        self.contentView.translatesAutoresizingMaskIntoConstraints = false
         self.segmentCo.translatesAutoresizingMaskIntoConstraints = false
         self.sheregeshInfo.translatesAutoresizingMaskIntoConstraints = false
-        
-        NSLayoutConstraint.activate([
-            self.segmentCo.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 100),
-            self.segmentCo.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 10),
-            self.segmentCo.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -10),
 
-            self.sheregeshInfo.topAnchor.constraint(equalTo: segmentCo.bottomAnchor, constant: 10),
-            self.sheregeshInfo.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 0),
-            self.sheregeshInfo.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: 0),
+        let hCont = contentView.heightAnchor.constraint(equalTo: scrollView.heightAnchor)
+        hCont.isActive = true
+        hCont.priority = UILayoutPriority(50)
+        
+        NSLayoutConstraint.activate ([
+            self.scrollView.topAnchor.constraint(equalTo: self.view.topAnchor),
+            self.scrollView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
+            self.scrollView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+            self.scrollView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
+            
+            self.contentView.topAnchor.constraint(equalTo: self.scrollView.topAnchor),
+            self.contentView.bottomAnchor.constraint(equalTo: self.scrollView.bottomAnchor),
+            self.contentView.leadingAnchor.constraint(equalTo: self.scrollView.leadingAnchor),
+            self.contentView.trailingAnchor.constraint(equalTo: self.scrollView.trailingAnchor),
+            self.contentView.widthAnchor.constraint(equalTo: self.scrollView.widthAnchor),
+            self.contentView.heightAnchor.constraint(equalTo: self.scrollView.heightAnchor, multiplier: 2),
+            
+            segmentCo.topAnchor.constraint(equalTo: self.contentView.topAnchor),
+            segmentCo.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor),
+            segmentCo.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant: -20),
+            segmentCo.widthAnchor.constraint(equalTo: self.contentView.widthAnchor),
+
+            sheregeshInfo.topAnchor.constraint(equalTo: self.segmentCo.bottomAnchor),
+            sheregeshInfo.centerXAnchor.constraint(equalTo: self.contentView.centerXAnchor),
+            sheregeshInfo.widthAnchor.constraint(equalTo: self.contentView.widthAnchor),
+            
+            //sheregeshInfo.bottomAnchor.constraint(equalTo: self.segmentCo.bottomAnchor, constant: -200)
+            
         ])
     }
 }
