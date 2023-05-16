@@ -116,6 +116,7 @@
 		0C030F612A0A148500ED5DFD /* Information */ = {
 			isa = PBXGroup;
 			children = (
+				0CBC54BE2A10EE2800B1B6A9 /* Dombai */,
 				0CBC54BB2A10EDE800B1B6A9 /* Sheregesh */,
 				0CBC54BC2A10EDF800B1B6A9 /* RosaKhutor */,
 				0CBC54BD2A10EE1200B1B6A9 /* Arhyz */,
@@ -239,7 +240,6 @@
 				0CA50CB329D2E6330094C74C /* CustomLabel.swift */,
 				0C43E8D129FD3B6400C3980D /* ChoiceOfSkiResortCell.swift */,
 				0C030F612A0A148500ED5DFD /* Information */,
-				0CBC54BE2A10EE2800B1B6A9 /* Dombai */,
 			);
 			path = Views;
 			sourceTree = "<group>";
