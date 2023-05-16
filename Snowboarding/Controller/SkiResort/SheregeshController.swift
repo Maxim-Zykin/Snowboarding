@@ -21,6 +21,7 @@ class SheregeshController: UIViewController {
         view.showsVerticalScrollIndicator = true
         view.isDirectionalLockEnabled = true
         view.showsHorizontalScrollIndicator = false
+        view.showsVerticalScrollIndicator = false
         return view
     }()
     
@@ -56,8 +57,8 @@ class SheregeshController: UIViewController {
         self.view.backgroundColor = .white
         self.view.addSubview(scrollView)
         self.scrollView.addSubview(contentView)
-        self.view.addSubview(segmentCo)
-        self.view.addSubview(sheregeshInfo)
+        self.scrollView.addSubview(segmentCo)
+        self.scrollView.addSubview(sheregeshInfo)
         
         self.scrollView.translatesAutoresizingMaskIntoConstraints = false
         self.contentView.translatesAutoresizingMaskIntoConstraints = false
@@ -66,7 +67,8 @@ class SheregeshController: UIViewController {
 
         let hCont = contentView.heightAnchor.constraint(equalTo: scrollView.heightAnchor)
         hCont.isActive = true
-        hCont.priority = UILayoutPriority(50)
+        hCont.priority = .defaultLow
+        
         
         NSLayoutConstraint.activate ([
             self.scrollView.topAnchor.constraint(equalTo: self.view.topAnchor),
@@ -79,7 +81,7 @@ class SheregeshController: UIViewController {
             self.contentView.leadingAnchor.constraint(equalTo: self.scrollView.leadingAnchor),
             self.contentView.trailingAnchor.constraint(equalTo: self.scrollView.trailingAnchor),
             self.contentView.widthAnchor.constraint(equalTo: self.scrollView.widthAnchor),
-            self.contentView.heightAnchor.constraint(equalTo: self.scrollView.heightAnchor, multiplier: 2),
+            self.contentView.heightAnchor.constraint(equalTo: self.scrollView.heightAnchor, constant: 430),
             
             segmentCo.topAnchor.constraint(equalTo: self.contentView.topAnchor),
             segmentCo.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor),

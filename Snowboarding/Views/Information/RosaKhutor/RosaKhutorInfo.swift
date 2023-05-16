@@ -26,7 +26,6 @@ class RosaKhutorInfo: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    
     // MARK: - UI Setup
     private func setupUI() {
         self.backgroundColor = .systemBackground
