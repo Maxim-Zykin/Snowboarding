@@ -65,10 +65,10 @@ class SheregeshController: UIViewController {
         self.segmentCo.translatesAutoresizingMaskIntoConstraints = false
         self.sheregeshInfo.translatesAutoresizingMaskIntoConstraints = false
 
-        let hCont = contentView.heightAnchor.constraint(equalTo: scrollView.heightAnchor)
-        hCont.isActive = true
-        hCont.priority = .defaultLow
-        
+//        let hCont = contentView.heightAnchor.constraint(equalTo: scrollView.heightAnchor)
+//        hCont.isActive = true
+//        hCont.priority = .defaultLow
+//
         
         NSLayoutConstraint.activate ([
             self.scrollView.topAnchor.constraint(equalTo: self.view.topAnchor),

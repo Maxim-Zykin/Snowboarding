@@ -20,6 +20,9 @@ class ForgotPasswordController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.addTapGestureToHideKeyboard()
+        
         self.setupUI()
         self.resetPasswordButton.addTarget(self, action: #selector(didTapForgotPassword), for: .touchUpInside)
     }

@@ -47,7 +47,7 @@ class RosaKhutorController: UIViewController {
  
         self.segmentCo.translatesAutoresizingMaskIntoConstraints = false
         self.rosaKhutorInfo.translatesAutoresizingMaskIntoConstraints = false
-        
+
         NSLayoutConstraint.activate([
             self.segmentCo.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 100),
             self.segmentCo.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 10),

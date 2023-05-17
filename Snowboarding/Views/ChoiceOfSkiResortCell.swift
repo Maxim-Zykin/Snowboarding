@@ -60,15 +60,6 @@ class ChoiceOfSkiResortCell: UICollectionViewCell {
     }
     
     override func layoutSubviews() {
-//        resortLabel.frame = CGRect(x: 5,
-//                                   y: contentView.frame.size.height-50,
-//                                   width: contentView.frame.size.width-10,
-//                                   height: 50)
-//
-//        resortImage.frame = CGRect(x: 5,
-//                                   y: 0,
-//                                   width: contentView.frame.size.width-10,
-//                                   height: contentView.frame.size.height-10)
         
         super.layoutSubviews()
         self.layer.cornerRadius = 5

@@ -45,6 +45,8 @@ class RegisterController: UIViewController {
         super.viewDidLoad()
         self.setupUI()
         
+        view.addTapGestureToHideKeyboard()
+        
         self.termsTextView.delegate = self
         
         self.signUpButton.addTarget(self, action: #selector(didTapSignUp), for: .touchUpInside)
