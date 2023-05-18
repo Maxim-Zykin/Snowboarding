@@ -11,14 +11,14 @@ class RegisterController: UIViewController {
     
     
     // MARK: - UI Components
-    private let headerView = AuthHeaderView(appLabel: "SNOWBOARDING", title: "Sign Up", subTitle: "Create new account")
+    private let headerView = AuthHeaderView(appLabel: "SNOWBOARDING", title: "Зарегистроваться", subTitle: "Создание нового аккаунта")
     
     private let userNameField = CustomTextField(filedTypr: .userName)
     private let emailField = CustomTextField(filedTypr: .email)
     private let passwordField = CustomTextField(filedTypr: .password)
 
-    private let signUpButton = CustomButtons(title: "Sign Up", hasBakground: true, fontSize: .big)
-    private let signInButton = CustomButtons(title: "Already have an account? Sign In.", fontSize: .med)
+    private let signUpButton = CustomButtons(title: "Зарегистрироваться", hasBakground: true, fontSize: .big)
+    private let signInButton = CustomButtons(title: "Уже есть аккаунт? Войти.", fontSize: .med)
     
     private let termsTextView: UITextView = {
         let attributedString = NSMutableAttributedString(string: "By creating an account, you agree to our Terms & Conditions and you acknowledge that you have read our Privacy Policy")

@@ -11,11 +11,11 @@ class ForgotPasswordController: UIViewController {
     
     // MARK: - UI Components
     
-    private let headerView = AuthHeaderView(appLabel: "SNOWBOARDING", title: "Forgot password", subTitle: "Reset your password")
+    private let headerView = AuthHeaderView(appLabel: "SNOWBOARDING", title: "Забыли пароль", subTitle: "Восстановить пароль")
     
     private let emailField = CustomTextField(filedTypr: .email)
     
-    private let resetPasswordButton = CustomButtons(title: "Sing Up", hasBakground: true, fontSize: .big)
+    private let resetPasswordButton = CustomButtons(title: "Восстановить", hasBakground: true, fontSize: .big)
     // MARK: - LifeCycle
     
     override func viewDidLoad() {

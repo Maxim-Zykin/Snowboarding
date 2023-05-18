@@ -23,15 +23,15 @@ class AlertManager {
 extension AlertManager {
     
     public static func showInvalidEmailAlert(on vc: UIViewController) {
-        self.showBasicAlert(on: vc, with: "Invalid e-mail", and: "Please enter a valid e-mail")
+        self.showBasicAlert(on: vc, with: "Неверный e-mail", and: "Пожалуйста, введите паравильный e-mail")
     }
     
     public static func showInvalidPasswordAlert(on vc: UIViewController) {
-        self.showBasicAlert(on: vc, with: "Invalid password", and: "Please enter a valid password")
+        self.showBasicAlert(on: vc, with: "Неверный пароль", and: "Пожалуйста, введите паравильный пароль")
     }
     
     public static func showInvalidUsernameAlert(on vc: UIViewController) {
-        self.showBasicAlert(on: vc, with: "Invalid User name", and: "Please enter a valid User name")
+        self.showBasicAlert(on: vc, with: "Неверное имя пользователя", and: "Пожалуйста введите корректное имя")
     }
 }
 
@@ -39,11 +39,11 @@ extension AlertManager {
 extension AlertManager {
     
     public static func showRegistrationErrorAlert(on vc: UIViewController) {
-        self.showBasicAlert(on: vc, with: "Unknow registration error", and: nil)
+        self.showBasicAlert(on: vc, with: "Неизвестная ошибка регистрации", and: nil)
     }
     
     public static func showRegistrationErrorAlert(on vc: UIViewController, with error: Error) {
-        self.showBasicAlert(on: vc, with: "Unknow registration error", and: "\(error.localizedDescription)")
+        self.showBasicAlert(on: vc, with: "Неизвестная ошибка регистрации", and: "\(error.localizedDescription)")
     }
 }
 
@@ -51,11 +51,11 @@ extension AlertManager {
 extension AlertManager {
     
     public static func showSignInErrorAlert(on vc: UIViewController) {
-        self.showBasicAlert(on: vc, with: "Unknow error Signing In", and: nil)
+        self.showBasicAlert(on: vc, with: "Неизвестная ошибка входа", and: nil)
     }
     
     public static func showSignInErrorAlert(on vc: UIViewController, with error: Error) {
-        self.showBasicAlert(on: vc, with: "Error Signing In", and: "\(error.localizedDescription)")
+        self.showBasicAlert(on: vc, with: "Ошибка входа", and: "\(error.localizedDescription)")
     }
 }
 
@@ -63,7 +63,7 @@ extension AlertManager {
 extension AlertManager {
     
     public static func showLogOutErrorAlert(on vc: UIViewController, with error: Error) {
-        self.showBasicAlert(on: vc, with: "Logout error ", and: "\(error.localizedDescription)")
+        self.showBasicAlert(on: vc, with: "Ошибка выхода ", and: "\(error.localizedDescription)")
     }
 }
 
@@ -71,11 +71,11 @@ extension AlertManager {
 extension AlertManager {
     
     public static func showPasswordResetSent(on vc: UIViewController) {
-        self.showBasicAlert(on: vc, with: "Password reset sent", and: nil)
+        self.showBasicAlert(on: vc, with: "На e-mail отправилена ссылка для восстановления пароль", and: nil)
     }
     
     public static func showErrorSendingPasswordReset(on vc: UIViewController, with error: Error) {
-        self.showBasicAlert(on: vc, with: "Error sending password reset", and: "\(error.localizedDescription)")
+        self.showBasicAlert(on: vc, with: "Ошибка сброса пароля", and: "\(error.localizedDescription)")
     }
 }
 
@@ -83,10 +83,10 @@ extension AlertManager {
 extension AlertManager {
     
     public static func showFetchingUserErrors(on vc: UIViewController, with error: Error) {
-        self.showBasicAlert(on: vc, with: "Error fetching User", and: "\(error.localizedDescription)")
+        self.showBasicAlert(on: vc, with: "Ошибка загрузки пользователя", and: "\(error.localizedDescription)")
     }
     
     public static func showUnknowFetchingUserErrors(on vc: UIViewController) {
-        self.showBasicAlert(on: vc, with: "Unknow error fetching User", and: nil)
+        self.showBasicAlert(on: vc, with: "Неизвестная ошибка при загрузки пользователя", and: nil)
     }
 }

@@ -25,10 +25,17 @@ class HomeViewController: UIViewController {
         return label
     }()
     
+    private let footer: UIImageView = {
+        let iv = UIImageView()
+        iv.contentMode = .scaleAspectFit
+        iv.image = UIImage (named: "footer")
+        iv.tintColor = .white
+        return iv
+    }()
+    
     //Choose a ski resort
     private let skiResort = CustomLabel(text: "Выбери горнолыжный курорт:", size: 24, color: .black)
     
-
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,11 +55,12 @@ class HomeViewController: UIViewController {
         collection.delegate = self
         collection.dataSource = self
         collection.backgroundColor = .white
-        //collection.frame = view.bounds
     }
     
     // MARK: - UI Setup
     private func setupUI() {
+        
+        let ratio = footer.intrinsicContentSize.height / footer.intrinsicContentSize.width
         
         self.view.backgroundColor = .white
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(didTapLogout))
@@ -62,10 +70,12 @@ class HomeViewController: UIViewController {
         self.view.addSubview(label)
         self.view.addSubview(skiResort)
         self.view.addSubview(collection!)
+        self.view.addSubview(footer)
 
         self.label.translatesAutoresizingMaskIntoConstraints = false
         self.skiResort.translatesAutoresizingMaskIntoConstraints = false
         self.collection!.translatesAutoresizingMaskIntoConstraints = false
+        self.footer.translatesAutoresizingMaskIntoConstraints = false
 
         NSLayoutConstraint.activate([
             self.label.topAnchor.constraint(equalTo: self.view.layoutMarginsGuide.topAnchor),
@@ -79,7 +89,12 @@ class HomeViewController: UIViewController {
             self.collection!.topAnchor.constraint(equalTo: skiResort.bottomAnchor, constant: 30),
             self.collection!.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 20),
             self.collection!.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -20),
-            self.collection!.heightAnchor.constraint(equalTo: self.view.heightAnchor)
+            self.collection!.heightAnchor.constraint(equalTo: self.view.heightAnchor),
+        
+            self.footer.leftAnchor.constraint(equalTo: self.view.leftAnchor),
+            self.footer.rightAnchor.constraint(equalTo: self.view.rightAnchor),
+            self.footer.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
+            self.footer.heightAnchor.constraint(equalTo: footer.widthAnchor, multiplier: ratio)
         ])
     }
     

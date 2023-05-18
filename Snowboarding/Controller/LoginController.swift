@@ -11,14 +11,14 @@ class LoginController: UIViewController {
    
     
     // MARK: - UI Components
-    private let headerView = AuthHeaderView(appLabel: "SNOWBOARDING", title: "Sign In", subTitle: "Sign In to your account")
+    private let headerView = AuthHeaderView(appLabel: "SNOWBOARDING", title: "Войти", subTitle: "Войдите в свой аккаунт")
     
     private let emailField = CustomTextField(filedTypr: .email)
     private let passwordField = CustomTextField(filedTypr: .password)
 
-    private let signInButton = CustomButtons(title: "Sign In", hasBakground: true, fontSize: .big)
-    private let newUserButton = CustomButtons(title: "New User? Create Account", fontSize: .med)
-    private let forgotPasswordButton = CustomButtons(title: "Forgot Password?", fontSize: .small)
+    private let signInButton = CustomButtons(title: "Войти", hasBakground: true, fontSize: .big)
+    private let newUserButton = CustomButtons(title: "Новый пользователь? Создайте аккаунт", fontSize: .med)
+    private let forgotPasswordButton = CustomButtons(title: "Забыли пароль?", fontSize: .small)
     
     // MARK: - LifeCycle
     override func viewDidLoad() {
