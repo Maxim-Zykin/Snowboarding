@@ -80,6 +80,7 @@ class SheregeshController: UIViewController {
             self.contentView.bottomAnchor.constraint(equalTo: self.scrollView.bottomAnchor),
             self.contentView.leadingAnchor.constraint(equalTo: self.scrollView.leadingAnchor),
             self.contentView.trailingAnchor.constraint(equalTo: self.scrollView.trailingAnchor),
+            
             self.contentView.widthAnchor.constraint(equalTo: self.scrollView.widthAnchor),
             self.contentView.heightAnchor.constraint(equalTo: self.scrollView.heightAnchor, constant: 430),
             

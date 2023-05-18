@@ -17,7 +17,7 @@ class LoginController: UIViewController {
     private let passwordField = CustomTextField(filedTypr: .password)
 
     private let signInButton = CustomButtons(title: "Войти", hasBakground: true, fontSize: .big)
-    private let newUserButton = CustomButtons(title: "Новый пользователь? Создайте аккаунт", fontSize: .med)
+    private let newUserButton = CustomButtons(title: "Создать аккаунт", fontSize: .med)
     private let forgotPasswordButton = CustomButtons(title: "Забыли пароль?", fontSize: .small)
     
     // MARK: - LifeCycle

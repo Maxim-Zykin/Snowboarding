@@ -33,14 +33,14 @@ class CustomTextField: UITextField, UITextFieldDelegate {
     
         switch filedTypr{
         case .userName:
-            self.placeholder = "User Name"
+            self.placeholder = "Имя"
             
         case .email:
             self.placeholder = "E-mail"
             self.keyboardType = .emailAddress
             self.textContentType = .emailAddress
         case .password:
-            self.placeholder = "Password"
+            self.placeholder = "Пароль"
             self.textContentType = .oneTimeCode
             self.isSecureTextEntry = true
         }
