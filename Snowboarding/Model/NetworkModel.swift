@@ -7,13 +7,15 @@
 
 import Foundation
 
-struct Data: Decodable {
-    let values: Fields
+struct Root: Decodable {
+    var main: Main = Main()
 }
 
-struct Fields: Decodable {
-    let temperature: Int
-}
+struct Main: Decodable {
+    var temp: Double? = 0.0
+    }
+
+
 
 
 

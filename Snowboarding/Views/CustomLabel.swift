@@ -17,12 +17,13 @@ class CustomLabel: UILabel {
         fatalError("init(coder:) has not been implemented")
     }
 
-    convenience init(text: String, textAlignment: NSTextAlignment = .left, size: CGFloat, color: UIColor = .label, numberOfLines: Int = 0) {
+    convenience init(text: String, textAlignment: NSTextAlignment = .left, size: CGFloat = 20, color: UIColor = .label, numberOfLines: Int = 0) {
         self.init(frame: .zero)
         self.text = text
         self.textAlignment = textAlignment
         self.numberOfLines = numberOfLines
-        //self.font = .systemFont(ofSize: size, weight: <#T##UIFont.Weight#>)
+        self.font = .systemFont(ofSize: size, weight: .regular)
+        //self.size = size
         self.textColor = color
     }
 }

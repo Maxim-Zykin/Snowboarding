@@ -11,12 +11,12 @@ class ArhyzInfo: UIView {
     
     // MARK: - Variables
     private let imageArhyz = UIImageView()
-    private let aboutResort = CustomLabel(text: "Всесезонный курорт в горах Северного Кавказа, ориентирован на активный семейный отдых. Зимой сюда едут кататься на лыжах и сноуборде, летом доступны трассы для горного велосипеда, пешие и конные маршруты, джиппинг, экскурсии по красивейшим окрестностям Архыза.",  textAlignment: .left, size: 20, color: .black, numberOfLines: 20)
+    private let aboutResort = CustomLabel(text: "Всесезонный курорт в горах Северного Кавказа, ориентирован на активный семейный отдых. Зимой сюда едут кататься на лыжах и сноуборде, летом доступны трассы для горного велосипеда, пешие и конные маршруты, джиппинг, экскурсии по красивейшим окрестностям Архыза.",  textAlignment: .left, size: 18, color: .black, numberOfLines: 20)
     
-    private let allTracks = CustomLabel(text: "Всего трасс: 16", textAlignment: .left, size: 20, color: .black)
-    private let heightDifference = CustomLabel(text: "Перепад высот: 854 м", textAlignment: .left, size: 20, color: .black)
-    private let totalLengthOfTracks = CustomLabel(text: "Общая длина трасс: 26,8 км", textAlignment: .left, size: 20, color: .black)
-    private let season = CustomLabel(text: "Горнолыжный сезон с декабря до апрель", textAlignment: .left, size: 20, color: .black)
+    private let allTracks = CustomLabel(text: "Всего трасс: 16", textAlignment: .left, size: 18, color: .black)
+    private let heightDifference = CustomLabel(text: "Перепад высот: 854 м", textAlignment: .left, size: 18, color: .black)
+    private let totalLengthOfTracks = CustomLabel(text: "Общая длина трасс: 26,8 км", textAlignment: .left, size: 18, color: .black)
+    private let season = CustomLabel(text: "Горнолыжный сезон с декабря до апрель", textAlignment: .left, size: 18, color: .black)
     
     override init(frame: CGRect) {
         super.init(frame: frame)

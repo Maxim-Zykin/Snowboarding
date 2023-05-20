@@ -34,7 +34,7 @@ class HomeViewController: UIViewController {
     }()
     
     //Choose a ski resort
-    private let skiResort = CustomLabel(text: "Выбери горнолыжный курорт:", size: 24, color: .black)
+    private let skiResort = CustomLabel(text: "Выбери горнолыжный курорт:", size: 20, color: .black)
     
     // MARK: - LifeCycle
     override func viewDidLoad() {

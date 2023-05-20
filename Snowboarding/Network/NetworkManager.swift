@@ -8,7 +8,8 @@
 import Foundation
 
 class NetworkManager {
-    static func fetchWeather(url: String, completion: @escaping (_ fields: Data)->()) {
+    
+    static func fetchWeather(url: String, completion: @escaping (_ fields: Main)->()) {
         guard let url = URL(string: url) else { return }
         
         URLSession.shared.dataTask(with: url) { data, _, error in
@@ -17,8 +18,8 @@ class NetworkManager {
             do {
                 let decoder = JSONDecoder()
                 decoder.keyDecodingStrategy = .convertFromSnakeCase
-                let weather = try decoder.decode(Data.self, from: data)
-                completion(weather)
+                let weather = try decoder.decode(Root.self, from: data)
+                completion(weather.main)
                 print(weather)
             } catch let error {
                 print(error.localizedDescription)

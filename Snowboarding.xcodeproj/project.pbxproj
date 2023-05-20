@@ -185,6 +185,7 @@
 				0CD0FAC829AB4C23000E76E8 /* Views */,
 				0CD0FAB629AB3688000E76E8 /* Controller */,
 				0CD0FAB529AB3679000E76E8 /* Model */,
+				0CF770BE2A19334800B8730D /* Network */,
 				0CD0FAB729AB36A8000E76E8 /* Support */,
 			);
 			path = Snowboarding;
@@ -200,8 +201,6 @@
 				0C87396129BDDCF00007CFC3 /* Validator.swift */,
 				0CF2F41529E1429800C82D57 /* SkiResorts.swift */,
 				0CBC54B32A10BC2800B1B6A9 /* NetworkModel.swift */,
-				0CBC54B52A10C15100B1B6A9 /* NetworkManager.swift */,
-				0CBC54B72A10C2DB00B1B6A9 /* API.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -239,6 +238,15 @@
 				0C030F612A0A148500ED5DFD /* Information */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		0CF770BE2A19334800B8730D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0CBC54B72A10C2DB00B1B6A9 /* API.swift */,
+				0CBC54B52A10C15100B1B6A9 /* NetworkManager.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		2590FC643BDDFDF06AB00859 /* Frameworks */ = {

@@ -11,11 +11,11 @@ class RosaKhutorInfo: UIView {
 
     // MARK: - Variables
     private let imageRosaKhutor = UIImageView()
-    private let aboutResort = CustomLabel(text: "Роза Хутор — круглогодичный горный курорт, расположенный на берегах реки Мзымта и горных склонах к югу от неё в Адлерском районе Сочи.",  textAlignment: .left, size: 20, color: .black, numberOfLines: 20)
+    private let aboutResort = CustomLabel(text: "Роза Хутор — круглогодичный горный курорт, расположенный на берегах реки Мзымта и горных склонах к югу от неё в Адлерском районе Сочи.",  textAlignment: .left, size: 18, color: .black, numberOfLines: 18)
     
-    private let allTracks = CustomLabel(text: "Всего трасс: 72", textAlignment: .left, size: 20, color: .black)
-    private let heightDifference = CustomLabel(text: "Перепад высот: 1569 м", textAlignment: .left, size: 20, color: .black)
-    private let totalLengthOfTracks = CustomLabel(text: "Общая длина трасс: 106 км", textAlignment: .left, size: 20, color: .black)
+    private let allTracks = CustomLabel(text: "Всего трасс: 72", textAlignment: .left, size: 18, color: .black)
+    private let heightDifference = CustomLabel(text: "Перепад высот: 1569 м", textAlignment: .left, size: 18, color: .black)
+    private let totalLengthOfTracks = CustomLabel(text: "Общая длина трасс: 106 км", textAlignment: .left, size: 18, color: .black)
     
     override init(frame: CGRect) {
         super.init(frame: frame)
