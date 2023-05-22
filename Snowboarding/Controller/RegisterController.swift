@@ -11,7 +11,7 @@ class RegisterController: UIViewController {
     
     
     // MARK: - UI Components
-    private let headerView = AuthHeaderView(appLabel: "SNOWBOARDING", title: "Зарегистроваться", subTitle: "Создание нового аккаунта")
+    private let headerView = AuthHeaderView(appLabel: "SNOWBOARDING", title: "Регистрация", subTitle: "Создание нового аккаунта")
     
     private let userNameField = CustomTextField(filedTypr: .userName)
     private let emailField = CustomTextField(filedTypr: .email)

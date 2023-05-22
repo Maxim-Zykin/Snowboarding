@@ -39,7 +39,6 @@
 		0CD0FAC129AB4A20000E76E8 /* ForgotPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD0FAC029AB4A20000E76E8 /* ForgotPasswordController.swift */; };
 		0CD0FAC529AB4A4F000E76E8 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD0FAC429AB4A4F000E76E8 /* RegisterController.swift */; };
 		0CD0FACC29AB4CAA000E76E8 /* AuthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD0FACB29AB4CAA000E76E8 /* AuthHeaderView.swift */; };
-		0CE600EE29C0DD7F00D058DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CE600ED29C0DD7F00D058DD /* Main.storyboard */; };
 		0CF2F41629E1429800C82D57 /* SkiResorts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF2F41529E1429800C82D57 /* SkiResorts.swift */; };
 		0CFDA63729BE223A00B7C6C4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFDA63629BE223A00B7C6C4 /* User.swift */; };
 		18EC958763DF0063B8735734 /* Pods_Snowboarding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F8F5A93243A745DEEFB6C7 /* Pods_Snowboarding.framework */; };
@@ -80,7 +79,6 @@
 		0CD0FAC029AB4A20000E76E8 /* ForgotPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordController.swift; sourceTree = "<group>"; };
 		0CD0FAC429AB4A4F000E76E8 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		0CD0FACB29AB4CAA000E76E8 /* AuthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderView.swift; sourceTree = "<group>"; };
-		0CE600ED29C0DD7F00D058DD /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0CF2F41529E1429800C82D57 /* SkiResorts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkiResorts.swift; sourceTree = "<group>"; };
 		0CFDA63629BE223A00B7C6C4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		454B9077E1DF4F4E603BD546 /* Pods-Snowboarding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snowboarding.release.xcconfig"; path = "Target Support Files/Pods-Snowboarding/Pods-Snowboarding.release.xcconfig"; sourceTree = "<group>"; };
@@ -221,7 +219,6 @@
 			isa = PBXGroup;
 			children = (
 				0CD0FAAC29AB3668000E76E8 /* LaunchScreen.storyboard */,
-				0CE600ED29C0DD7F00D058DD /* Main.storyboard */,
 				0CABCB6A2A113B4400620FE4 /* extension.swift */,
 			);
 			path = Support;
@@ -329,7 +326,6 @@
 				0CD0FAAE29AB3668000E76E8 /* LaunchScreen.storyboard in Resources */,
 				0CD0FABD29AB3888000E76E8 /* GoogleService-Info.plist in Resources */,
 				0CD0FAAB29AB3668000E76E8 /* Assets.xcassets in Resources */,
-				0CE600EE29C0DD7F00D058DD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

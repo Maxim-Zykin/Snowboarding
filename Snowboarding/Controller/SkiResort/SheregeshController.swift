@@ -30,10 +30,9 @@ class SheregeshController: UIViewController {
         return view
     }()
     
-    
-    lazy var temps = CustomLabel(text: "-", size: 50, color: .white)
+    let weather = CustomLabel(text: "Погода",size: 20, color: .white)
+    lazy var temps = CustomLabel(text: "-", size: 30, color: .white)
     var temp = "-"
-    
     
     let sheregeshInfo = SheregeshInfo()
     
@@ -49,37 +48,48 @@ class SheregeshController: UIViewController {
         switch sender.selectedSegmentIndex {
         case 0:
             sheregeshInfo.alpha = 1
+            weather.alpha = 1
+            temps.alpha = 1
             print("1")
         case 1:
             print("1")
             sheregeshInfo.alpha = 0
+            weather.alpha = 0
+            temps.alpha = 0
         case 2:
             print("2")
+            sheregeshInfo.alpha = 0
+            weather.alpha = 0
+            temps.alpha = 0
         default: return
         }
     }
+    
     func tempFeach(){
         NetworkManager.fetchWeather(url: API.apiWeatherSheregesh) { fields in
             self.temp = String(Int(fields.temp ?? 0))
             DispatchQueue.main.async { [weak self] in
                 guard let self = self else { return }
-                self.temps.text = self.temp
+                self.temps.text = "\(self.temp)°"
                 print(self.temp)
             }
         }
     }
+    
     private func setupUI() {
         self.view.backgroundColor = .white
         self.view.addSubview(scrollView)
         self.scrollView.addSubview(contentView)
         self.scrollView.addSubview(segmentCo)
         self.scrollView.addSubview(sheregeshInfo)
+        self.scrollView.addSubview(weather)
         self.scrollView.addSubview(temps)
         
         self.scrollView.translatesAutoresizingMaskIntoConstraints = false
         self.contentView.translatesAutoresizingMaskIntoConstraints = false
         self.segmentCo.translatesAutoresizingMaskIntoConstraints = false
         self.sheregeshInfo.translatesAutoresizingMaskIntoConstraints = false
+        self.weather.translatesAutoresizingMaskIntoConstraints = false
         self.temps.translatesAutoresizingMaskIntoConstraints = false
 
         let hCont = contentView.heightAnchor.constraint(equalTo: scrollView.heightAnchor)
@@ -98,20 +108,22 @@ class SheregeshController: UIViewController {
             self.contentView.leadingAnchor.constraint(equalTo: self.scrollView.leadingAnchor),
             self.contentView.trailingAnchor.constraint(equalTo: self.scrollView.trailingAnchor),
             self.contentView.widthAnchor.constraint(equalTo: self.scrollView.widthAnchor),
-            self.contentView.heightAnchor.constraint(equalTo: self.scrollView.heightAnchor, constant: 430),
+            self.contentView.heightAnchor.constraint(equalTo: self.scrollView.heightAnchor, constant: 230),
             
-            segmentCo.topAnchor.constraint(equalTo: self.contentView.topAnchor),
-            segmentCo.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor),
-            segmentCo.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant: -20),
-            segmentCo.widthAnchor.constraint(equalTo: self.contentView.widthAnchor),
+            self.segmentCo.topAnchor.constraint(equalTo: self.contentView.topAnchor),
+            self.segmentCo.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor),
+            self.segmentCo.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant: -20),
+            self.segmentCo.widthAnchor.constraint(equalTo: self.contentView.widthAnchor),
 
-            sheregeshInfo.topAnchor.constraint(equalTo: self.segmentCo.bottomAnchor),
-            sheregeshInfo.centerXAnchor.constraint(equalTo: self.contentView.centerXAnchor),
-            sheregeshInfo.widthAnchor.constraint(equalTo: self.contentView.widthAnchor),
+            self.sheregeshInfo.topAnchor.constraint(equalTo: self.segmentCo.bottomAnchor),
+            self.sheregeshInfo.centerXAnchor.constraint(equalTo: self.contentView.centerXAnchor),
+            self.sheregeshInfo.widthAnchor.constraint(equalTo: self.contentView.widthAnchor),
             
-            temps.topAnchor.constraint(equalTo: self.sheregeshInfo.bottomAnchor),
-            temps.centerXAnchor.constraint(equalTo: self.contentView.centerXAnchor),
-            temps.widthAnchor.constraint(equalTo: self.contentView.widthAnchor),
+            self.weather.topAnchor.constraint(equalTo: self.sheregeshInfo.bottomAnchor, constant: 10),
+            self.weather.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 20),
+            
+            self.temps.topAnchor.constraint(equalTo: self.weather.bottomAnchor),
+            self.temps.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 40),
             
             //sheregeshInfo.bottomAnchor.constraint(equalTo: self.segmentCo.bottomAnchor, constant: -200)
             

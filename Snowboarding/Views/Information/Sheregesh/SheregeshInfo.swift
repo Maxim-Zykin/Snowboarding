@@ -19,7 +19,7 @@ class SheregeshInfo: UIView {
     private let totalLengthOfTracks = CustomLabel(text: "Общая длина трасс: 35 км", textAlignment: .left, size: 18, color: .black)
     
     private var imageSheregesh = UIImageView()
-    
+
     private var scrollView: UIScrollView = {
         let view = UIScrollView()
         view.showsVerticalScrollIndicator = true
@@ -42,6 +42,7 @@ class SheregeshInfo: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+
     
     // MARK: - UI Setup
     private func setupUI() {
