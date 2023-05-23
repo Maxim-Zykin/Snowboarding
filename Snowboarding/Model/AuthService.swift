@@ -16,7 +16,6 @@ class AuthService {
     
     private init(){}
     
-    
     /// A method to register the user
     /// - Parameters:
     ///     - userRequest: The users information (email, password, username)

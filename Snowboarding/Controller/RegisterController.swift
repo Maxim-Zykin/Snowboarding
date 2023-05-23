@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RegisterController: UIViewController {
+class RegisterController: UIViewController, UITextFieldDelegate {
     
     
     // MARK: - UI Components
@@ -44,6 +44,10 @@ class RegisterController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupUI()
+        
+        userNameField.delegate = self
+        emailField.delegate = self
+        passwordField.delegate = self
         
         view.addTapGestureToHideKeyboard()
         
@@ -162,6 +166,20 @@ class RegisterController: UIViewController {
         print("DEBUG PRINT:", "didTapSignIn")
         self.navigationController?.popToRootViewController(animated: true)
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        switch textField {
+        case userNameField:
+            emailField.becomeFirstResponder()
+        case emailField:
+            passwordField.becomeFirstResponder()
+        case passwordField:
+            passwordField.resignFirstResponder()
+        default:
+            break
+        }
+               return true
+       }
 }
 
 

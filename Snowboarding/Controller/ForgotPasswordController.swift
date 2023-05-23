@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ForgotPasswordController: UIViewController {
+class ForgotPasswordController: UIViewController, UITextFieldDelegate {
     
     // MARK: - UI Components
     
@@ -22,6 +22,7 @@ class ForgotPasswordController: UIViewController {
         super.viewDidLoad()
         
         view.addTapGestureToHideKeyboard()
+        emailField.delegate = self
         
         self.setupUI()
         self.resetPasswordButton.addTarget(self, action: #selector(didTapForgotPassword), for: .touchUpInside)
@@ -80,4 +81,11 @@ class ForgotPasswordController: UIViewController {
             AlertManager.showPasswordResetSent(on: self)
         }
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+           if textField == emailField {
+               emailField.resignFirstResponder()
+           }
+               return true
+       }
 }

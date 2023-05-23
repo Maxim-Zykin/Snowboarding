@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginController: UIViewController {
+class LoginController: UIViewController, UITextFieldDelegate {
    
     
     // MARK: - UI Components
@@ -25,6 +25,8 @@ class LoginController: UIViewController {
         super.viewDidLoad()
         self.setupUI()
         view.addTapGestureToHideKeyboard()
+        emailField.delegate = self
+        passwordField.delegate = self
         self.signInButton.addTarget(self, action: #selector(didTapSignIn), for: .touchUpInside)
         self.newUserButton.addTarget(self, action: #selector(didTapNewUser), for: .touchUpInside)
         self.forgotPasswordButton.addTarget(self, action: #selector(didTapForgotPassword), for: .touchUpInside)
@@ -129,4 +131,12 @@ class LoginController: UIViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+           if textField == emailField {
+               passwordField.becomeFirstResponder()
+           } else {
+               passwordField.resignFirstResponder()
+           }
+               return true
+       }
 }
