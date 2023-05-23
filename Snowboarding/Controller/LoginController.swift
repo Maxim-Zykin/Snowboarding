@@ -87,6 +87,7 @@ class LoginController: UIViewController, UITextFieldDelegate {
             self.forgotPasswordButton.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.85)
         ])
     }
+    
     // MARK: - Selectors
     @objc private func didTapSignIn() {
         print("DEBUG PRINT:", "didTapSignIn")

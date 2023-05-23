@@ -182,7 +182,6 @@ class RegisterController: UIViewController, UITextFieldDelegate {
        }
 }
 
-
 extension RegisterController: UITextViewDelegate {
     func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
         

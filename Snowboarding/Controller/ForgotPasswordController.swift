@@ -87,5 +87,5 @@ class ForgotPasswordController: UIViewController, UITextFieldDelegate {
                emailField.resignFirstResponder()
            }
                return true
-       }
+       } 
 }
