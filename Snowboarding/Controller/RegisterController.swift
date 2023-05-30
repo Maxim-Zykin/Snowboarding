@@ -178,8 +178,8 @@ class RegisterController: UIViewController, UITextFieldDelegate {
         default:
             break
         }
-               return true
-       }
+        return true
+    }
 }
 
 extension RegisterController: UITextViewDelegate {

@@ -32,7 +32,7 @@ class SheregeshController: UIViewController {
     
     let weather = CustomLabel(text: "Погода",size: 20, color: .white)
     lazy var temps = CustomLabel(text: "-", size: 30, color: .white)
-    var temp = "-"
+    var temp = ""
     
     let sheregeshInfo = SheregeshInfo()
     
