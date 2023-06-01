@@ -10,6 +10,10 @@
 		0C030F3B2A08F54C00ED5DFD /* RosaKhutorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C030F3A2A08F54C00ED5DFD /* RosaKhutorController.swift */; };
 		0C030F3D2A08F56900ED5DFD /* ArhyzController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C030F3C2A08F56900ED5DFD /* ArhyzController.swift */; };
 		0C030F3F2A08F58700ED5DFD /* DombaiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C030F3E2A08F58700ED5DFD /* DombaiController.swift */; };
+		0C1AD7842A28D2D2003108DF /* SheregeshTubBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1AD7832A28D2D2003108DF /* SheregeshTubBarController.swift */; };
+		0C1AD7872A28D39C003108DF /* SheregeshInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1AD7862A28D39C003108DF /* SheregeshInfoController.swift */; };
+		0C1AD78A2A28D3D0003108DF /* SheregeshPriceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1AD7892A28D3D0003108DF /* SheregeshPriceController.swift */; };
+		0C1AD78C2A28D41E003108DF /* SheregeshTimeWorkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1AD78B2A28D41E003108DF /* SheregeshTimeWorkController.swift */; };
 		0C1DC26D29AB92DF004F3FDC /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1DC26C29AB92DF004F3FDC /* CustomTextField.swift */; };
 		0C1DC26F29ABB802004F3FDC /* CustomButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1DC26E29ABB802004F3FDC /* CustomButtons.swift */; };
 		0C43E8D229FD3B6400C3980D /* ChoiceOfSkiResortCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C43E8D129FD3B6400C3980D /* ChoiceOfSkiResortCell.swift */; };
@@ -20,7 +24,6 @@
 		0C899C792A03E8820038542E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C899C782A03E8820038542E /* HomeViewController.swift */; };
 		0CA50CB429D2E6330094C74C /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA50CB329D2E6330094C74C /* CustomLabel.swift */; };
 		0CABCB6B2A113B4400620FE4 /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CABCB6A2A113B4400620FE4 /* extension.swift */; };
-		0CAF328B2A010C4400BB261F /* SheregeshController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF328A2A010C4400BB261F /* SheregeshController.swift */; };
 		0CBC54B22A10B1BA00B1B6A9 /* RosaKhutorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBC54B12A10B1BA00B1B6A9 /* RosaKhutorInfo.swift */; };
 		0CBC54B42A10BC2800B1B6A9 /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBC54B32A10BC2800B1B6A9 /* NetworkModel.swift */; };
 		0CBC54B62A10C15100B1B6A9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBC54B52A10C15100B1B6A9 /* NetworkManager.swift */; };
@@ -48,6 +51,10 @@
 		0C030F3A2A08F54C00ED5DFD /* RosaKhutorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosaKhutorController.swift; sourceTree = "<group>"; };
 		0C030F3C2A08F56900ED5DFD /* ArhyzController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArhyzController.swift; sourceTree = "<group>"; };
 		0C030F3E2A08F58700ED5DFD /* DombaiController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DombaiController.swift; sourceTree = "<group>"; };
+		0C1AD7832A28D2D2003108DF /* SheregeshTubBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheregeshTubBarController.swift; sourceTree = "<group>"; };
+		0C1AD7862A28D39C003108DF /* SheregeshInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheregeshInfoController.swift; sourceTree = "<group>"; };
+		0C1AD7892A28D3D0003108DF /* SheregeshPriceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheregeshPriceController.swift; sourceTree = "<group>"; };
+		0C1AD78B2A28D41E003108DF /* SheregeshTimeWorkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheregeshTimeWorkController.swift; sourceTree = "<group>"; };
 		0C1DC26C29AB92DF004F3FDC /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		0C1DC26E29ABB802004F3FDC /* CustomButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtons.swift; sourceTree = "<group>"; };
 		0C43E8D129FD3B6400C3980D /* ChoiceOfSkiResortCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceOfSkiResortCell.swift; sourceTree = "<group>"; };
@@ -58,7 +65,6 @@
 		0C899C782A03E8820038542E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0CA50CB329D2E6330094C74C /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		0CABCB6A2A113B4400620FE4 /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
-		0CAF328A2A010C4400BB261F /* SheregeshController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheregeshController.swift; sourceTree = "<group>"; };
 		0CBC54B12A10B1BA00B1B6A9 /* RosaKhutorInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosaKhutorInfo.swift; sourceTree = "<group>"; };
 		0CBC54B32A10BC2800B1B6A9 /* NetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
 		0CBC54B52A10C15100B1B6A9 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -101,10 +107,11 @@
 		0C030F392A08F50A00ED5DFD /* SkiResort */ = {
 			isa = PBXGroup;
 			children = (
-				0CAF328A2A010C4400BB261F /* SheregeshController.swift */,
 				0C030F3A2A08F54C00ED5DFD /* RosaKhutorController.swift */,
 				0C030F3C2A08F56900ED5DFD /* ArhyzController.swift */,
 				0C030F3E2A08F58700ED5DFD /* DombaiController.swift */,
+				0C1AD7832A28D2D2003108DF /* SheregeshTubBarController.swift */,
+				0C1AD7852A28D34B003108DF /* Information */,
 			);
 			path = SkiResort;
 			sourceTree = "<group>";
@@ -118,6 +125,24 @@
 				0CBC54BD2A10EE1200B1B6A9 /* Arhyz */,
 			);
 			path = Information;
+			sourceTree = "<group>";
+		};
+		0C1AD7852A28D34B003108DF /* Information */ = {
+			isa = PBXGroup;
+			children = (
+				0C1AD7882A28D3A3003108DF /* Sheregesh */,
+			);
+			path = Information;
+			sourceTree = "<group>";
+		};
+		0C1AD7882A28D3A3003108DF /* Sheregesh */ = {
+			isa = PBXGroup;
+			children = (
+				0C1AD7862A28D39C003108DF /* SheregeshInfoController.swift */,
+				0C1AD7892A28D3D0003108DF /* SheregeshPriceController.swift */,
+				0C1AD78B2A28D41E003108DF /* SheregeshTimeWorkController.swift */,
+			);
+			path = Sheregesh;
 			sourceTree = "<group>";
 		};
 		0CBC54BB2A10EDE800B1B6A9 /* Sheregesh */ = {
@@ -391,7 +416,10 @@
 				0C030F3D2A08F56900ED5DFD /* ArhyzController.swift in Sources */,
 				0CA50CB429D2E6330094C74C /* CustomLabel.swift in Sources */,
 				0CABCB6B2A113B4400620FE4 /* extension.swift in Sources */,
+				0C1AD78C2A28D41E003108DF /* SheregeshTimeWorkController.swift in Sources */,
 				0C87396029BDB61B0007CFC3 /* LoginUserRequest.swift in Sources */,
+				0C1AD78A2A28D3D0003108DF /* SheregeshPriceController.swift in Sources */,
+				0C1AD7872A28D39C003108DF /* SheregeshInfoController.swift in Sources */,
 				0CBC54B22A10B1BA00B1B6A9 /* RosaKhutorInfo.swift in Sources */,
 				0CD0FAB929AB36F5000E76E8 /* RegiserUserRequest.swift in Sources */,
 				0C43E8D229FD3B6400C3980D /* ChoiceOfSkiResortCell.swift in Sources */,
@@ -405,7 +433,7 @@
 				0C030F3B2A08F54C00ED5DFD /* RosaKhutorController.swift in Sources */,
 				0CC381662A13400D00549CA5 /* SheregeshInfo.swift in Sources */,
 				0CD0FAA229AB3667000E76E8 /* AppDelegate.swift in Sources */,
-				0CAF328B2A010C4400BB261F /* SheregeshController.swift in Sources */,
+				0C1AD7842A28D2D2003108DF /* SheregeshTubBarController.swift in Sources */,
 				0CD0FAA429AB3667000E76E8 /* SceneDelegate.swift in Sources */,
 				0CF2F41629E1429800C82D57 /* SkiResorts.swift in Sources */,
 				0CBC54C02A10EE3D00B1B6A9 /* DombaiInfo.swift in Sources */,

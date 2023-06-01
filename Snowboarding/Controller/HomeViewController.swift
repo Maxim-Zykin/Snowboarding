@@ -158,7 +158,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         let correct = indexPath.row
         switch correct {
         case 0:
-            let vc = SheregeshController()
+            let vc = SheregeshTubBarController()
             self.navigationController?.pushViewController(vc, animated: true)
         case 1:
             let vc = RosaKhutorController()

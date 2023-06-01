@@ -197,6 +197,7 @@ class RegisterController: UIViewController, UITextFieldDelegate {
             self.view.frame.origin.y = 0
         }
     }
+    
 }
 
 extension RegisterController: UITextViewDelegate {
