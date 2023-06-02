@@ -158,16 +158,16 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         let correct = indexPath.row
         switch correct {
         case 0:
-            let vc = SheregeshTubBarController()
+            let vc = SheregeshTabBarController()
             self.navigationController?.pushViewController(vc, animated: true)
         case 1:
-            let vc = RosaKhutorController()
+            let vc = RosaKhutorTabBarController()
             self.navigationController?.pushViewController(vc, animated: true)
         case 2:
-            let vc = ArhyzController()
+            let vc = ArhyzTabBarController()
             self.navigationController?.pushViewController(vc, animated: true)
         case 3:
-            let vc = DombaiController()
+            let vc = DombaiTabBarViewController()
             self.navigationController?.pushViewController(vc, animated: true)
         default:
             break

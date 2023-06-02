@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "priseSR25х25.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "priseSR50х50.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "priseSR75х75.png",
+      "filename" : "1priseSR75х75.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

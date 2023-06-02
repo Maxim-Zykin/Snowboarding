@@ -1,22 +1,19 @@
 //
-//  SheregeshInfoController.swift
+//  RosaKhutorInfoController.swift
 //  Snowboarding
 //
-//  Created by Максим Зыкин on 01.06.2023.
+//  Created by Максим Зыкин on 02.06.2023.
 //
 
 import UIKit
 
-class SheregeshInfoController: UIViewController {
-    
+class RosaKhutorInfoController: UIViewController {
+
     // MARK: - UI Components
-    private let aboutResort = CustomLabel(text: "Шерегеш находится на юге Кемеровской области, в Горной Шории — красивой и дикой гористой местности на стыке Саян, Алтая и Кузнецкого Алатау.", textAlignment: .left, size: 18, color: .black, numberOfLines: 0)
-    
-    private let allTracks = CustomLabel(text: "Всего трасс: 16", textAlignment: .left, size: 18, color: .black)
-    
-    private let heightDifference = CustomLabel(text: "Перепад высот: 630 м", textAlignment: .left, size: 18, color: .black)
-    
-    private let totalLengthOfTracks = CustomLabel(text: "Общая длина трасс: 35 км", textAlignment: .left, size: 18, color: .black)
+    private let aboutResort = CustomLabel(text: "Роза Хутор — круглогодичный горный курорт, расположенный на берегах реки Мзымта и горных склонах к югу от неё в Адлерском районе Сочи.",  textAlignment: .left, size: 18, color: .black, numberOfLines: 18)
+    private let allTracks = CustomLabel(text: "Всего трасс: 72", textAlignment: .left, size: 18, color: .black)
+    private let heightDifference = CustomLabel(text: "Перепад высот: 1569 м", textAlignment: .left, size: 18, color: .black)
+    private let totalLengthOfTracks = CustomLabel(text: "Общая длина трасс: 106 км", textAlignment: .left, size: 18, color: .black)
     
     private var imageSheregesh = UIImageView()
 
@@ -45,7 +42,7 @@ class SheregeshInfoController: UIViewController {
     }
     
     func tempFeach() {
-        NetworkManager.fetchWeather(url: API.apiWeatherSheregesh) { fields in
+        NetworkManager.fetchWeather(url: API.apiWeatherRosaKhutor) { fields in
             self.temp = String(Int(fields.temp ?? 0))
             DispatchQueue.main.async { [weak self] in
                 guard let self = self else { return }
@@ -78,7 +75,7 @@ class SheregeshInfoController: UIViewController {
             contentView.widthAnchor.constraint(equalTo: self.scrollView.widthAnchor),
         ])
         
-        self.imageSheregesh.image = UIImage(named: "sheregeshLogo")
+        self.imageSheregesh.image = UIImage(named: "rosakhutorLogo")
         
         self.view.addSubview(imageSheregesh)
         self.view.addSubview(aboutResort)

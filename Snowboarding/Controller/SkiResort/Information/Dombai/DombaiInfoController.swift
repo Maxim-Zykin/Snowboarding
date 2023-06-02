@@ -1,22 +1,21 @@
 //
-//  SheregeshInfoController.swift
+//  DombaiInfoController.swift
 //  Snowboarding
 //
-//  Created by Максим Зыкин on 01.06.2023.
+//  Created by Максим Зыкин on 02.06.2023.
 //
 
 import UIKit
 
-class SheregeshInfoController: UIViewController {
+class DombaiInfoController: UIViewController {
     
     // MARK: - UI Components
-    private let aboutResort = CustomLabel(text: "Шерегеш находится на юге Кемеровской области, в Горной Шории — красивой и дикой гористой местности на стыке Саян, Алтая и Кузнецкого Алатау.", textAlignment: .left, size: 18, color: .black, numberOfLines: 0)
+    private let aboutResort = CustomLabel(text: "Горный курорт Домбай (Домбайская поляна) расположился на территории Карачаево-Черкесской республики, у подножия Главного хребта Кавказских гор. Домбай относится к всесезонному туристическому комплексу: с декабря по апрель создаются идеальные условия для активного катания по склонам, май - август - время для пешего туризма, ранняя осень - “бархатный” сезон, и только октябрь и ноябрь - сезон затишья.",  textAlignment: .left, size: 18, color: .black, numberOfLines: 20)
     
-    private let allTracks = CustomLabel(text: "Всего трасс: 16", textAlignment: .left, size: 18, color: .black)
-    
-    private let heightDifference = CustomLabel(text: "Перепад высот: 630 м", textAlignment: .left, size: 18, color: .black)
-    
-    private let totalLengthOfTracks = CustomLabel(text: "Общая длина трасс: 35 км", textAlignment: .left, size: 18, color: .black)
+    private let allTracks = CustomLabel(text: "Всего трасс: 9", textAlignment: .left, size: 18, color: .black)
+    private let heightDifference = CustomLabel(text: "Перепад высот: 1538 м", textAlignment: .left, size: 18, color: .black)
+    private let totalLengthOfTracks = CustomLabel(text: "Общая длина трасс: 16,2 км", textAlignment: .left, size: 18, color: .black)
+    private let season = CustomLabel(text: "Горнолыжный сезон с декабря до апрель", textAlignment: .left, size: 18, color: .black)
     
     private var imageSheregesh = UIImageView()
 
@@ -45,7 +44,7 @@ class SheregeshInfoController: UIViewController {
     }
     
     func tempFeach() {
-        NetworkManager.fetchWeather(url: API.apiWeatherSheregesh) { fields in
+        NetworkManager.fetchWeather(url: API.apiWeatherDombai) { fields in
             self.temp = String(Int(fields.temp ?? 0))
             DispatchQueue.main.async { [weak self] in
                 guard let self = self else { return }
@@ -78,7 +77,7 @@ class SheregeshInfoController: UIViewController {
             contentView.widthAnchor.constraint(equalTo: self.scrollView.widthAnchor),
         ])
         
-        self.imageSheregesh.image = UIImage(named: "sheregeshLogo")
+        self.imageSheregesh.image = UIImage(named: "dombai")
         
         self.view.addSubview(imageSheregesh)
         self.view.addSubview(aboutResort)

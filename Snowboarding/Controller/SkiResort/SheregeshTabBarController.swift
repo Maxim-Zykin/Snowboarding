@@ -1,5 +1,5 @@
 //
-//  SheregeshTubBarController.swift
+//  SheregeshTabBarController.swift
 //  Snowboarding
 //
 //  Created by Максим Зыкин on 01.06.2023.
@@ -7,16 +7,14 @@
 
 import UIKit
 
-class SheregeshTubBarController: UITabBarController {
+class SheregeshTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        createTabBar()
-        setTubBar()
         navigationItem.title = "Шерегеш"
         tabBar.backgroundColor = .white
-        
+        createTabBar()
     }
     
     private func createTabBar() {
@@ -31,9 +29,5 @@ class SheregeshTubBarController: UITabBarController {
         viewController.tabBarItem.title = title
         viewController.tabBarItem.image = image
         return viewController
-    }
-    
-    private func setTubBar() {
-
     }
 }

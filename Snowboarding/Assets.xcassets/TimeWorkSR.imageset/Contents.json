@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "TimeWorkSR25х25.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "TimeWorkSR50х50.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "TimeWorkSR75х75.png",
+      "filename" : "1TimeWorkSR75х75.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

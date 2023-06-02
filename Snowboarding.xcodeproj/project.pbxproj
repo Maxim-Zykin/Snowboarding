@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C030F3B2A08F54C00ED5DFD /* RosaKhutorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C030F3A2A08F54C00ED5DFD /* RosaKhutorController.swift */; };
-		0C030F3D2A08F56900ED5DFD /* ArhyzController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C030F3C2A08F56900ED5DFD /* ArhyzController.swift */; };
-		0C030F3F2A08F58700ED5DFD /* DombaiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C030F3E2A08F58700ED5DFD /* DombaiController.swift */; };
-		0C1AD7842A28D2D2003108DF /* SheregeshTubBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1AD7832A28D2D2003108DF /* SheregeshTubBarController.swift */; };
+		0C1AD7842A28D2D2003108DF /* SheregeshTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1AD7832A28D2D2003108DF /* SheregeshTabBarController.swift */; };
 		0C1AD7872A28D39C003108DF /* SheregeshInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1AD7862A28D39C003108DF /* SheregeshInfoController.swift */; };
 		0C1AD78A2A28D3D0003108DF /* SheregeshPriceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1AD7892A28D3D0003108DF /* SheregeshPriceController.swift */; };
 		0C1AD78C2A28D41E003108DF /* SheregeshTimeWorkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1AD78B2A28D41E003108DF /* SheregeshTimeWorkController.swift */; };
 		0C1DC26D29AB92DF004F3FDC /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1DC26C29AB92DF004F3FDC /* CustomTextField.swift */; };
 		0C1DC26F29ABB802004F3FDC /* CustomButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1DC26E29ABB802004F3FDC /* CustomButtons.swift */; };
+		0C41BA282A29BBF700E89A71 /* DombaiTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C41BA272A29BBF700E89A71 /* DombaiTabBarViewController.swift */; };
+		0C41BA2B2A29BD7100E89A71 /* DombaiInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C41BA2A2A29BD7100E89A71 /* DombaiInfoController.swift */; };
+		0C41BA2D2A29BD8A00E89A71 /* DombaiPriceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C41BA2C2A29BD8A00E89A71 /* DombaiPriceController.swift */; };
+		0C41BA2F2A29BDA400E89A71 /* DombaiTimeWorkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C41BA2E2A29BDA400E89A71 /* DombaiTimeWorkController.swift */; };
+		0C41BA312A29BF8600E89A71 /* ArhyzTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C41BA302A29BF8600E89A71 /* ArhyzTabBarController.swift */; };
+		0C41BA342A29BFE500E89A71 /* ArhyzInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C41BA332A29BFE500E89A71 /* ArhyzInfoController.swift */; };
+		0C41BA362A29C00000E89A71 /* ArhyzPriceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C41BA352A29C00000E89A71 /* ArhyzPriceController.swift */; };
+		0C41BA382A29C01700E89A71 /* ArhyzTimeWorkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C41BA372A29C01700E89A71 /* ArhyzTimeWorkController.swift */; };
+		0C41BA3B2A29C12700E89A71 /* RosaKhutorInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C41BA3A2A29C12700E89A71 /* RosaKhutorInfoController.swift */; };
+		0C41BA3D2A29C13F00E89A71 /* RosaKhutorPriceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C41BA3C2A29C13F00E89A71 /* RosaKhutorPriceController.swift */; };
+		0C41BA3F2A29C15C00E89A71 /* RosaKhutorTimeWorkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C41BA3E2A29C15C00E89A71 /* RosaKhutorTimeWorkController.swift */; };
+		0C41BA412A29C18000E89A71 /* RosaKhutorTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C41BA402A29C18000E89A71 /* RosaKhutorTabBarController.swift */; };
 		0C43E8D229FD3B6400C3980D /* ChoiceOfSkiResortCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C43E8D129FD3B6400C3980D /* ChoiceOfSkiResortCell.swift */; };
 		0C584F8C29B4C89100A5A8EC /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C584F8B29B4C89100A5A8EC /* AlertManager.swift */; };
 		0C850E8C29AE446E00C6AB10 /* WebViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C850E8B29AE446E00C6AB10 /* WebViewerController.swift */; };
@@ -24,13 +33,9 @@
 		0C899C792A03E8820038542E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C899C782A03E8820038542E /* HomeViewController.swift */; };
 		0CA50CB429D2E6330094C74C /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA50CB329D2E6330094C74C /* CustomLabel.swift */; };
 		0CABCB6B2A113B4400620FE4 /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CABCB6A2A113B4400620FE4 /* extension.swift */; };
-		0CBC54B22A10B1BA00B1B6A9 /* RosaKhutorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBC54B12A10B1BA00B1B6A9 /* RosaKhutorInfo.swift */; };
 		0CBC54B42A10BC2800B1B6A9 /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBC54B32A10BC2800B1B6A9 /* NetworkModel.swift */; };
 		0CBC54B62A10C15100B1B6A9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBC54B52A10C15100B1B6A9 /* NetworkManager.swift */; };
 		0CBC54B82A10C2DB00B1B6A9 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBC54B72A10C2DB00B1B6A9 /* API.swift */; };
-		0CBC54BA2A10EDCB00B1B6A9 /* ArhyzInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBC54B92A10EDCB00B1B6A9 /* ArhyzInfo.swift */; };
-		0CBC54C02A10EE3D00B1B6A9 /* DombaiInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBC54BF2A10EE3D00B1B6A9 /* DombaiInfo.swift */; };
-		0CC381662A13400D00549CA5 /* SheregeshInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC381652A13400D00549CA5 /* SheregeshInfo.swift */; };
 		0CD0FAA229AB3667000E76E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD0FAA129AB3667000E76E8 /* AppDelegate.swift */; };
 		0CD0FAA429AB3667000E76E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD0FAA329AB3667000E76E8 /* SceneDelegate.swift */; };
 		0CD0FAAB29AB3668000E76E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CD0FAAA29AB3668000E76E8 /* Assets.xcassets */; };
@@ -48,15 +53,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0C030F3A2A08F54C00ED5DFD /* RosaKhutorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosaKhutorController.swift; sourceTree = "<group>"; };
-		0C030F3C2A08F56900ED5DFD /* ArhyzController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArhyzController.swift; sourceTree = "<group>"; };
-		0C030F3E2A08F58700ED5DFD /* DombaiController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DombaiController.swift; sourceTree = "<group>"; };
-		0C1AD7832A28D2D2003108DF /* SheregeshTubBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheregeshTubBarController.swift; sourceTree = "<group>"; };
+		0C1AD7832A28D2D2003108DF /* SheregeshTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheregeshTabBarController.swift; sourceTree = "<group>"; };
 		0C1AD7862A28D39C003108DF /* SheregeshInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheregeshInfoController.swift; sourceTree = "<group>"; };
 		0C1AD7892A28D3D0003108DF /* SheregeshPriceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheregeshPriceController.swift; sourceTree = "<group>"; };
 		0C1AD78B2A28D41E003108DF /* SheregeshTimeWorkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheregeshTimeWorkController.swift; sourceTree = "<group>"; };
 		0C1DC26C29AB92DF004F3FDC /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		0C1DC26E29ABB802004F3FDC /* CustomButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtons.swift; sourceTree = "<group>"; };
+		0C41BA272A29BBF700E89A71 /* DombaiTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DombaiTabBarViewController.swift; sourceTree = "<group>"; };
+		0C41BA2A2A29BD7100E89A71 /* DombaiInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DombaiInfoController.swift; sourceTree = "<group>"; };
+		0C41BA2C2A29BD8A00E89A71 /* DombaiPriceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DombaiPriceController.swift; sourceTree = "<group>"; };
+		0C41BA2E2A29BDA400E89A71 /* DombaiTimeWorkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DombaiTimeWorkController.swift; sourceTree = "<group>"; };
+		0C41BA302A29BF8600E89A71 /* ArhyzTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArhyzTabBarController.swift; sourceTree = "<group>"; };
+		0C41BA332A29BFE500E89A71 /* ArhyzInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArhyzInfoController.swift; sourceTree = "<group>"; };
+		0C41BA352A29C00000E89A71 /* ArhyzPriceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArhyzPriceController.swift; sourceTree = "<group>"; };
+		0C41BA372A29C01700E89A71 /* ArhyzTimeWorkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArhyzTimeWorkController.swift; sourceTree = "<group>"; };
+		0C41BA3A2A29C12700E89A71 /* RosaKhutorInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosaKhutorInfoController.swift; sourceTree = "<group>"; };
+		0C41BA3C2A29C13F00E89A71 /* RosaKhutorPriceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosaKhutorPriceController.swift; sourceTree = "<group>"; };
+		0C41BA3E2A29C15C00E89A71 /* RosaKhutorTimeWorkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosaKhutorTimeWorkController.swift; sourceTree = "<group>"; };
+		0C41BA402A29C18000E89A71 /* RosaKhutorTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosaKhutorTabBarController.swift; sourceTree = "<group>"; };
 		0C43E8D129FD3B6400C3980D /* ChoiceOfSkiResortCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceOfSkiResortCell.swift; sourceTree = "<group>"; };
 		0C584F8B29B4C89100A5A8EC /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		0C850E8B29AE446E00C6AB10 /* WebViewerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewerController.swift; sourceTree = "<group>"; };
@@ -65,13 +79,9 @@
 		0C899C782A03E8820038542E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0CA50CB329D2E6330094C74C /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		0CABCB6A2A113B4400620FE4 /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
-		0CBC54B12A10B1BA00B1B6A9 /* RosaKhutorInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosaKhutorInfo.swift; sourceTree = "<group>"; };
 		0CBC54B32A10BC2800B1B6A9 /* NetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
 		0CBC54B52A10C15100B1B6A9 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		0CBC54B72A10C2DB00B1B6A9 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
-		0CBC54B92A10EDCB00B1B6A9 /* ArhyzInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArhyzInfo.swift; sourceTree = "<group>"; };
-		0CBC54BF2A10EE3D00B1B6A9 /* DombaiInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DombaiInfo.swift; sourceTree = "<group>"; };
-		0CC381652A13400D00549CA5 /* SheregeshInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheregeshInfo.swift; sourceTree = "<group>"; };
 		0CD0FA9E29AB3667000E76E8 /* Snowboarding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snowboarding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CD0FAA129AB3667000E76E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CD0FAA329AB3667000E76E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,29 +117,21 @@
 		0C030F392A08F50A00ED5DFD /* SkiResort */ = {
 			isa = PBXGroup;
 			children = (
-				0C030F3A2A08F54C00ED5DFD /* RosaKhutorController.swift */,
-				0C030F3C2A08F56900ED5DFD /* ArhyzController.swift */,
-				0C030F3E2A08F58700ED5DFD /* DombaiController.swift */,
-				0C1AD7832A28D2D2003108DF /* SheregeshTubBarController.swift */,
+				0C1AD7832A28D2D2003108DF /* SheregeshTabBarController.swift */,
+				0C41BA272A29BBF700E89A71 /* DombaiTabBarViewController.swift */,
+				0C41BA302A29BF8600E89A71 /* ArhyzTabBarController.swift */,
+				0C41BA402A29C18000E89A71 /* RosaKhutorTabBarController.swift */,
 				0C1AD7852A28D34B003108DF /* Information */,
 			);
 			path = SkiResort;
 			sourceTree = "<group>";
 		};
-		0C030F612A0A148500ED5DFD /* Information */ = {
-			isa = PBXGroup;
-			children = (
-				0CBC54BE2A10EE2800B1B6A9 /* Dombai */,
-				0CBC54BB2A10EDE800B1B6A9 /* Sheregesh */,
-				0CBC54BC2A10EDF800B1B6A9 /* RosaKhutor */,
-				0CBC54BD2A10EE1200B1B6A9 /* Arhyz */,
-			);
-			path = Information;
-			sourceTree = "<group>";
-		};
 		0C1AD7852A28D34B003108DF /* Information */ = {
 			isa = PBXGroup;
 			children = (
+				0C41BA392A29C10200E89A71 /* RosaKhutor */,
+				0C41BA322A29BFAE00E89A71 /* Arhyz */,
+				0C41BA292A29BD4F00E89A71 /* Dombai */,
 				0C1AD7882A28D3A3003108DF /* Sheregesh */,
 			);
 			path = Information;
@@ -145,36 +147,34 @@
 			path = Sheregesh;
 			sourceTree = "<group>";
 		};
-		0CBC54BB2A10EDE800B1B6A9 /* Sheregesh */ = {
+		0C41BA292A29BD4F00E89A71 /* Dombai */ = {
 			isa = PBXGroup;
 			children = (
-				0CC381652A13400D00549CA5 /* SheregeshInfo.swift */,
+				0C41BA2A2A29BD7100E89A71 /* DombaiInfoController.swift */,
+				0C41BA2C2A29BD8A00E89A71 /* DombaiPriceController.swift */,
+				0C41BA2E2A29BDA400E89A71 /* DombaiTimeWorkController.swift */,
 			);
-			path = Sheregesh;
+			path = Dombai;
 			sourceTree = "<group>";
 		};
-		0CBC54BC2A10EDF800B1B6A9 /* RosaKhutor */ = {
+		0C41BA322A29BFAE00E89A71 /* Arhyz */ = {
 			isa = PBXGroup;
 			children = (
-				0CBC54B12A10B1BA00B1B6A9 /* RosaKhutorInfo.swift */,
-			);
-			path = RosaKhutor;
-			sourceTree = "<group>";
-		};
-		0CBC54BD2A10EE1200B1B6A9 /* Arhyz */ = {
-			isa = PBXGroup;
-			children = (
-				0CBC54B92A10EDCB00B1B6A9 /* ArhyzInfo.swift */,
+				0C41BA332A29BFE500E89A71 /* ArhyzInfoController.swift */,
+				0C41BA352A29C00000E89A71 /* ArhyzPriceController.swift */,
+				0C41BA372A29C01700E89A71 /* ArhyzTimeWorkController.swift */,
 			);
 			path = Arhyz;
 			sourceTree = "<group>";
 		};
-		0CBC54BE2A10EE2800B1B6A9 /* Dombai */ = {
+		0C41BA392A29C10200E89A71 /* RosaKhutor */ = {
 			isa = PBXGroup;
 			children = (
-				0CBC54BF2A10EE3D00B1B6A9 /* DombaiInfo.swift */,
+				0C41BA3A2A29C12700E89A71 /* RosaKhutorInfoController.swift */,
+				0C41BA3C2A29C13F00E89A71 /* RosaKhutorPriceController.swift */,
+				0C41BA3E2A29C15C00E89A71 /* RosaKhutorTimeWorkController.swift */,
 			);
-			path = Dombai;
+			path = RosaKhutor;
 			sourceTree = "<group>";
 		};
 		0CD0FA9529AB3667000E76E8 = {
@@ -257,7 +257,6 @@
 				0C1DC26E29ABB802004F3FDC /* CustomButtons.swift */,
 				0CA50CB329D2E6330094C74C /* CustomLabel.swift */,
 				0C43E8D129FD3B6400C3980D /* ChoiceOfSkiResortCell.swift */,
-				0C030F612A0A148500ED5DFD /* Information */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -403,40 +402,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C41BA3D2A29C13F00E89A71 /* RosaKhutorPriceController.swift in Sources */,
+				0C41BA312A29BF8600E89A71 /* ArhyzTabBarController.swift in Sources */,
 				0CBC54B62A10C15100B1B6A9 /* NetworkManager.swift in Sources */,
 				0C899C792A03E8820038542E /* HomeViewController.swift in Sources */,
-				0C030F3F2A08F58700ED5DFD /* DombaiController.swift in Sources */,
 				0CD0FABF29AB49F2000E76E8 /* LoginController.swift in Sources */,
+				0C41BA362A29C00000E89A71 /* ArhyzPriceController.swift in Sources */,
 				0C850E8C29AE446E00C6AB10 /* WebViewerController.swift in Sources */,
-				0CBC54BA2A10EDCB00B1B6A9 /* ArhyzInfo.swift in Sources */,
 				0C1DC26F29ABB802004F3FDC /* CustomButtons.swift in Sources */,
 				0CBC54B82A10C2DB00B1B6A9 /* API.swift in Sources */,
 				0CD0FAC129AB4A20000E76E8 /* ForgotPasswordController.swift in Sources */,
 				0CFDA63729BE223A00B7C6C4 /* User.swift in Sources */,
-				0C030F3D2A08F56900ED5DFD /* ArhyzController.swift in Sources */,
 				0CA50CB429D2E6330094C74C /* CustomLabel.swift in Sources */,
+				0C41BA3B2A29C12700E89A71 /* RosaKhutorInfoController.swift in Sources */,
 				0CABCB6B2A113B4400620FE4 /* extension.swift in Sources */,
 				0C1AD78C2A28D41E003108DF /* SheregeshTimeWorkController.swift in Sources */,
 				0C87396029BDB61B0007CFC3 /* LoginUserRequest.swift in Sources */,
 				0C1AD78A2A28D3D0003108DF /* SheregeshPriceController.swift in Sources */,
+				0C41BA342A29BFE500E89A71 /* ArhyzInfoController.swift in Sources */,
 				0C1AD7872A28D39C003108DF /* SheregeshInfoController.swift in Sources */,
-				0CBC54B22A10B1BA00B1B6A9 /* RosaKhutorInfo.swift in Sources */,
 				0CD0FAB929AB36F5000E76E8 /* RegiserUserRequest.swift in Sources */,
 				0C43E8D229FD3B6400C3980D /* ChoiceOfSkiResortCell.swift in Sources */,
 				0C584F8C29B4C89100A5A8EC /* AlertManager.swift in Sources */,
 				0C87396229BDDCF00007CFC3 /* Validator.swift in Sources */,
+				0C41BA2D2A29BD8A00E89A71 /* DombaiPriceController.swift in Sources */,
+				0C41BA3F2A29C15C00E89A71 /* RosaKhutorTimeWorkController.swift in Sources */,
 				0CD0FAC529AB4A4F000E76E8 /* RegisterController.swift in Sources */,
 				0CBC54B42A10BC2800B1B6A9 /* NetworkModel.swift in Sources */,
 				0C1DC26D29AB92DF004F3FDC /* CustomTextField.swift in Sources */,
 				0CD0FACC29AB4CAA000E76E8 /* AuthHeaderView.swift in Sources */,
+				0C41BA282A29BBF700E89A71 /* DombaiTabBarViewController.swift in Sources */,
 				0CD0FABB29AB3739000E76E8 /* AuthService.swift in Sources */,
-				0C030F3B2A08F54C00ED5DFD /* RosaKhutorController.swift in Sources */,
-				0CC381662A13400D00549CA5 /* SheregeshInfo.swift in Sources */,
+				0C41BA2B2A29BD7100E89A71 /* DombaiInfoController.swift in Sources */,
 				0CD0FAA229AB3667000E76E8 /* AppDelegate.swift in Sources */,
-				0C1AD7842A28D2D2003108DF /* SheregeshTubBarController.swift in Sources */,
+				0C41BA2F2A29BDA400E89A71 /* DombaiTimeWorkController.swift in Sources */,
+				0C1AD7842A28D2D2003108DF /* SheregeshTabBarController.swift in Sources */,
+				0C41BA382A29C01700E89A71 /* ArhyzTimeWorkController.swift in Sources */,
 				0CD0FAA429AB3667000E76E8 /* SceneDelegate.swift in Sources */,
+				0C41BA412A29C18000E89A71 /* RosaKhutorTabBarController.swift in Sources */,
 				0CF2F41629E1429800C82D57 /* SkiResorts.swift in Sources */,
-				0CBC54C02A10EE3D00B1B6A9 /* DombaiInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
