@@ -90,7 +90,7 @@ class HomeViewController: UIViewController {
             self.collection!.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 20),
             self.collection!.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -20),
             self.collection!.heightAnchor.constraint(equalTo: self.view.heightAnchor),
-        
+
             self.footer.leftAnchor.constraint(equalTo: self.view.leftAnchor),
             self.footer.rightAnchor.constraint(equalTo: self.view.rightAnchor),
             self.footer.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),

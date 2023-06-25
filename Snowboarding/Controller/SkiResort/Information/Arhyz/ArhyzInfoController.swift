@@ -21,10 +21,9 @@ class ArhyzInfoController: UIViewController {
 
     private var scrollView: UIScrollView = {
         let view = UIScrollView()
-        view.showsVerticalScrollIndicator = true
+        view.showsVerticalScrollIndicator = false
         view.isDirectionalLockEnabled = true
         view.showsHorizontalScrollIndicator = false
-        view.showsVerticalScrollIndicator = false
         return view
     }()
     
