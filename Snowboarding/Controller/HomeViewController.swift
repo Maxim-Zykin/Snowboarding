@@ -32,7 +32,7 @@ class HomeViewController: UIViewController {
         iv.tintColor = .white
         return iv
     }()
-    
+
     //Choose a ski resort
     private let skiResort = CustomLabel(text: "Выбери горнолыжный курорт:", size: 20, color: .black)
     

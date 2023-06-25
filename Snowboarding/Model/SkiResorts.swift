@@ -27,7 +27,6 @@ extension SkiResortsGroup{
             AllSkiResorts(name: "Архыз", image: UIImage(named: "arhyz")!),
             AllSkiResorts(name: "Домбай", image: UIImage(named: "dombai")!)
         ]
-
         return SkiResortsGroup(sky: products)
     }
 }

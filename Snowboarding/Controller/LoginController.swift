@@ -8,7 +8,6 @@
 import UIKit
 
 class LoginController: UIViewController, UITextFieldDelegate {
-   
     
     // MARK: - UI Components
     private let headerView = AuthHeaderView(appLabel: "SNOWBOARDING", title: "Войти", subTitle: "Войдите в свой аккаунт")
