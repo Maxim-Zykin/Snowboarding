@@ -33,12 +33,13 @@ class HotelsCollectionViewCell: UICollectionViewCell {
     
     var nameLabel = CustomLabel(text: "", textAlignment: .left, size: 20, color: .white)
     
-    var phoneLabel = CustomLabel(text: "", textAlignment: .left, size: 16, color: .white)
+    var phoneLabel = CustomButtons(title: "", fontSize: .small)
     
     var adressLabel = CustomLabel(text: "", textAlignment: .left, size: 16, color: .white)
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        phoneLabel.addTarget(self, action: #selector(call), for: .touchUpInside)
         setupUI()
     }
     
@@ -48,6 +49,16 @@ class HotelsCollectionViewCell: UICollectionViewCell {
     
     override func layoutSubviews(){
         hotelImage.frame = CGRect(x: 12, y: 12, width: 140, height: 140)
+    }
+    
+    @objc func call() {
+        if let url = URL(string: "tel://\(String(describing: phoneLabel.setTitle))"), UIApplication.shared.canOpenURL(url) {
+                if #available(iOS 10, *) {
+                    UIApplication.shared.open(url)
+                } else {
+                    UIApplication.shared.openURL(url)
+                }
+            }
     }
     
     private func setupUI() {

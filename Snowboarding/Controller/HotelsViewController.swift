@@ -57,6 +57,7 @@ class HotelsViewController: UIViewController {
             collection.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
         ])
     }
+    
 }
 
 extension HotelsViewController: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -70,7 +71,8 @@ extension HotelsViewController: UICollectionViewDelegate, UICollectionViewDataSo
         cell.hotelImage.image = model[indexPath.row].image
         cell.nameLabel.text = model[indexPath.row].name
         cell.adressLabel.text = model[indexPath.row].address
-        cell.phoneLabel.text = model[indexPath.row].phone
+        cell.phoneLabel.setTitle(model[indexPath.row].phone, for: .normal)
+        //cell.phoneLabel.text = model[indexPath.row].phone
         return cell
     }
 }
