@@ -239,11 +239,11 @@ extension BigWoodInfoViewController: UICollectionViewDelegate, UICollectionViewD
         switch info {
         case .hotels:
             let vc = HotelsViewController()
-            vc.model = hotelsRosaKhutorAll
+            vc.model = hotelsBigWoodAll
             self.navigationController?.pushViewController(vc, animated: true)
         case .rent:
             let vc = RentViewController()
-            vc.model = rentsRosaKhutorAll
+            vc.model = rentsBigWoodAll
             self.navigationController?.pushViewController(vc, animated: true)
         case .map:
             let vc = MapViewController()
