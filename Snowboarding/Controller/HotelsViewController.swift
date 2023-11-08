@@ -67,12 +67,14 @@ extension HotelsViewController: UICollectionViewDelegate, UICollectionViewDataSo
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collection.dequeueReusableCell(withReuseIdentifier: HotelsCollectionViewCell.cellID, for: indexPath) as! HotelsCollectionViewCell
-        cell.hotelImage.image = model[indexPath.row].image
-        cell.nameLabel.text = model[indexPath.row].name
-        cell.adressLabel.text = model[indexPath.row].address
-        cell.phoneLabel.setTitle(model[indexPath.row].phone, for: .normal)
-        //cell.phoneLabel.text = model[indexPath.row].phone
-        return cell
-    }
+            let cell = collection.dequeueReusableCell(withReuseIdentifier: HotelsCollectionViewCell.cellID, for: indexPath) as! HotelsCollectionViewCell
+            cell.hotelImage.image = model[indexPath.row].image
+            cell.nameLabel.text = model[indexPath.row].name
+            cell.adressLabel.text = model[indexPath.row].address
+            cell.phoneLabel.setTitle(model[indexPath.row].phone, for: .normal)
+
+            cell.phoneNumber = model[indexPath.row].phone
+            //cell.phoneLabel.text = model[indexPath.row].phone
+            return cell
+        }
 }

@@ -35,6 +35,8 @@ class HotelsCollectionViewCell: UICollectionViewCell {
     
     var phoneLabel = CustomButtons(title: "", fontSize: .small)
     
+    var phoneNumber: String?
+    
     var adressLabel = CustomLabel(text: "", textAlignment: .left, size: 16, color: .white)
     
     override init(frame: CGRect) {
@@ -52,7 +54,7 @@ class HotelsCollectionViewCell: UICollectionViewCell {
     }
     
     @objc func call() {
-        if let url = URL(string: "tel://\(String(describing: phoneLabel.setTitle))"), UIApplication.shared.canOpenURL(url) {
+        if let url = URL(string: "tel://\(phoneNumber ?? "")"), UIApplication.shared.canOpenURL(url) {
                 if #available(iOS 10, *) {
                     UIApplication.shared.open(url)
                 } else {
