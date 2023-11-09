@@ -75,7 +75,8 @@ extension RentViewController: UICollectionViewDelegate, UICollectionViewDataSour
         cell.nameLabel.text = model[indexPath.row].name
         cell.adressLabel.text = model[indexPath.row].address
         cell.phoneLabel.setTitle(model[indexPath.row].phone, for: .normal)
-       // cell.phoneLabel.text = model[indexPath.row].phone
+
+        cell.phoneNumber = model[indexPath.row].phone
         return cell
     }
 }

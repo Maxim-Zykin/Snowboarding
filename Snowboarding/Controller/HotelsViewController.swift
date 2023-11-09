@@ -74,7 +74,6 @@ extension HotelsViewController: UICollectionViewDelegate, UICollectionViewDataSo
             cell.phoneLabel.setTitle(model[indexPath.row].phone, for: .normal)
 
             cell.phoneNumber = model[indexPath.row].phone
-            //cell.phoneLabel.text = model[indexPath.row].phone
             return cell
         }
 }

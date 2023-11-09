@@ -93,9 +93,9 @@ class HotelsCollectionViewCell: UICollectionViewCell {
         nameLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10).isActive = true
         nameLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -15).isActive = true
 
-        phoneLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor).isActive = true
+        phoneLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 5).isActive = true
         phoneLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10).isActive = true
-        phoneLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 10).isActive = true
+        phoneLabel.heightAnchor.constraint(equalToConstant: 20).isActive = true
         
         adressLabel.topAnchor.constraint(equalTo: phoneLabel.bottomAnchor).isActive = true
         adressLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10).isActive = true

@@ -14,7 +14,7 @@ let severnayaHote =  AllHotels(image: UIImage(named: "severnayaHote")!, name: "�
 
 let powderApart = AllHotels(image: UIImage(named: "powderApart")!, name: "Powder apart hotel", phone: "+7 911 308-34-46", address: "г. Кировск, улица Парковая, д.3а")
 
-let sokromaHyperborea = AllHotels(image: UIImage(named: "sokromaHyperborea")!, name: "Sokroma Гиперборея", phone: "79219000551", address: "г. Кировск, Коммунальная, д. 9")
+let sokromaHyperborea = AllHotels(image: UIImage(named: "sokromaHyperborea")!, name: "Sokroma Гиперборея", phone: "+7 921 900-05-51", address: "г. Кировск, Коммунальная, д. 9")
 
 let hotelsBigWoodAll = [lesnayaRecreation, severnayaHote, powderApart, sokromaHyperborea]
 
