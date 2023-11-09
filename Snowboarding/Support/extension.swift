@@ -22,7 +22,7 @@ extension UIView {
         }
         return view
     }
-
+    
    @objc func dismissKeyboard() {
         topSuperview?.endEditing(true)
     }
@@ -32,21 +32,13 @@ extension UIView {
 extension UIScrollView {
 
     func resizeScrollViewContentSize() {
-
         var contentRect = CGRect.zero
-
         for view in self.subviews {
-
             contentRect = contentRect.union(view.frame)
-
         }
-
         self.contentSize = contentRect.size
-
     }
-
 }
-
 
 extension String {
     func firstCharOnly() -> String {
