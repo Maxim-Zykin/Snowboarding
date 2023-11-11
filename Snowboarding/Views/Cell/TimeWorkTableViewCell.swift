@@ -35,7 +35,6 @@ class TimeWorkTableViewCell: UITableViewCell {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-        
     }
     
     override func layoutSubviews() {
@@ -43,9 +42,6 @@ class TimeWorkTableViewCell: UITableViewCell {
         contentView.addSubview(liftNameLabel)
         contentView.addSubview(timeWork)
         contentView.backgroundColor = .white
-        
-//        liftNameLabel.frame = CGRect(x: 15, y: 5, width: 1000, height: contentView.frame.size.height-10)
-//        timeWork.frame = CGRect(x: contentView.frame.size.height+110, y: 18, width: 300, height: contentView.frame.size.height-10)
         
         liftNameLabel.frame = CGRect(x: 15, y: 0, width: 200, height: contentView.frame.size.height)
         timeWork.frame = CGRect(x: contentView.frame.size.height+90, y: 5, width: 300, height: contentView.frame.size.height-10)
