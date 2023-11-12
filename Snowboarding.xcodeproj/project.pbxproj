@@ -40,10 +40,8 @@
 		0C43E8D229FD3B6400C3980D /* ChoiceOfSkiResortCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C43E8D129FD3B6400C3980D /* ChoiceOfSkiResortCell.swift */; };
 		0C46D0B62AF4A2CC002A2A11 /* BigWoodTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C46D0B52AF4A2CC002A2A11 /* BigWoodTabBarController.swift */; };
 		0C46D0B92AF4A329002A2A11 /* BigWoodInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C46D0B82AF4A329002A2A11 /* BigWoodInfoViewController.swift */; };
-		0C46D0BB2AF4B1D0002A2A11 /* BigWoodPriceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C46D0BA2AF4B1D0002A2A11 /* BigWoodPriceController.swift */; };
 		0C46D0C02AF4B23D002A2A11 /* BigWoodPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C46D0BF2AF4B23D002A2A11 /* BigWoodPrice.swift */; };
 		0C46D0C22AF4C720002A2A11 /* BigWoodTimeWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C46D0C12AF4C720002A2A11 /* BigWoodTimeWork.swift */; };
-		0C46D0C42AF4C7A2002A2A11 /* BigWoodTimeWorkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C46D0C32AF4C7A2002A2A11 /* BigWoodTimeWorkController.swift */; };
 		0C46D0C62AF4CBAD002A2A11 /* BigWoodInfoCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C46D0C52AF4CBAD002A2A11 /* BigWoodInfoCV.swift */; };
 		0C48538E2A67945100B245FC /* RosaKhutorTimeWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C48538D2A67945100B245FC /* RosaKhutorTimeWork.swift */; };
 		0C4853922A67B1E400B245FC /* DombaiPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4853912A67B1E400B245FC /* DombaiPrice.swift */; };
@@ -60,6 +58,12 @@
 		0C8FC4102A68E9F0002FDD45 /* ArhyzTimeWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8FC40F2A68E9F0002FDD45 /* ArhyzTimeWork.swift */; };
 		0C8FC4142A6D069C002FDD45 /* PriceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8FC4132A6D069C002FDD45 /* PriceTableViewCell.swift */; };
 		0CA50CB429D2E6330094C74C /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA50CB329D2E6330094C74C /* CustomLabel.swift */; };
+		0CA5FC0C2B0100A100FD2B21 /* TimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5FC0B2B0100A100FD2B21 /* TimeTableViewController.swift */; };
+		0CA5FC0E2B0100AF00FD2B21 /* PriceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5FC0D2B0100AF00FD2B21 /* PriceTableViewController.swift */; };
+		0CA5FC102B0100D000FD2B21 /* AllTimeWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5FC0F2B0100D000FD2B21 /* AllTimeWork.swift */; };
+		0CA5FC122B0100DC00FD2B21 /* AllPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5FC112B0100DC00FD2B21 /* AllPrice.swift */; };
+		0CA5FC142B01014700FD2B21 /* BigWoodHotels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5FC132B01014700FD2B21 /* BigWoodHotels.swift */; };
+		0CA5FC162B01015700FD2B21 /* BigWoodRent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5FC152B01015700FD2B21 /* BigWoodRent.swift */; };
 		0CABCB6B2A113B4400620FE4 /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CABCB6A2A113B4400620FE4 /* extension.swift */; };
 		0CBC54B42A10BC2800B1B6A9 /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBC54B32A10BC2800B1B6A9 /* NetworkModel.swift */; };
 		0CBC54B62A10C15100B1B6A9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBC54B52A10C15100B1B6A9 /* NetworkManager.swift */; };
@@ -126,10 +130,8 @@
 		0C43E8D129FD3B6400C3980D /* ChoiceOfSkiResortCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceOfSkiResortCell.swift; sourceTree = "<group>"; };
 		0C46D0B52AF4A2CC002A2A11 /* BigWoodTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigWoodTabBarController.swift; sourceTree = "<group>"; };
 		0C46D0B82AF4A329002A2A11 /* BigWoodInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigWoodInfoViewController.swift; sourceTree = "<group>"; };
-		0C46D0BA2AF4B1D0002A2A11 /* BigWoodPriceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigWoodPriceController.swift; sourceTree = "<group>"; };
 		0C46D0BF2AF4B23D002A2A11 /* BigWoodPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigWoodPrice.swift; sourceTree = "<group>"; };
 		0C46D0C12AF4C720002A2A11 /* BigWoodTimeWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigWoodTimeWork.swift; sourceTree = "<group>"; };
-		0C46D0C32AF4C7A2002A2A11 /* BigWoodTimeWorkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigWoodTimeWorkController.swift; sourceTree = "<group>"; };
 		0C46D0C52AF4CBAD002A2A11 /* BigWoodInfoCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigWoodInfoCV.swift; sourceTree = "<group>"; };
 		0C48538D2A67945100B245FC /* RosaKhutorTimeWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosaKhutorTimeWork.swift; sourceTree = "<group>"; };
 		0C4853912A67B1E400B245FC /* DombaiPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DombaiPrice.swift; sourceTree = "<group>"; };
@@ -147,6 +149,12 @@
 		0C8FC40F2A68E9F0002FDD45 /* ArhyzTimeWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArhyzTimeWork.swift; sourceTree = "<group>"; };
 		0C8FC4132A6D069C002FDD45 /* PriceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceTableViewCell.swift; sourceTree = "<group>"; };
 		0CA50CB329D2E6330094C74C /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		0CA5FC0B2B0100A100FD2B21 /* TimeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableViewController.swift; sourceTree = "<group>"; };
+		0CA5FC0D2B0100AF00FD2B21 /* PriceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceTableViewController.swift; sourceTree = "<group>"; };
+		0CA5FC0F2B0100D000FD2B21 /* AllTimeWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllTimeWork.swift; sourceTree = "<group>"; };
+		0CA5FC112B0100DC00FD2B21 /* AllPrice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllPrice.swift; sourceTree = "<group>"; };
+		0CA5FC132B01014700FD2B21 /* BigWoodHotels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BigWoodHotels.swift; sourceTree = "<group>"; };
+		0CA5FC152B01015700FD2B21 /* BigWoodRent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BigWoodRent.swift; sourceTree = "<group>"; };
 		0CABCB6A2A113B4400620FE4 /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
 		0CBC54B32A10BC2800B1B6A9 /* NetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
 		0CBC54B52A10C15100B1B6A9 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -322,8 +330,6 @@
 			isa = PBXGroup;
 			children = (
 				0C46D0B82AF4A329002A2A11 /* BigWoodInfoViewController.swift */,
-				0C46D0BA2AF4B1D0002A2A11 /* BigWoodPriceController.swift */,
-				0C46D0C32AF4C7A2002A2A11 /* BigWoodTimeWorkController.swift */,
 			);
 			path = BigWood;
 			sourceTree = "<group>";
@@ -334,6 +340,8 @@
 				0C46D0BF2AF4B23D002A2A11 /* BigWoodPrice.swift */,
 				0C46D0C12AF4C720002A2A11 /* BigWoodTimeWork.swift */,
 				0C46D0C52AF4CBAD002A2A11 /* BigWoodInfoCV.swift */,
+				0CA5FC132B01014700FD2B21 /* BigWoodHotels.swift */,
+				0CA5FC152B01015700FD2B21 /* BigWoodRent.swift */,
 			);
 			path = BigWood;
 			sourceTree = "<group>";
@@ -385,6 +393,8 @@
 				0C87396129BDDCF00007CFC3 /* Validator.swift */,
 				0C0BF46F2ACFF7FF00FBE18B /* AllHotels.swift */,
 				0C0BF4732ACFF9A200FBE18B /* AllRents.swift */,
+				0CA5FC0F2B0100D000FD2B21 /* AllTimeWork.swift */,
+				0CA5FC112B0100DC00FD2B21 /* AllPrice.swift */,
 				0CD447532A6633A500021DD4 /* Ski */,
 				0CBC54B32A10BC2800B1B6A9 /* NetworkModel.swift */,
 			);
@@ -402,6 +412,8 @@
 				0C7539FF2ACBB9F800651FA0 /* MapViewController.swift */,
 				0C0BF46D2ACFEF9D00FBE18B /* HotelsViewController.swift */,
 				0C0BF4712ACFF89600FBE18B /* RentViewController.swift */,
+				0CA5FC0B2B0100A100FD2B21 /* TimeTableViewController.swift */,
+				0CA5FC0D2B0100AF00FD2B21 /* PriceTableViewController.swift */,
 				0C030F392A08F50A00ED5DFD /* SkiResort */,
 			);
 			path = Controller;
@@ -604,7 +616,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C41BA3D2A29C13F00E89A71 /* RosaKhutorPriceController.swift in Sources */,
+				0CA5FC0C2B0100A100FD2B21 /* TimeTableViewController.swift in Sources */,
 				0C41BA312A29BF8600E89A71 /* ArhyzTabBarController.swift in Sources */,
+				0CA5FC122B0100DC00FD2B21 /* AllPrice.swift in Sources */,
+				0CA5FC0E2B0100AF00FD2B21 /* PriceTableViewController.swift in Sources */,
+				0CA5FC142B01014700FD2B21 /* BigWoodHotels.swift in Sources */,
 				0CBC54B62A10C15100B1B6A9 /* NetworkManager.swift in Sources */,
 				0C46D0B92AF4A329002A2A11 /* BigWoodInfoViewController.swift in Sources */,
 				0C899C792A03E8820038542E /* HomeViewController.swift in Sources */,
@@ -616,11 +632,10 @@
 				0C61E3362A6D093C0088372E /* TimeWorkTableViewCell.swift in Sources */,
 				0CBC54B82A10C2DB00B1B6A9 /* API.swift in Sources */,
 				0CD0FAC129AB4A20000E76E8 /* ForgotPasswordController.swift in Sources */,
-				0C46D0BB2AF4B1D0002A2A11 /* BigWoodPriceController.swift in Sources */,
 				0C46D0C62AF4CBAD002A2A11 /* BigWoodInfoCV.swift in Sources */,
 				0C48538E2A67945100B245FC /* RosaKhutorTimeWork.swift in Sources */,
-				0C46D0C42AF4C7A2002A2A11 /* BigWoodTimeWorkController.swift in Sources */,
 				0C753A002ACBB9F800651FA0 /* MapViewController.swift in Sources */,
+				0CA5FC102B0100D000FD2B21 /* AllTimeWork.swift in Sources */,
 				0CFDA63729BE223A00B7C6C4 /* User.swift in Sources */,
 				0CE7A2F12AB209F500A9AA91 /* InfrastructureInformationCell.swift in Sources */,
 				0CA50CB429D2E6330094C74C /* CustomLabel.swift in Sources */,
@@ -674,6 +689,7 @@
 				0C41BA382A29C01700E89A71 /* ArhyzTimeWorkController.swift in Sources */,
 				0CFC68922ACD39FA00AA38EB /* RosaKhutorRent.swift in Sources */,
 				0C23022E2AC3CE5800074B48 /* SettingsViewController.swift in Sources */,
+				0CA5FC162B01015700FD2B21 /* BigWoodRent.swift in Sources */,
 				0C0BF4722ACFF89600FBE18B /* RentViewController.swift in Sources */,
 				0CD0FAA429AB3667000E76E8 /* SceneDelegate.swift in Sources */,
 				0C46D0C02AF4B23D002A2A11 /* BigWoodPrice.swift in Sources */,

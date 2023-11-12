@@ -7,26 +7,11 @@
 
 import Foundation
 
-public struct DombaiPrice {
-    let liftName: String
-    let cost: String
-}
+let onePriceD = AllPrice(liftName: "1 подъём/спуск на 1 очередь", cost: "500 ₽")
+let twoPriceD = AllPrice(liftName: "1 подъём/спуск на 1+2 очереди", cost: "1000 ₽")
+let threePriceD = AllPrice(liftName: "1 подъём/спуск на 1+2+3 очереди", cost: "1150 ₽")
+let fourPriceD = AllPrice(liftName: "1 подъём/спуск на 2+3 очереди", cost: "650 ₽")
+let fivePriveD = AllPrice(liftName: "Единый ски-пасс 1 день", cost: "2000 ₽")
 
-public struct DombaiPriceGroup {
-  public let sky: [DombaiPrice]
-}
+let allPriceDombai = [onePriceD, twoPriceD, threePriceD, fourPriceD, fivePriveD]
 
-extension DombaiPriceGroup{
-
-    public static func skiShow() -> DombaiPriceGroup{
-
-        let price = [
-            DombaiPrice(liftName: "1 подъём/спуск на 1 очередь", cost: "500 ₽"),
-            DombaiPrice(liftName: "1 подъём/спуск на 1+2 очереди", cost: "1000 ₽"),
-            DombaiPrice(liftName: "1 подъём/спуск на 1+2+3 очереди", cost: "1150 ₽"),
-            DombaiPrice(liftName: "1 подъём/спуск на 2+3 очереди", cost: "650 ₽"),
-            DombaiPrice(liftName: "Единый ски-пасс 1 день", cost: "2000 ₽")
-        ]
-        return DombaiPriceGroup(sky: price)
-    }
-}

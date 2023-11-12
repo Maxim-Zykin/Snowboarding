@@ -272,5 +272,53 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E453BFCB-0154-46F5-A5A4-A7F5D76447FB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Snowboarding/Model/Ski/BigWood/BigWoodHotels.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "E453BFCB-0154-46F5-A5A4-A7F5D76447FB - d93c7fac4f1b927a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "one-time initialization function for lesnayaRecreation"
+                  moduleName = "Snowboarding"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksimzykin/Desktop/Developer/Snowboarding/Snowboarding/Model/Ski/BigWood/BigWoodHotels.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "E453BFCB-0154-46F5-A5A4-A7F5D76447FB - 42e857066a1e7fb8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Snowboarding.lesnayaRecreation.unsafeMutableAddressor : Snowboarding.AllHotels"
+                  moduleName = "Snowboarding"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksimzykin/Desktop/Developer/Snowboarding/Snowboarding/Model/Ski/BigWood/BigWoodHotels.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
