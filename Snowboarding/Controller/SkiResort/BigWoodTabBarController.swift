@@ -16,12 +16,12 @@ class BigWoodTabBarController: UITabBarController {
         navigationItem.title = "Большой Вудъявр"
         createTabBar()
     }
-
+    
     private func createTabBar() {
         viewControllers = [
             createVC(viewController: BigWoodInfoViewController(), title: "О курорте", image: UIImage(named: "infoSR")),
-            createVC(viewController: BigWoodPriceController(), title: "Цены", image: UIImage(named: "priseSR")),
-            createVC(viewController: BigWoodTimeWorkController(), title: "Режим работы", image: UIImage(named: "timeWorkSR"))
+            createVC(viewController: PriceTableViewController(costModel: allPriceBigWood), title: "Цены", image: UIImage(named: "priseSR")),
+            createVC(viewController: TimeTableViewController(timeWorkModel: allTimeWorkBigWood), title: "Режим работы", image: UIImage(named: "timeWorkSR"))
         ]
     }
     
