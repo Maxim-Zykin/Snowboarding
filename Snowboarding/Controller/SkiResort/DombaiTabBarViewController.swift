@@ -21,7 +21,7 @@ class DombaiTabBarViewController: UITabBarController {
         viewControllers = [
             createVC(viewController: DombaiInfoController(), title: "О курорте", image: UIImage(named: "infoSR")),
             createVC(viewController: PriceTableViewController(costModel: allPriceDombai), title: "Цены", image: UIImage(named: "priseSR")),
-            createVC(viewController: DombaiTimeWorkController(), title: "Режим работы", image: UIImage(named: "timeWorkSR"))
+            createVC(viewController: TimeTableViewController(timeWorkModel: allTimeWorkDombai), title: "Режим работы", image: UIImage(named: "timeWorkSR"))
         ]
     }
     
