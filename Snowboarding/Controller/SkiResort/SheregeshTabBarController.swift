@@ -21,7 +21,7 @@ class SheregeshTabBarController: UITabBarController {
         viewControllers = [
             createVC(viewController: SheregeshInfoController(), title: "О курорте", image: UIImage(named: "infoSR")),
             createVC(viewController: PriceTableViewController(costModel: priceSheregesh), title: "Цены", image: UIImage(named: "priseSR")),
-            createVC(viewController: SheregeshTimeWorkController(), title: "Режим работы", image: UIImage(named: "timeWorkSR"))
+            createVC(viewController: TimeTableViewController(timeWorkModel: allTimeWorkSheregesh), title: "Режим работы", image: UIImage(named: "timeWorkSR"))
         ]
     }
 
