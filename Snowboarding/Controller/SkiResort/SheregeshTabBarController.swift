@@ -20,7 +20,7 @@ class SheregeshTabBarController: UITabBarController {
     private func createTabBar() {
         viewControllers = [
             createVC(viewController: SheregeshInfoController(), title: "О курорте", image: UIImage(named: "infoSR")),
-            createVC(viewController: SheregeshPriceControllerTableController(), title: "Цены", image: UIImage(named: "priseSR")),
+            createVC(viewController: PriceTableViewController(costModel: priceSheregesh), title: "Цены", image: UIImage(named: "priseSR")),
             createVC(viewController: SheregeshTimeWorkController(), title: "Режим работы", image: UIImage(named: "timeWorkSR"))
         ]
     }

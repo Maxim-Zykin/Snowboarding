@@ -20,7 +20,7 @@ class RosaKhutorTabBarController: UITabBarController {
     private func createTabBar() {
         viewControllers = [
             createVC(viewController: RosaKhutorInfoController(), title: "О курорте", image: UIImage(named: "infoSR")),
-            createVC(viewController: RosaKhutorPriceController(), title: "Цены", image: UIImage(named: "priseSR")),
+            createVC(viewController: PriceTableViewController(costModel: priceRosaKhutor), title: "Цены", image: UIImage(named: "priseSR")),
             createVC(viewController: RosaKhutorTimeWorkController(), title: "Режим работы", image: UIImage(named: "timeWorkSR"))
         ]
     }
