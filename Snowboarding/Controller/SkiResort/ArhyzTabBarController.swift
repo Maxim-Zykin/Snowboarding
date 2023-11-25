@@ -20,8 +20,8 @@ class ArhyzTabBarController: UITabBarController {
     private func createTabBar() {
         viewControllers = [
             createVC(viewController: ArhyzInfoController(), title: "О курорте", image: UIImage(named: "infoSR")),
-            createVC(viewController: ArhyzPriceController(), title: "Цены", image: UIImage(named: "priseSR")),
-            createVC(viewController: ArhyzTimeWorkController(), title: "Режим работы", image: UIImage(named: "timeWorkSR"))
+            createVC(viewController: PriceTableViewController(costModel: priceArhyz), title: "Цены", image: UIImage(named: "priseSR")),
+            createVC(viewController: TimeTableViewController(timeWorkModel: allTimeWorkArhyz), title: "Режим работы", image: UIImage(named: "timeWorkSR"))
         ]
     }
     
@@ -31,3 +31,5 @@ class ArhyzTabBarController: UITabBarController {
         return viewController
     }
 }
+
+

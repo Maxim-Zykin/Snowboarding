@@ -7,24 +7,10 @@
 
 import Foundation
 
-public struct ArhyzPrice {
-    let liftName: String
-    let cost: String
-}
+let sSkipass = AllPrice(liftName: "Сезонный ски-пасс зима 2023/2024", cost: "45000 ₽")
+let tenSkipass = AllPrice(liftName: "10 дней в зимнем сезоне 2023/2024", cost: "23350 ₽")
+let fiveSkipass = AllPrice(liftName: "5 дней в зимнем сезоне 2023/2024", cost: "12550 ₽")
+let sevenSkipass = AllPrice(liftName: "7 дней в зимнем сезоне 2023/2024", cost: "17150 ₽")
 
-public struct ArhyzPriceGroup {
-  public let sky: [ArhyzPrice]
-}
+let priceArhyz = [sSkipass, tenSkipass, fiveSkipass, sevenSkipass]
 
-extension ArhyzPriceGroup{
-
-    public static func skiShow() -> ArhyzPriceGroup{
-
-        let price = [
-            ArhyzPrice(liftName: "Сезонный ски-пасс зима 2023/2024", cost: "31500 ₽"),
-            ArhyzPrice(liftName: "10 дней в зимнем сезоне 23/24", cost: "16300 ₽"),
-            ArhyzPrice(liftName: "7 дней в зимнем сезоне 23/24", cost: "12000 ₽")
-        ]
-        return ArhyzPriceGroup(sky: price)
-    }
-}

@@ -7,22 +7,6 @@
 
 import Foundation
 
-public struct ArhyzTimeWork {
-    let liftName: String
-    let timeWork: String
-}
+let cableCarArhyz = AllTimeWork(liftName: "Канатная дорога", timeWork: "с 8:30 до 16:30")
 
-public struct ArhyzTimeWorkGroup {
-  public let sky: [ArhyzTimeWork]
-}
-
-extension ArhyzTimeWorkGroup{
-
-    public static func skiShow() -> ArhyzTimeWorkGroup{
-
-        let timeWork = [
-            ArhyzTimeWork(liftName: "Канатная дорога", timeWork: "с 8:30 до 16:30")
-        ]
-        return ArhyzTimeWorkGroup(sky: timeWork)
-    }
-}
+let allTimeWorkArhyz = [cableCarArhyz]
