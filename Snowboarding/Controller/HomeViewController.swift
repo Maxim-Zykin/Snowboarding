@@ -40,7 +40,7 @@ class HomeViewController: UIViewController {
     private let skiResort = CustomLabel(text: "Выбери горнолыжный курорт:", size: 20, color: .black)
     
     enum AllSkiResort: CaseIterable {
-        case sheregesh, rosaKhutor, arhyz, dombai, bigWood
+        case sheregesh, rosaKhutor, arhyz, dombai, bigWood, elbrus
     }
     
     let allSkiResort = AllSkiResort.allCases
@@ -191,6 +191,9 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             self.navigationController?.pushViewController(vc, animated: true)
         case .bigWood:
             let vc = BigWoodTabBarController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        case .elbrus:
+            let vc = ElbrusRegionTabBarController()
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }

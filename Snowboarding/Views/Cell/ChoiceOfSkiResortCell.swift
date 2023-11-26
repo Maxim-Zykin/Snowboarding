@@ -24,7 +24,7 @@ class ChoiceOfSkiResortCell: UICollectionViewCell {
         text.textColor = UIColor.white
         text.textAlignment = .center
         text.numberOfLines = 2
-        text.font = UIFont.systemFont(ofSize: 24, weight: .bold)
+        text.font = UIFont.systemFont(ofSize: 22, weight: .bold)
         text.layer.shadowColor = UIColor.black.cgColor
         text.layer.shadowRadius = 3.0
         text.layer.shadowOpacity = 1.0

@@ -14,5 +14,4 @@ let priceFourBW = AllPrice(liftName: "Пиковый сезон: 25.12.23 - 08.0
 let priceFiveBW = AllPrice(liftName: "Высокий сезон: 22.02.24 - 06.03.24 - 4 часа", cost: "1950 ₽")
 let priceSixBW = AllPrice(liftName: "Высокий сезон: 22.02.24 - 06.03.24 - 1 день", cost: "2600 ₽")
 
-
 let allPriceBigWood = [priceOneBW, pricwTwoBW, priceThreeBW, priceFourBW, priceFiveBW, priceSixBW]

@@ -1,23 +1,23 @@
 //
-//  BigWoodInfoViewController.swift
+//  ElbrusRegionInfoViewController.swift
 //  Snowboarding
 //
-//  Created by Максим Зыкин on 03.11.2023.
+//  Created by Максим Зыкин on 26.11.2023.
 //
 
 import UIKit
 
-class BigWoodInfoViewController: UIViewController {
+class ElbrusRegionInfoViewController: UIViewController {
     
     // MARK: - UI Components
-    private let aboutResort = CustomLabel(text: "«Большой Вудъявр» — самый высокогорный курорт на Северо-западе России, оснащённый современными подъёмниками. Здесь вас встретят подготовленные на европейском уровне трассы, сертифицированные FIS, общей протяжённостью более 35 км, 15 из которых имеют искусственное освещение, ориентированные как на настоящих профи, так и на новичков.",  textAlignment: .left, size: 18, color: .black, numberOfLines: 0)
-    private let allTracks = CustomLabel(text: "Всего трасс: 23", textAlignment: .left, size: 18, color: .black)
-    private let heightDifference = CustomLabel(text: "Перепад высот: 650 м", textAlignment: .left, size: 18, color: .black)
-    private let totalLengthOfTracks = CustomLabel(text: "Общая длина трасс: более 35 км", textAlignment: .left, size: 18, color: .black)
+    private let aboutResort = CustomLabel(text: "Курорт Приэльбрусье – один из самых известных на Кавказе и в России центров горнолыжного отдыха, альпинизма и туризма. Этот изумительно красивый горный край называют жемчужиной Кавказских гор. Здесь располагается самая высокая часть Кавказских гор и самые известные его вершины. Заоблачные выси здесь искрятся снегами, укрывающими вершины Эльбруса, Ушбы, Шхары, Кошкантау, Дыхтау, Уллу-Тау, Шхельды и других гор. Приэльбрусье славится также самыми мощными ледниками – Дых-Су и Безенги. Горные хребты, тянущиеся параллельно друг другу, прорезающие их грандиозные и красивейшие ущелья поражают туристов своей первозданной красотой и великолепием.",  textAlignment: .left, size: 18, color: .black, numberOfLines: 0)
+    private let allTracks = CustomLabel(text: "Всего трасс: 7", textAlignment: .left, size: 18, color: .black)
+    private let heightDifference = CustomLabel(text: "Перепад высот: 1497 м", textAlignment: .left, size: 18, color: .black)
+    private let totalLengthOfTracks = CustomLabel(text: "Общая длина трасс: более 17 км", textAlignment: .left, size: 18, color: .black)
     
     private let backgroundViewWeather: UIView = {
         let view = UIView()
-        view.backgroundColor = UIColor(red: 81/255, green: 108/255, blue: 142/255, alpha: 255/255)
+        view.backgroundColor = UIColor(red: 180/255, green: 196/255, blue: 225/255, alpha: 255/255)
         view.layer.cornerRadius = 35
         return view
     }()
@@ -44,7 +44,7 @@ class BigWoodInfoViewController: UIViewController {
         collectionViewLayout: makeLayout()
     )
     
-    let weather = CustomLabel(text: "Сейчас в Большом Вудъявре",size: 20, color: .white)
+    let weather = CustomLabel(text: "Сейчас в Приэльбрусье",size: 20, color: .white)
     lazy var temps = CustomLabel(text: "-", size: 30, color: .white)
     var temp = ""
     var descriptionWeather = CustomLabel(text: "", size: 16, color: .white)
@@ -138,7 +138,7 @@ class BigWoodInfoViewController: UIViewController {
             contentView.widthAnchor.constraint(equalTo: self.scrollView.widthAnchor),
         ])
         
-        self.imageRosaKhutor.image = UIImage(named: "bigWood")
+        self.imageRosaKhutor.image = UIImage(named: "elb")
         
         self.view.addSubview(imageRosaKhutor)
         self.view.addSubview(backgroundViewWeather)
@@ -220,7 +220,7 @@ class BigWoodInfoViewController: UIViewController {
     }
 }
 
-extension BigWoodInfoViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension ElbrusRegionInfoViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int { infoModel.sky.count
     }
@@ -253,3 +253,5 @@ extension BigWoodInfoViewController: UICollectionViewDelegate, UICollectionViewD
         }
     }
 }
+
+
