@@ -50,7 +50,7 @@ class HotelsCollectionViewCell: UICollectionViewCell {
     }
     
     override func layoutSubviews(){
-        hotelImage.frame = CGRect(x: 12, y: 12, width: 140, height: 140)
+        hotelImage.frame = CGRect(x: 12, y: 12, width: 120, height: 120)
     }
     
     @objc func call() {
@@ -82,7 +82,7 @@ class HotelsCollectionViewCell: UICollectionViewCell {
         viewC.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
         viewC.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         viewC.topAnchor.constraint(equalTo: topAnchor).isActive = true
-        viewC.heightAnchor.constraint(equalTo: heightAnchor).isActive = true
+        viewC.heightAnchor.constraint(equalTo: heightAnchor, constant: 10).isActive = true
 
         hotelImage.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
         hotelImage.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true

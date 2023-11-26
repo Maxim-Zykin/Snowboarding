@@ -21,7 +21,7 @@ class ElbrusRegionTabBarController: UITabBarController {
         viewControllers = [
             createVC(viewController: ElbrusRegionInfoViewController(), title: "О курорте", image: UIImage(named: "infoSR")),
             createVC(viewController: PriceTableViewController(costModel: allPriceElbrusRegion), title: "Цены", image: UIImage(named: "priseSR")),
-            createVC(viewController: TimeTableViewController(timeWorkModel: allTimeWorkBigWood), title: "Режим работы", image: UIImage(named: "timeWorkSR"))
+            createVC(viewController: TimeTableViewController(timeWorkModel: allTimeWorkElbrusRegion), title: "Режим работы", image: UIImage(named: "timeWorkSR"))
         ]
     }
     

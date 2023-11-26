@@ -24,7 +24,7 @@ class ElbrusRegionInfoViewController: UIViewController {
     
     private var imageRosaKhutor = UIImageView()
     
-    private var infoModel = InfoGroupBigWood.skiInfi()
+    private var infoModel = InfoGroupElbrusRegion.skiInfi()
 
     private var scrollView: UIScrollView = {
         let view = UIScrollView()
@@ -65,7 +65,7 @@ class ElbrusRegionInfoViewController: UIViewController {
     }
     
     func tempFeach() {
-        NetworkManager.fetchWeather(url: API.apiWeatherBigWood) { [weak self] fields, icon in
+        NetworkManager.fetchWeather(url: API.apiWeatherElbrusRegion) { [weak self] fields, icon in
             guard let self = self else { return }
             self.temp = String(Int(fields.temp ?? 0))
             var iconName = ""
@@ -239,19 +239,18 @@ extension ElbrusRegionInfoViewController: UICollectionViewDelegate, UICollection
         switch info {
         case .hotels:
             let vc = HotelsViewController()
-            vc.model = hotelsBigWoodAll
+            vc.model = hotelsElbrusRegionAll
             self.navigationController?.pushViewController(vc, animated: true)
         case .rent:
             let vc = RentViewController()
-            vc.model = rentsBigWoodAll
+            vc.model = rentsElbrusRegionAll
             self.navigationController?.pushViewController(vc, animated: true)
         case .map:
             let vc = MapViewController()
-            vc.latitude = 67.602420
-            vc.longitude = 33.729756
+            vc.latitude = 43.267222
+            vc.longitude = 42.477608
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
 }
-
 
