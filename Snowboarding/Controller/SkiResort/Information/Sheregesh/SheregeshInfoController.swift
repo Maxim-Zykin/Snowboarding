@@ -211,7 +211,7 @@ class SheregeshInfoController: UIViewController {
             iconW.heightAnchor.constraint(equalToConstant: 60),
             
             descriptionWeather.centerYAnchor.constraint(equalTo: self.temps.centerYAnchor),
-            descriptionWeather.leftAnchor.constraint(equalTo: self.temps.leftAnchor, constant: 50),
+            descriptionWeather.leftAnchor.constraint(equalTo: self.temps.leftAnchor, constant: 60),
             descriptionWeather.rightAnchor.constraint(equalTo: self.backgroundViewWeather.rightAnchor, constant: -10),
             
             
