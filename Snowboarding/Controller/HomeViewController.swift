@@ -35,6 +35,8 @@ class HomeViewController: UIViewController {
         iv.tintColor = .white
         return iv
     }()
+    
+    private var userEmail = ""
 
     //Choose a ski resort
     private let skiResort = CustomLabel(text: "Выбери горнолыжный курорт:", size: 20, color: .black)
@@ -127,6 +129,7 @@ class HomeViewController: UIViewController {
     @objc private func didTapSettings() {
         let vc = SettingsViewController()
         vc.userNameLabel.text = label.text
+        vc.userEmail.text = userEmail
         self.navigationController?.pushViewController(vc, animated: true)
         //self.navigationController?.present(vc, animated: true)
     }
@@ -154,6 +157,7 @@ class HomeViewController: UIViewController {
             
             if let user = user {
                 self.label.text = "Привет, \(user.usarname)!"
+                self.userEmail = "E-mail: \(user.email)"
             }
         }
     }

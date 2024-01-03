@@ -10,6 +10,7 @@ import UIKit
 class SettingsViewController: UIViewController {
 
     var userNameLabel = CustomLabel(text: "", textAlignment: .left, size: 26)
+    var userEmail = CustomLabel(text: "", textAlignment: .left, size: 16)
     private let logoutButton = CustomButtons(title: "Выйти из аккаунта", fontSize: .small)
     private let deleteAccountButton = CustomButtons(title: "Удалить аккаунт", fontSize: .small)
     
@@ -53,10 +54,12 @@ class SettingsViewController: UIViewController {
         view.backgroundColor = UIColor(red: 231/255, green: 242/255, blue: 250/234, alpha: 255/255)
 
         self.view.addSubview(userNameLabel)
+        self.view.addSubview(userEmail)
         self.view.addSubview(logoutButton)
         self.view.addSubview(deleteAccountButton)
 
         self.userNameLabel.translatesAutoresizingMaskIntoConstraints = false
+        self.userEmail.translatesAutoresizingMaskIntoConstraints = false
         self.logoutButton.translatesAutoresizingMaskIntoConstraints = false
         self.deleteAccountButton.translatesAutoresizingMaskIntoConstraints = false
 
@@ -64,6 +67,10 @@ class SettingsViewController: UIViewController {
             userNameLabel.topAnchor.constraint(equalTo: self.view.layoutMarginsGuide.topAnchor, constant: 20),
             userNameLabel.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 30),
             userNameLabel.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -30),
+            
+            userEmail.topAnchor.constraint(equalTo: self.userNameLabel.bottomAnchor, constant: 20),
+            userEmail.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 30),
+            userEmail.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -30),
             
             logoutButton.topAnchor.constraint(equalTo: view.bottomAnchor, constant: -100),
             logoutButton.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 30),
