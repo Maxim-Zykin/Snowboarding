@@ -20,6 +20,7 @@ class SkiResotViewController: UIViewController {
     
     private var scrollView: UIScrollView = {
         let view = UIScrollView()
+        view.frame = view.bounds
         view.showsVerticalScrollIndicator = false
         view.isDirectionalLockEnabled = true
         view.showsHorizontalScrollIndicator = false
@@ -41,7 +42,6 @@ class SkiResotViewController: UIViewController {
     private let contentViewWeatherInfo: UIView = {
         let view = UIView()
         view.layer.cornerRadius = 25
-        view.frame.size = CGSize(width: 160, height: 160)
         view.backgroundColor = UIColor(red: 236/255, green: 236/255, blue: 236/255, alpha: 255/255)
         return view
     }()
@@ -53,36 +53,81 @@ class SkiResotViewController: UIViewController {
         return view
     }()
     
+    private let contentViewSkiAbout: UIView = {
+        let view = UIView()
+        view.layer.cornerRadius = 25
+        view.backgroundColor = UIColor(red: 236/255, green: 236/255, blue: 236/255, alpha: 255/255)
+        return view
+    }()
+    
+    private let priceButton = CustomButtons(title: "СКИ-ПАСС \nцены", hasBakground: true, fontSize: .med)
+    private let timeButton = CustomButtons(title: "РЕЖИМ РАБОТЫ", hasBakground: true, fontSize: .med)
+    
     var nameSkiResot = ""
     var allTracks: String = ""
     var heightDifference: String = ""
     var totalLengthOfTracks: String = ""
     var apiWeather: String = ""
     var imageSkiR: String = ""
+    var descroption: String = ""
+    var timeWorkModel: [AllTimeWork] = []
+    var costModel: [AllPrice] = []
     
     private lazy var nameSkiResotLable = CustomLabel(text: "\(nameSkiResot)", size: 32, color: .white)
 
     private let weather = CustomLabel(text: "ПОГОДА", color: .black, textFont: .systemFont(ofSize: 16, weight: .bold))
     
-    private lazy var temps = CustomLabel(text: "-", size: 40, color: .black)
+    private lazy var temps = CustomLabel(text: "", size: 40, color: .black)
     
-    private var descriptionWeather = CustomLabel(text: "", size: 13, color: .black)
+    private var descriptionWeather = CustomLabel(text: "", size: 14, color: .black)
     
     private var iconW = UIImageView()
     
     private var temp = ""
 
-    private lazy var allTracksLable = CustomLabel(text: "Всего трасс: \(allTracks)", textAlignment: .left, size: 14, color: .black)
+    private lazy var allTracksLable = CustomLabel(text: "Всего трасс: \(allTracks)", textAlignment: .left, size: 15, color: .black)
     
-    private lazy var heightDifferenceLable = CustomLabel(text: "Перепад высот: \(heightDifference) м", textAlignment: .left, size: 14, color: .black)
+    private lazy var heightDifferenceLable = CustomLabel(text: "Перепад высот: \(heightDifference) м", textAlignment: .left, size: 15, color: .black)
     
-    private lazy var totalLengthOfTracksLable = CustomLabel(text: "Длина трасс: \(totalLengthOfTracks) км", textAlignment: .left, size: 14, color: .black)
+    private lazy var totalLengthOfTracksLable = CustomLabel(text: "Длина трасс: \(totalLengthOfTracks) км", textAlignment: .left, size: 15, color: .black)
     
+    private lazy var descroptionLable = CustomLabel(text: "Шерегеш находится на юге Кемеровской области, в Горной Шории — красивой и дикой гористой местности на стыке Саян, Алтая и Кузнецкого Алатау.", textAlignment: .left, size: 18, color: .black, numberOfLines: 0)
+    
+    init(timeWorkModel: [AllTimeWork], costModel: [AllPrice]) {
+        self.timeWorkModel = timeWorkModel
+        self.costModel = costModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        tempFeach()
+        setupButtons()
+    }
+    // MARK: - Buttons
+    func setupButtons() {
+        self.priceButton.addTarget(self, action: #selector(didTapPrice), for: .touchUpInside)
+        self.timeButton.addTarget(self, action: #selector(didTapTime), for: .touchUpInside)
     }
     
+    // MARK: - Selectors
+    @objc private func didTapPrice() {
+        let vc = TimeTableViewController(timeWorkModel: timeWorkModel)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc private func didTapTime() {
+        let vc = PriceTableViewController(costModel: costModel)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    // MARK: - Network
     func tempFeach() {
         NetworkManager.fetchWeather(url: apiWeather) { [weak self] fields, icon in
             guard let self = self else { return }
@@ -131,9 +176,10 @@ class SkiResotViewController: UIViewController {
         
         self.imageSki.image = UIImage(named: "\(imageSkiR)")
         
-        self.view.addSubview(imageSki)
-        self.view.addSubview(contentViewGeneral)
-        self.view.addSubview(contentViewWeatherInfo)
+        self.contentView.addSubview(imageSki)
+        self.contentView.addSubview(contentViewGeneral)
+        self.contentView.addSubview(contentViewWeatherInfo)
+        self.contentView.addSubview(contentViewSkiInfo)
         self.view.addSubview(nameSkiResotLable)
         self.view.addSubview(weather)
         self.view.addSubview(temps)
@@ -142,10 +188,15 @@ class SkiResotViewController: UIViewController {
         self.view.addSubview(allTracksLable)
         self.view.addSubview(heightDifferenceLable)
         self.view.addSubview(totalLengthOfTracksLable)
+        self.contentView.addSubview(contentViewSkiAbout)
+        self.view.addSubview(descroptionLable)
+        self.view.addSubview(priceButton)
+        self.view.addSubview(timeButton)
         
         self.imageSki.translatesAutoresizingMaskIntoConstraints = false
         self.contentViewGeneral.translatesAutoresizingMaskIntoConstraints = false
         self.contentViewWeatherInfo.translatesAutoresizingMaskIntoConstraints = false
+        self.contentViewSkiInfo.translatesAutoresizingMaskIntoConstraints = false
         self.nameSkiResotLable.translatesAutoresizingMaskIntoConstraints = false
         self.weather.translatesAutoresizingMaskIntoConstraints = false
         self.temps.translatesAutoresizingMaskIntoConstraints = false
@@ -154,6 +205,10 @@ class SkiResotViewController: UIViewController {
         self.allTracksLable.translatesAutoresizingMaskIntoConstraints = false
         self.heightDifferenceLable.translatesAutoresizingMaskIntoConstraints = false
         self.totalLengthOfTracksLable.translatesAutoresizingMaskIntoConstraints = false
+        self.contentViewSkiAbout.translatesAutoresizingMaskIntoConstraints = false
+        self.descroptionLable.translatesAutoresizingMaskIntoConstraints = false
+        self.priceButton.translatesAutoresizingMaskIntoConstraints = false
+        self.timeButton.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
             
@@ -169,7 +224,63 @@ class SkiResotViewController: UIViewController {
             contentViewGeneral.topAnchor.constraint(equalTo: self.imageSki.bottomAnchor, constant: -50),
             contentViewGeneral.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor),
             contentViewGeneral.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor),
-            contentViewGeneral.heightAnchor.constraint(equalToConstant: 400),
+            contentViewGeneral.heightAnchor.constraint(equalToConstant: 120),
+            
+            contentViewWeatherInfo.topAnchor.constraint(equalTo: self.contentViewGeneral.topAnchor, constant: 20),
+            contentViewWeatherInfo.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 22),
+            contentViewWeatherInfo.heightAnchor.constraint(equalToConstant: 160),
+            contentViewWeatherInfo.widthAnchor.constraint(equalToConstant: 160),
+            
+            weather.topAnchor.constraint(equalTo: self.contentViewWeatherInfo.topAnchor, constant: 10),
+            weather.leadingAnchor.constraint(equalTo: self.contentViewWeatherInfo.leadingAnchor, constant: 20),
+            
+            iconW.topAnchor.constraint(equalTo: self.weather.bottomAnchor, constant: 15),
+            iconW.centerYAnchor.constraint(equalTo: self.contentViewWeatherInfo.centerYAnchor),
+            iconW.leadingAnchor.constraint(equalTo: self.contentViewWeatherInfo.leadingAnchor, constant: 10),
+            iconW.widthAnchor.constraint(equalToConstant: 60),
+            iconW.heightAnchor.constraint(equalToConstant: 60),
+            
+            temps.topAnchor.constraint(equalTo: self.weather.bottomAnchor, constant: 15),
+            temps.centerYAnchor.constraint(equalTo: self.contentViewWeatherInfo.centerYAnchor),
+            temps.leadingAnchor.constraint(equalTo: self.iconW.trailingAnchor, constant: 10),
+            
+            descriptionWeather.topAnchor.constraint(equalTo: self.iconW.bottomAnchor, constant: 20),
+            descriptionWeather.leadingAnchor.constraint(equalTo: self.contentViewWeatherInfo.leadingAnchor, constant: 20),
+            
+            contentViewSkiInfo.topAnchor.constraint(equalTo: self.contentViewGeneral.topAnchor, constant: 20),
+            contentViewSkiInfo.trailingAnchor.constraint(equalTo: self.contentViewGeneral.trailingAnchor, constant: -22),
+            contentViewSkiInfo.heightAnchor.constraint(equalToConstant: 160),
+            contentViewSkiInfo.widthAnchor.constraint(equalToConstant: 160),
+            
+            allTracksLable.topAnchor.constraint(equalTo: contentViewSkiInfo.topAnchor, constant: 35),
+            allTracksLable.leadingAnchor.constraint(equalTo: contentViewSkiInfo.leadingAnchor, constant: 10),
+            
+            heightDifferenceLable.topAnchor.constraint(equalTo: allTracksLable.topAnchor, constant: 35),
+            heightDifferenceLable.leadingAnchor.constraint(equalTo: contentViewSkiInfo.leadingAnchor, constant: 10),
+            
+            totalLengthOfTracksLable.topAnchor.constraint(equalTo: heightDifferenceLable.topAnchor, constant: 35),
+            totalLengthOfTracksLable.leadingAnchor.constraint(equalTo: contentViewSkiInfo.leadingAnchor, constant: 10),
+            
+            contentViewSkiAbout.topAnchor.constraint(equalTo: self.contentViewSkiInfo.bottomAnchor, constant: 20),
+            contentViewSkiAbout.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 20),
+            contentViewSkiAbout.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant: -20),
+            contentViewSkiAbout.heightAnchor.constraint(equalTo: self.descroptionLable.heightAnchor, constant: 20),
+            
+            descroptionLable.topAnchor.constraint(equalTo: self.contentViewSkiAbout.topAnchor, constant: 10),
+            descroptionLable.leadingAnchor.constraint(equalTo: self.contentViewSkiAbout.leadingAnchor, constant: 20),
+            descroptionLable.trailingAnchor.constraint(equalTo: self.contentViewSkiAbout.trailingAnchor, constant: -20),
+            
+            priceButton.topAnchor.constraint(equalTo: self.contentViewSkiAbout.bottomAnchor, constant: 20),
+            priceButton.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 20),
+            priceButton.heightAnchor.constraint(equalToConstant: 59),
+            priceButton.widthAnchor.constraint(equalToConstant: 160),
+            
+            timeButton.topAnchor.constraint(equalTo: self.contentViewSkiAbout.bottomAnchor, constant: 20),
+            timeButton.trailingAnchor.constraint(equalTo: self.contentViewGeneral.trailingAnchor, constant: -20),
+            timeButton.heightAnchor.constraint(equalToConstant: 59),
+            timeButton.widthAnchor.constraint(equalToConstant: 160),
+            
+            priceButton.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor, constant: 30)
             ])
     }
 }
