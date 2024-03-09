@@ -182,7 +182,9 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         
         switch allSki {
         case .sheregesh:
-            let vc = SheregeshTabBarController()
+            let model = sheregeshInfo
+            let vc = SkiResotViewController(nameSkiResot: model.nameSkiResot, allTracks: model.allTracks, heightDifference: model.heightDifference, totalLengthOfTracks: model.totalLengthOfTracks, apiWeather: model.apiWeather, imageSkiR: model.imageSkiR, descroption: model.descroption, timeWorkModel: model.timeWorkModel, costModel: model.costModel, hotelModel: model.hotelModel, rentsModel: model.rentsModel, latitudeMap: model.latitudeMap, longitudeMap: model.longitudeMap)
+            //let vc = SheregeshTabBarController()
             self.navigationController?.pushViewController(vc, animated: true)
         case .rosaKhutor:
             let vc = RosaKhutorTabBarController()

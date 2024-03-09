@@ -105,11 +105,11 @@ class SkiResotViewController: UIViewController {
 
     private lazy var allTracksLable = CustomLabel(text: "Всего трасс: \(allTracks)", textAlignment: .left, size: 15, color: .black)
     
-    private lazy var heightDifferenceLable = CustomLabel(text: "Перепад высот: \(heightDifference) м", textAlignment: .left, size: 15, color: .black)
+    private lazy var heightDifferenceLable = CustomLabel(text: "Перепад высот: \(heightDifference)м", textAlignment: .left, size: 15, color: .black)
     
-    private lazy var totalLengthOfTracksLable = CustomLabel(text: "Длина трасс: \(totalLengthOfTracks) км", textAlignment: .left, size: 15, color: .black)
+    private lazy var totalLengthOfTracksLable = CustomLabel(text: "Длина трасс: \(totalLengthOfTracks)км", textAlignment: .left, size: 15, color: .black)
     
-    private lazy var descroptionLable = CustomLabel(text: "Шерегеш находится на юге Кемеровской области, в Горной Шории — красивой и дикой гористой местности на стыке Саян, Алтая и Кузнецкого Алатау.  Шерегеш находится на юге Кемеровской области, в Горной Шории — красивой и дикой гористой местности на стыке Саян, Алтая и Кузнецкого Алатау.Шерегеш находится на юге Кемеровской области, в Горной Шории — красивой и дикой гористой местности на стыке Саян, Алтая и Кузнецкого Алатау.", textAlignment: .left, size: 15, color: .black, numberOfLines: 0)
+    private lazy var descroptionLable = CustomLabel(text: "\(descroption)", textAlignment: .left, size: 15, color: .black, numberOfLines: 0)
     
     // MARK: - Init
     init(nameSkiResot: String, allTracks: String, heightDifference: String, totalLengthOfTracks: String, apiWeather: String, imageSkiR: String, descroption: String, timeWorkModel: [AllTimeWork], costModel: [AllPrice], hotelModel: [AllHotels], rentsModel: [AllRents], latitudeMap: Double, longitudeMap: Double) {
@@ -292,15 +292,15 @@ class SkiResotViewController: UIViewController {
             
             contentViewWeatherInfo.topAnchor.constraint(equalTo: self.contentViewGeneral.topAnchor, constant: 20),
             contentViewWeatherInfo.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 22),
-            contentViewWeatherInfo.heightAnchor.constraint(equalToConstant: 160),
-            contentViewWeatherInfo.widthAnchor.constraint(equalToConstant: 160),
+            contentViewWeatherInfo.heightAnchor.constraint(equalToConstant: 165),
+            contentViewWeatherInfo.widthAnchor.constraint(equalToConstant: 165),
             
             weather.topAnchor.constraint(equalTo: self.contentViewWeatherInfo.topAnchor, constant: 10),
             weather.leadingAnchor.constraint(equalTo: self.contentViewWeatherInfo.leadingAnchor, constant: 20),
             
             iconW.topAnchor.constraint(equalTo: self.weather.bottomAnchor, constant: 15),
             iconW.centerYAnchor.constraint(equalTo: self.contentViewWeatherInfo.centerYAnchor),
-            iconW.leadingAnchor.constraint(equalTo: self.contentViewWeatherInfo.leadingAnchor, constant: 10),
+            iconW.leadingAnchor.constraint(equalTo: self.contentViewWeatherInfo.leadingAnchor, constant: 15),
             iconW.widthAnchor.constraint(equalToConstant: 60),
             iconW.heightAnchor.constraint(equalToConstant: 60),
             
@@ -314,17 +314,17 @@ class SkiResotViewController: UIViewController {
             
             contentViewSkiInfo.topAnchor.constraint(equalTo: self.contentViewGeneral.topAnchor, constant: 20),
             contentViewSkiInfo.trailingAnchor.constraint(equalTo: self.contentViewGeneral.trailingAnchor, constant: -22),
-            contentViewSkiInfo.heightAnchor.constraint(equalToConstant: 160),
-            contentViewSkiInfo.widthAnchor.constraint(equalToConstant: 160),
+            contentViewSkiInfo.heightAnchor.constraint(equalToConstant: 165),
+            contentViewSkiInfo.widthAnchor.constraint(equalToConstant: 165),
             
             allTracksLable.topAnchor.constraint(equalTo: contentViewSkiInfo.topAnchor, constant: 35),
-            allTracksLable.leadingAnchor.constraint(equalTo: contentViewSkiInfo.leadingAnchor, constant: 10),
+            allTracksLable.leadingAnchor.constraint(equalTo: contentViewSkiInfo.leadingAnchor, constant: 7),
             
             heightDifferenceLable.topAnchor.constraint(equalTo: allTracksLable.topAnchor, constant: 35),
-            heightDifferenceLable.leadingAnchor.constraint(equalTo: contentViewSkiInfo.leadingAnchor, constant: 10),
+            heightDifferenceLable.leadingAnchor.constraint(equalTo: contentViewSkiInfo.leadingAnchor, constant: 7),
             
             totalLengthOfTracksLable.topAnchor.constraint(equalTo: heightDifferenceLable.topAnchor, constant: 35),
-            totalLengthOfTracksLable.leadingAnchor.constraint(equalTo: contentViewSkiInfo.leadingAnchor, constant: 10),
+            totalLengthOfTracksLable.leadingAnchor.constraint(equalTo: contentViewSkiInfo.leadingAnchor, constant: 7),
             
             contentViewSkiAbout.topAnchor.constraint(equalTo: self.contentViewSkiInfo.bottomAnchor, constant: 20),
             contentViewSkiAbout.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 20),
