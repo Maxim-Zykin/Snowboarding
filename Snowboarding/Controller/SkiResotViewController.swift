@@ -60,18 +60,36 @@ class SkiResotViewController: UIViewController {
         return view
     }()
     
+    lazy var collection = UICollectionView(
+        frame: .zero,
+        collectionViewLayout: makeLayout()
+    )
+    
+    enum Info: CaseIterable {
+        case hotels, rent, map
+    }
+    
+    let infoResort = Info.allCases
+    
     private let priceButton = CustomButtons(title: "СКИ-ПАСС \nцены", hasBakground: true, fontSize: .med)
     private let timeButton = CustomButtons(title: "РЕЖИМ РАБОТЫ", hasBakground: true, fontSize: .med)
     
-    var nameSkiResot = ""
+    
+    var nameSkiResot: String = ""
     var allTracks: String = ""
     var heightDifference: String = ""
     var totalLengthOfTracks: String = ""
     var apiWeather: String = ""
     var imageSkiR: String = ""
     var descroption: String = ""
-    var timeWorkModel: [AllTimeWork] = []
-    var costModel: [AllPrice] = []
+    var timeWorkModel: [AllTimeWork]
+    var costModel: [AllPrice]
+    var hotelModel: [AllHotels]
+    var rentsModel: [AllRents]
+    var latitudeMap: Double
+    var longitudeMap: Double
+    
+    private let infoModel = InfoGroup.skiInfi()
     
     private lazy var nameSkiResotLable = CustomLabel(text: "\(nameSkiResot)", size: 32, color: .white)
 
@@ -91,11 +109,23 @@ class SkiResotViewController: UIViewController {
     
     private lazy var totalLengthOfTracksLable = CustomLabel(text: "Длина трасс: \(totalLengthOfTracks) км", textAlignment: .left, size: 15, color: .black)
     
-    private lazy var descroptionLable = CustomLabel(text: "Шерегеш находится на юге Кемеровской области, в Горной Шории — красивой и дикой гористой местности на стыке Саян, Алтая и Кузнецкого Алатау.", textAlignment: .left, size: 18, color: .black, numberOfLines: 0)
+    private lazy var descroptionLable = CustomLabel(text: "Шерегеш находится на юге Кемеровской области, в Горной Шории — красивой и дикой гористой местности на стыке Саян, Алтая и Кузнецкого Алатау.  Шерегеш находится на юге Кемеровской области, в Горной Шории — красивой и дикой гористой местности на стыке Саян, Алтая и Кузнецкого Алатау.Шерегеш находится на юге Кемеровской области, в Горной Шории — красивой и дикой гористой местности на стыке Саян, Алтая и Кузнецкого Алатау.", textAlignment: .left, size: 15, color: .black, numberOfLines: 0)
     
-    init(timeWorkModel: [AllTimeWork], costModel: [AllPrice]) {
+    // MARK: - Init
+    init(nameSkiResot: String, allTracks: String, heightDifference: String, totalLengthOfTracks: String, apiWeather: String, imageSkiR: String, descroption: String, timeWorkModel: [AllTimeWork], costModel: [AllPrice], hotelModel: [AllHotels], rentsModel: [AllRents], latitudeMap: Double, longitudeMap: Double) {
+        self.nameSkiResot = nameSkiResot
+        self.allTracks = allTracks
+        self.heightDifference = heightDifference
+        self.totalLengthOfTracks = totalLengthOfTracks
+        self.apiWeather = apiWeather
+        self.imageSkiR = imageSkiR
+        self.descroption = descroption
         self.timeWorkModel = timeWorkModel
         self.costModel = costModel
+        self.hotelModel = hotelModel
+        self.rentsModel = rentsModel
+        self.latitudeMap = latitudeMap
+        self.longitudeMap = longitudeMap
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -109,7 +139,9 @@ class SkiResotViewController: UIViewController {
         setupUI()
         tempFeach()
         setupButtons()
+        setupCollectionView()
     }
+    
     // MARK: - Buttons
     func setupButtons() {
         self.priceButton.addTarget(self, action: #selector(didTapPrice), for: .touchUpInside)
@@ -151,6 +183,36 @@ class SkiResotViewController: UIViewController {
     }
 
     // MARK: - UI Setup
+    
+    private func makeLayout() -> UICollectionViewLayout {
+        let spacing: CGFloat = 20
+        let itemSize = NSCollectionLayoutSize(
+            widthDimension: .fractionalWidth(1.0),
+            heightDimension: .fractionalHeight(1.0))
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+        
+        let groupSize = NSCollectionLayoutSize(
+            widthDimension: .fractionalWidth(1.0),
+            heightDimension: .absolute(105))
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, repeatingSubitem: item, count: 1)
+        group.interItemSpacing = .fixed(spacing)
+        
+        let section = NSCollectionLayoutSection(group: group)
+        section.contentInsets = .init(top: spacing, leading: spacing, bottom: spacing, trailing: spacing)
+        section.interGroupSpacing = spacing
+        
+        let layout = UICollectionViewCompositionalLayout(section: section)
+        return layout
+        }
+    
+    private func setupCollectionView() {
+        collection.register(InfrastructureInformationCell.self, forCellWithReuseIdentifier: InfrastructureInformationCell.cellID)
+        collection.delegate = self
+        collection.dataSource = self
+        collection.backgroundColor = .white
+        collection.isScrollEnabled = false
+    }
+    
     private func setupUI() {
     
         self.view.backgroundColor = .white
@@ -192,6 +254,7 @@ class SkiResotViewController: UIViewController {
         self.view.addSubview(descroptionLable)
         self.view.addSubview(priceButton)
         self.view.addSubview(timeButton)
+        self.contentView.addSubview(collection)
         
         self.imageSki.translatesAutoresizingMaskIntoConstraints = false
         self.contentViewGeneral.translatesAutoresizingMaskIntoConstraints = false
@@ -209,17 +272,18 @@ class SkiResotViewController: UIViewController {
         self.descroptionLable.translatesAutoresizingMaskIntoConstraints = false
         self.priceButton.translatesAutoresizingMaskIntoConstraints = false
         self.timeButton.translatesAutoresizingMaskIntoConstraints = false
+        self.collection.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
             
-            imageSki.topAnchor.constraint(equalTo: self.contentView.topAnchor, constant: -50),
+            imageSki.topAnchor.constraint(equalTo: self.contentView.topAnchor, constant: -99),
             imageSki.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor),
             imageSki.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor),
             imageSki.heightAnchor.constraint(equalToConstant: 396),
             imageSki.widthAnchor.constraint(equalTo: self.contentView.widthAnchor),
             
             nameSkiResotLable.centerXAnchor.constraint(equalTo: self.contentView.centerXAnchor),
-            nameSkiResotLable.topAnchor.constraint(equalTo: self.contentView.topAnchor, constant: 128),
+            nameSkiResotLable.topAnchor.constraint(equalTo: self.contentView.topAnchor, constant: 120),
             
             contentViewGeneral.topAnchor.constraint(equalTo: self.imageSki.bottomAnchor, constant: -50),
             contentViewGeneral.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor),
@@ -244,8 +308,9 @@ class SkiResotViewController: UIViewController {
             temps.centerYAnchor.constraint(equalTo: self.contentViewWeatherInfo.centerYAnchor),
             temps.leadingAnchor.constraint(equalTo: self.iconW.trailingAnchor, constant: 10),
             
-            descriptionWeather.topAnchor.constraint(equalTo: self.iconW.bottomAnchor, constant: 20),
+            descriptionWeather.topAnchor.constraint(equalTo: self.iconW.bottomAnchor, constant: 10),
             descriptionWeather.leadingAnchor.constraint(equalTo: self.contentViewWeatherInfo.leadingAnchor, constant: 20),
+            descriptionWeather.trailingAnchor.constraint(equalTo: self.contentViewWeatherInfo.trailingAnchor, constant: -5),
             
             contentViewSkiInfo.topAnchor.constraint(equalTo: self.contentViewGeneral.topAnchor, constant: 20),
             contentViewSkiInfo.trailingAnchor.constraint(equalTo: self.contentViewGeneral.trailingAnchor, constant: -22),
@@ -273,14 +338,57 @@ class SkiResotViewController: UIViewController {
             priceButton.topAnchor.constraint(equalTo: self.contentViewSkiAbout.bottomAnchor, constant: 20),
             priceButton.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 20),
             priceButton.heightAnchor.constraint(equalToConstant: 59),
-            priceButton.widthAnchor.constraint(equalToConstant: 160),
+            priceButton.widthAnchor.constraint(equalToConstant: 165),
             
             timeButton.topAnchor.constraint(equalTo: self.contentViewSkiAbout.bottomAnchor, constant: 20),
             timeButton.trailingAnchor.constraint(equalTo: self.contentViewGeneral.trailingAnchor, constant: -20),
             timeButton.heightAnchor.constraint(equalToConstant: 59),
-            timeButton.widthAnchor.constraint(equalToConstant: 160),
+            timeButton.widthAnchor.constraint(equalToConstant: 165),
             
-            priceButton.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor, constant: 30)
+            collection.topAnchor.constraint(equalTo: timeButton.bottomAnchor, constant: 10),
+            collection.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor),
+            collection.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor),
+            collection.heightAnchor.constraint(equalToConstant: 400),
+            
+            collection.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor)
+            
+            //priceButton.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor, constant: -80)
             ])
+    }
+}
+
+
+extension SkiResotViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+        
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int { infoModel.sky.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collection.dequeueReusableCell(withReuseIdentifier: InfrastructureInformationCell.cellID, for: indexPath) as! InfrastructureInformationCell
+        cell.infoImage.image = infoModel.sky[indexPath.row].image
+        cell.infoLabel.text = infoModel.sky[indexPath.row].name
+        return cell
+    }
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(infoModel.sky[indexPath.row].name)
+        
+        let info = infoResort[indexPath.row]
+        
+        switch info {
+        case .hotels:
+            let vc = HotelsViewController()
+            vc.model = hotelModel
+            self.navigationController?.pushViewController(vc, animated: true)
+        case .rent:
+            let vc = RentViewController()
+            vc.model = rentsModel
+            self.navigationController?.pushViewController(vc, animated: true)
+        case .map:
+            let vc = MapViewController()
+            vc.latitude = latitudeMap
+            vc.longitude = longitudeMap
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
 }
