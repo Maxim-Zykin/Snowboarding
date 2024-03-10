@@ -14,35 +14,21 @@
 		0C0CD1492AB43E780098696C /* SheregeshHotels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0CD1482AB43E780098696C /* SheregeshHotels.swift */; };
 		0C0CD14C2AB45A220098696C /* HotelsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0CD14B2AB45A220098696C /* HotelsCollectionViewCell.swift */; };
 		0C1250282AC29499008D4BCF /* ArhyzRent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1250272AC29499008D4BCF /* ArhyzRent.swift */; };
-		0C1AD7842A28D2D2003108DF /* SheregeshTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1AD7832A28D2D2003108DF /* SheregeshTabBarController.swift */; };
-		0C1AD7872A28D39C003108DF /* SheregeshInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1AD7862A28D39C003108DF /* SheregeshInfoController.swift */; };
-		0C1AD78C2A28D41E003108DF /* SheregeshTimeWorkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1AD78B2A28D41E003108DF /* SheregeshTimeWorkController.swift */; };
 		0C1DC26D29AB92DF004F3FDC /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1DC26C29AB92DF004F3FDC /* CustomTextField.swift */; };
 		0C1DC26F29ABB802004F3FDC /* CustomButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1DC26E29ABB802004F3FDC /* CustomButtons.swift */; };
 		0C23022E2AC3CE5800074B48 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C23022D2AC3CE5800074B48 /* SettingsViewController.swift */; };
+		0C25D39C2B97095F0067183A /* SkiResotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C25D39B2B97095F0067183A /* SkiResotViewController.swift */; };
+		0C25D3A72B9770BF0067183A /* ModelSkiResort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C25D3A62B9770BF0067183A /* ModelSkiResort.swift */; };
+		0C2E0F282B1319B100B497A7 /* ElbrusRegionPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2E0F272B1319B100B497A7 /* ElbrusRegionPrice.swift */; };
+		0C2E0F2A2B1319BC00B497A7 /* ElbrusRegionTimeWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2E0F292B1319BC00B497A7 /* ElbrusRegionTimeWork.swift */; };
+		0C2E0F2E2B1319D200B497A7 /* ElbrusRegionHotels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2E0F2D2B1319D200B497A7 /* ElbrusRegionHotels.swift */; };
+		0C2E0F302B1319DB00B497A7 /* ElbrusRegionRent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2E0F2F2B1319DB00B497A7 /* ElbrusRegionRent.swift */; };
 		0C341B072ABC181D00A7595F /* DombaiHotelsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C341B062ABC181D00A7595F /* DombaiHotelsVC.swift */; };
-		0C341B092ABC203D00A7595F /* DombaiInfoCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C341B082ABC203D00A7595F /* DombaiInfoCV.swift */; };
 		0C341B0D2ABC22FB00A7595F /* DombaiRent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C341B0C2ABC22FB00A7595F /* DombaiRent.swift */; };
-		0C341B0F2ABC35AF00A7595F /* ArhyzInfoCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C341B0E2ABC35AF00A7595F /* ArhyzInfoCV.swift */; };
 		0C341B132ABC37F900A7595F /* ArhyzHotels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C341B122ABC37F900A7595F /* ArhyzHotels.swift */; };
-		0C41BA282A29BBF700E89A71 /* DombaiTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C41BA272A29BBF700E89A71 /* DombaiTabBarViewController.swift */; };
-		0C41BA2B2A29BD7100E89A71 /* DombaiInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C41BA2A2A29BD7100E89A71 /* DombaiInfoController.swift */; };
-		0C41BA2D2A29BD8A00E89A71 /* DombaiPriceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C41BA2C2A29BD8A00E89A71 /* DombaiPriceController.swift */; };
-		0C41BA2F2A29BDA400E89A71 /* DombaiTimeWorkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C41BA2E2A29BDA400E89A71 /* DombaiTimeWorkController.swift */; };
-		0C41BA312A29BF8600E89A71 /* ArhyzTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C41BA302A29BF8600E89A71 /* ArhyzTabBarController.swift */; };
-		0C41BA342A29BFE500E89A71 /* ArhyzInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C41BA332A29BFE500E89A71 /* ArhyzInfoController.swift */; };
-		0C41BA362A29C00000E89A71 /* ArhyzPriceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C41BA352A29C00000E89A71 /* ArhyzPriceController.swift */; };
-		0C41BA382A29C01700E89A71 /* ArhyzTimeWorkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C41BA372A29C01700E89A71 /* ArhyzTimeWorkController.swift */; };
-		0C41BA3B2A29C12700E89A71 /* RosaKhutorInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C41BA3A2A29C12700E89A71 /* RosaKhutorInfoController.swift */; };
-		0C41BA3D2A29C13F00E89A71 /* RosaKhutorPriceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C41BA3C2A29C13F00E89A71 /* RosaKhutorPriceController.swift */; };
-		0C41BA3F2A29C15C00E89A71 /* RosaKhutorTimeWorkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C41BA3E2A29C15C00E89A71 /* RosaKhutorTimeWorkController.swift */; };
-		0C41BA412A29C18000E89A71 /* RosaKhutorTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C41BA402A29C18000E89A71 /* RosaKhutorTabBarController.swift */; };
 		0C43E8D229FD3B6400C3980D /* ChoiceOfSkiResortCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C43E8D129FD3B6400C3980D /* ChoiceOfSkiResortCell.swift */; };
-		0C46D0B62AF4A2CC002A2A11 /* BigWoodTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C46D0B52AF4A2CC002A2A11 /* BigWoodTabBarController.swift */; };
-		0C46D0B92AF4A329002A2A11 /* BigWoodInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C46D0B82AF4A329002A2A11 /* BigWoodInfoViewController.swift */; };
 		0C46D0C02AF4B23D002A2A11 /* BigWoodPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C46D0BF2AF4B23D002A2A11 /* BigWoodPrice.swift */; };
 		0C46D0C22AF4C720002A2A11 /* BigWoodTimeWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C46D0C12AF4C720002A2A11 /* BigWoodTimeWork.swift */; };
-		0C46D0C62AF4CBAD002A2A11 /* BigWoodInfoCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C46D0C52AF4CBAD002A2A11 /* BigWoodInfoCV.swift */; };
 		0C48538E2A67945100B245FC /* RosaKhutorTimeWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C48538D2A67945100B245FC /* RosaKhutorTimeWork.swift */; };
 		0C4853922A67B1E400B245FC /* DombaiPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4853912A67B1E400B245FC /* DombaiPrice.swift */; };
 		0C4853982A67B6C000B245FC /* ArhyzPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4853972A67B6C000B245FC /* ArhyzPrice.swift */; };
@@ -50,6 +36,12 @@
 		0C61E3362A6D093C0088372E /* TimeWorkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C61E3352A6D093C0088372E /* TimeWorkTableViewCell.swift */; };
 		0C7539FE2ACA790200651FA0 /* YBaseMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7539FD2ACA790200651FA0 /* YBaseMapView.swift */; };
 		0C753A002ACBB9F800651FA0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7539FF2ACBB9F800651FA0 /* MapViewController.swift */; };
+		0C7B4EBE2B9DB98300042A83 /* AllInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B4EBD2B9DB98300042A83 /* AllInfo.swift */; };
+		0C7B4EC02B9DB9E900042A83 /* RosaKhutorSkiResort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B4EBF2B9DB9E900042A83 /* RosaKhutorSkiResort.swift */; };
+		0C7B4EC22B9DD34D00042A83 /* DombaiSciResort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B4EC12B9DD34D00042A83 /* DombaiSciResort.swift */; };
+		0C7B4EC42B9DD58D00042A83 /* ArhyzSciResot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B4EC32B9DD58D00042A83 /* ArhyzSciResot.swift */; };
+		0C7B4EC62B9DD75500042A83 /* BigWoodSkiResort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B4EC52B9DD75500042A83 /* BigWoodSkiResort.swift */; };
+		0C7B4EC82B9DD89900042A83 /* ElbrusSkiResort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B4EC72B9DD89900042A83 /* ElbrusSkiResort.swift */; };
 		0C850E8C29AE446E00C6AB10 /* WebViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C850E8B29AE446E00C6AB10 /* WebViewerController.swift */; };
 		0C87396029BDB61B0007CFC3 /* LoginUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C87395F29BDB61B0007CFC3 /* LoginUserRequest.swift */; };
 		0C87396229BDDCF00007CFC3 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C87396129BDDCF00007CFC3 /* Validator.swift */; };
@@ -80,18 +72,17 @@
 		0CD0FAC529AB4A4F000E76E8 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD0FAC429AB4A4F000E76E8 /* RegisterController.swift */; };
 		0CD0FACC29AB4CAA000E76E8 /* AuthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD0FACB29AB4CAA000E76E8 /* AuthHeaderView.swift */; };
 		0CD447552A66342100021DD4 /* SheregeshPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD447542A66342100021DD4 /* SheregeshPrice.swift */; };
-		0CD447572A6639D600021DD4 /* SheregeshPriceControllerTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD447562A6639D600021DD4 /* SheregeshPriceControllerTableController.swift */; };
 		0CD4475B2A666B9500021DD4 /* RosaKhutorPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4475A2A666B9500021DD4 /* RosaKhutorPrice.swift */; };
 		0CD4475D2A66773300021DD4 /* SheregeshTimeWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4475C2A66773300021DD4 /* SheregeshTimeWork.swift */; };
 		0CDBE0EF2AB97611009EAF9F /* SheregeshRent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBE0EE2AB97611009EAF9F /* SheregeshRent.swift */; };
 		0CE7A2F12AB209F500A9AA91 /* InfrastructureInformationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE7A2F02AB209F500A9AA91 /* InfrastructureInformationCell.swift */; };
-		0CE7A2F32AB20B2800A9AA91 /* SheregeshInfoCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE7A2F22AB20B2800A9AA91 /* SheregeshInfoCV.swift */; };
 		0CE882FB2AD685800087C3EA /* NetworkTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE882FA2AD685800087C3EA /* NetworkTest.swift */; };
 		0CF2F41629E1429800C82D57 /* SkiResorts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF2F41529E1429800C82D57 /* SkiResorts.swift */; };
-		0CFC688A2ACD38D600AA38EB /* RosaKhutorInfoCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFC68892ACD38D600AA38EB /* RosaKhutorInfoCV.swift */; };
 		0CFC68902ACD39B800AA38EB /* RosaKhutorHotels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFC688F2ACD39B800AA38EB /* RosaKhutorHotels.swift */; };
 		0CFC68922ACD39FA00AA38EB /* RosaKhutorRent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFC68912ACD39FA00AA38EB /* RosaKhutorRent.swift */; };
 		0CFDA63729BE223A00B7C6C4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFDA63629BE223A00B7C6C4 /* User.swift */; };
+		0CFF06912B9C8FA000D0DD42 /* InfoGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFF06902B9C8FA000D0DD42 /* InfoGroup.swift */; };
+		0CFF06932B9C8FF500D0DD42 /* SheregeshSkiResort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFF06922B9C8FF500D0DD42 /* SheregeshSkiResort.swift */; };
 		45E00DDD028B1DDCECD7B711 /* Pods_Snowboarding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE27C195ACA12952C53CB13 /* Pods_Snowboarding.framework */; };
 /* End PBXBuildFile section */
 
@@ -104,35 +95,21 @@
 		0C0CD1482AB43E780098696C /* SheregeshHotels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheregeshHotels.swift; sourceTree = "<group>"; };
 		0C0CD14B2AB45A220098696C /* HotelsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelsCollectionViewCell.swift; sourceTree = "<group>"; };
 		0C1250272AC29499008D4BCF /* ArhyzRent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArhyzRent.swift; sourceTree = "<group>"; };
-		0C1AD7832A28D2D2003108DF /* SheregeshTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheregeshTabBarController.swift; sourceTree = "<group>"; };
-		0C1AD7862A28D39C003108DF /* SheregeshInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheregeshInfoController.swift; sourceTree = "<group>"; };
-		0C1AD78B2A28D41E003108DF /* SheregeshTimeWorkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheregeshTimeWorkController.swift; sourceTree = "<group>"; };
 		0C1DC26C29AB92DF004F3FDC /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		0C1DC26E29ABB802004F3FDC /* CustomButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtons.swift; sourceTree = "<group>"; };
 		0C23022D2AC3CE5800074B48 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		0C25D39B2B97095F0067183A /* SkiResotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkiResotViewController.swift; sourceTree = "<group>"; };
+		0C25D3A62B9770BF0067183A /* ModelSkiResort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSkiResort.swift; sourceTree = "<group>"; };
+		0C2E0F272B1319B100B497A7 /* ElbrusRegionPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElbrusRegionPrice.swift; sourceTree = "<group>"; };
+		0C2E0F292B1319BC00B497A7 /* ElbrusRegionTimeWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElbrusRegionTimeWork.swift; sourceTree = "<group>"; };
+		0C2E0F2D2B1319D200B497A7 /* ElbrusRegionHotels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElbrusRegionHotels.swift; sourceTree = "<group>"; };
+		0C2E0F2F2B1319DB00B497A7 /* ElbrusRegionRent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElbrusRegionRent.swift; sourceTree = "<group>"; };
 		0C341B062ABC181D00A7595F /* DombaiHotelsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DombaiHotelsVC.swift; sourceTree = "<group>"; };
-		0C341B082ABC203D00A7595F /* DombaiInfoCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DombaiInfoCV.swift; sourceTree = "<group>"; };
 		0C341B0C2ABC22FB00A7595F /* DombaiRent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DombaiRent.swift; sourceTree = "<group>"; };
-		0C341B0E2ABC35AF00A7595F /* ArhyzInfoCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArhyzInfoCV.swift; sourceTree = "<group>"; };
 		0C341B122ABC37F900A7595F /* ArhyzHotels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArhyzHotels.swift; sourceTree = "<group>"; };
-		0C41BA272A29BBF700E89A71 /* DombaiTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DombaiTabBarViewController.swift; sourceTree = "<group>"; };
-		0C41BA2A2A29BD7100E89A71 /* DombaiInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DombaiInfoController.swift; sourceTree = "<group>"; };
-		0C41BA2C2A29BD8A00E89A71 /* DombaiPriceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DombaiPriceController.swift; sourceTree = "<group>"; };
-		0C41BA2E2A29BDA400E89A71 /* DombaiTimeWorkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DombaiTimeWorkController.swift; sourceTree = "<group>"; };
-		0C41BA302A29BF8600E89A71 /* ArhyzTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArhyzTabBarController.swift; sourceTree = "<group>"; };
-		0C41BA332A29BFE500E89A71 /* ArhyzInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArhyzInfoController.swift; sourceTree = "<group>"; };
-		0C41BA352A29C00000E89A71 /* ArhyzPriceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArhyzPriceController.swift; sourceTree = "<group>"; };
-		0C41BA372A29C01700E89A71 /* ArhyzTimeWorkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArhyzTimeWorkController.swift; sourceTree = "<group>"; };
-		0C41BA3A2A29C12700E89A71 /* RosaKhutorInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosaKhutorInfoController.swift; sourceTree = "<group>"; };
-		0C41BA3C2A29C13F00E89A71 /* RosaKhutorPriceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosaKhutorPriceController.swift; sourceTree = "<group>"; };
-		0C41BA3E2A29C15C00E89A71 /* RosaKhutorTimeWorkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosaKhutorTimeWorkController.swift; sourceTree = "<group>"; };
-		0C41BA402A29C18000E89A71 /* RosaKhutorTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosaKhutorTabBarController.swift; sourceTree = "<group>"; };
 		0C43E8D129FD3B6400C3980D /* ChoiceOfSkiResortCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceOfSkiResortCell.swift; sourceTree = "<group>"; };
-		0C46D0B52AF4A2CC002A2A11 /* BigWoodTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigWoodTabBarController.swift; sourceTree = "<group>"; };
-		0C46D0B82AF4A329002A2A11 /* BigWoodInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigWoodInfoViewController.swift; sourceTree = "<group>"; };
 		0C46D0BF2AF4B23D002A2A11 /* BigWoodPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigWoodPrice.swift; sourceTree = "<group>"; };
 		0C46D0C12AF4C720002A2A11 /* BigWoodTimeWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigWoodTimeWork.swift; sourceTree = "<group>"; };
-		0C46D0C52AF4CBAD002A2A11 /* BigWoodInfoCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigWoodInfoCV.swift; sourceTree = "<group>"; };
 		0C48538D2A67945100B245FC /* RosaKhutorTimeWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosaKhutorTimeWork.swift; sourceTree = "<group>"; };
 		0C4853912A67B1E400B245FC /* DombaiPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DombaiPrice.swift; sourceTree = "<group>"; };
 		0C4853972A67B6C000B245FC /* ArhyzPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArhyzPrice.swift; sourceTree = "<group>"; };
@@ -141,6 +118,12 @@
 		0C61E3352A6D093C0088372E /* TimeWorkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeWorkTableViewCell.swift; sourceTree = "<group>"; };
 		0C7539FD2ACA790200651FA0 /* YBaseMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YBaseMapView.swift; sourceTree = "<group>"; };
 		0C7539FF2ACBB9F800651FA0 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		0C7B4EBD2B9DB98300042A83 /* AllInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllInfo.swift; sourceTree = "<group>"; };
+		0C7B4EBF2B9DB9E900042A83 /* RosaKhutorSkiResort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosaKhutorSkiResort.swift; sourceTree = "<group>"; };
+		0C7B4EC12B9DD34D00042A83 /* DombaiSciResort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DombaiSciResort.swift; sourceTree = "<group>"; };
+		0C7B4EC32B9DD58D00042A83 /* ArhyzSciResot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArhyzSciResot.swift; sourceTree = "<group>"; };
+		0C7B4EC52B9DD75500042A83 /* BigWoodSkiResort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigWoodSkiResort.swift; sourceTree = "<group>"; };
+		0C7B4EC72B9DD89900042A83 /* ElbrusSkiResort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElbrusSkiResort.swift; sourceTree = "<group>"; };
 		0C850E8B29AE446E00C6AB10 /* WebViewerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewerController.swift; sourceTree = "<group>"; };
 		0C87395F29BDB61B0007CFC3 /* LoginUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUserRequest.swift; sourceTree = "<group>"; };
 		0C87396129BDDCF00007CFC3 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
@@ -173,18 +156,17 @@
 		0CD0FAC429AB4A4F000E76E8 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		0CD0FACB29AB4CAA000E76E8 /* AuthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderView.swift; sourceTree = "<group>"; };
 		0CD447542A66342100021DD4 /* SheregeshPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheregeshPrice.swift; sourceTree = "<group>"; };
-		0CD447562A6639D600021DD4 /* SheregeshPriceControllerTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheregeshPriceControllerTableController.swift; sourceTree = "<group>"; };
 		0CD4475A2A666B9500021DD4 /* RosaKhutorPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosaKhutorPrice.swift; sourceTree = "<group>"; };
 		0CD4475C2A66773300021DD4 /* SheregeshTimeWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheregeshTimeWork.swift; sourceTree = "<group>"; };
 		0CDBE0EE2AB97611009EAF9F /* SheregeshRent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheregeshRent.swift; sourceTree = "<group>"; };
 		0CE7A2F02AB209F500A9AA91 /* InfrastructureInformationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfrastructureInformationCell.swift; sourceTree = "<group>"; };
-		0CE7A2F22AB20B2800A9AA91 /* SheregeshInfoCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheregeshInfoCV.swift; sourceTree = "<group>"; };
 		0CE882FA2AD685800087C3EA /* NetworkTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTest.swift; sourceTree = "<group>"; };
 		0CF2F41529E1429800C82D57 /* SkiResorts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkiResorts.swift; sourceTree = "<group>"; };
-		0CFC68892ACD38D600AA38EB /* RosaKhutorInfoCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosaKhutorInfoCV.swift; sourceTree = "<group>"; };
 		0CFC688F2ACD39B800AA38EB /* RosaKhutorHotels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosaKhutorHotels.swift; sourceTree = "<group>"; };
 		0CFC68912ACD39FA00AA38EB /* RosaKhutorRent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosaKhutorRent.swift; sourceTree = "<group>"; };
 		0CFDA63629BE223A00B7C6C4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0CFF06902B9C8FA000D0DD42 /* InfoGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoGroup.swift; sourceTree = "<group>"; };
+		0CFF06922B9C8FF500D0DD42 /* SheregeshSkiResort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheregeshSkiResort.swift; sourceTree = "<group>"; };
 		EA4EA49892A8661F70F1C27B /* Pods-Snowboarding.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snowboarding.debug.xcconfig"; path = "Target Support Files/Pods-Snowboarding/Pods-Snowboarding.debug.xcconfig"; sourceTree = "<group>"; };
 		EDE27C195ACA12952C53CB13 /* Pods_Snowboarding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snowboarding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -201,25 +183,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C030F392A08F50A00ED5DFD /* SkiResort */ = {
-			isa = PBXGroup;
-			children = (
-				0C1AD7832A28D2D2003108DF /* SheregeshTabBarController.swift */,
-				0C41BA272A29BBF700E89A71 /* DombaiTabBarViewController.swift */,
-				0C41BA302A29BF8600E89A71 /* ArhyzTabBarController.swift */,
-				0C41BA402A29C18000E89A71 /* RosaKhutorTabBarController.swift */,
-				0C46D0B52AF4A2CC002A2A11 /* BigWoodTabBarController.swift */,
-				0C1AD7852A28D34B003108DF /* Information */,
-			);
-			path = SkiResort;
-			sourceTree = "<group>";
-		};
 		0C0CD1432AB43DA40098696C /* Sheregesh */ = {
 			isa = PBXGroup;
 			children = (
+				0CFF06922B9C8FF500D0DD42 /* SheregeshSkiResort.swift */,
 				0CD447542A66342100021DD4 /* SheregeshPrice.swift */,
 				0CD4475C2A66773300021DD4 /* SheregeshTimeWork.swift */,
-				0CE7A2F22AB20B2800A9AA91 /* SheregeshInfoCV.swift */,
 				0C0CD1482AB43E780098696C /* SheregeshHotels.swift */,
 				0CDBE0EE2AB97611009EAF9F /* SheregeshRent.swift */,
 			);
@@ -229,9 +198,9 @@
 		0C0CD1452AB43DEE0098696C /* RosaKhutor */ = {
 			isa = PBXGroup;
 			children = (
+				0C7B4EBF2B9DB9E900042A83 /* RosaKhutorSkiResort.swift */,
 				0CD4475A2A666B9500021DD4 /* RosaKhutorPrice.swift */,
 				0C48538D2A67945100B245FC /* RosaKhutorTimeWork.swift */,
-				0CFC68892ACD38D600AA38EB /* RosaKhutorInfoCV.swift */,
 				0CFC688F2ACD39B800AA38EB /* RosaKhutorHotels.swift */,
 				0CFC68912ACD39FA00AA38EB /* RosaKhutorRent.swift */,
 			);
@@ -241,9 +210,9 @@
 		0C0CD1462AB43E150098696C /* Dombai */ = {
 			isa = PBXGroup;
 			children = (
+				0C7B4EC12B9DD34D00042A83 /* DombaiSciResort.swift */,
 				0C4853912A67B1E400B245FC /* DombaiPrice.swift */,
 				0C8FC40B2A68E50E002FDD45 /* DombaiTimeWork.swift */,
-				0C341B082ABC203D00A7595F /* DombaiInfoCV.swift */,
 				0C341B062ABC181D00A7595F /* DombaiHotelsVC.swift */,
 				0C341B0C2ABC22FB00A7595F /* DombaiRent.swift */,
 			);
@@ -254,8 +223,8 @@
 			isa = PBXGroup;
 			children = (
 				0C4853972A67B6C000B245FC /* ArhyzPrice.swift */,
+				0C7B4EC32B9DD58D00042A83 /* ArhyzSciResot.swift */,
 				0C8FC40F2A68E9F0002FDD45 /* ArhyzTimeWork.swift */,
-				0C341B0E2ABC35AF00A7595F /* ArhyzInfoCV.swift */,
 				0C341B122ABC37F900A7595F /* ArhyzHotels.swift */,
 				0C1250272AC29499008D4BCF /* ArhyzRent.swift */,
 			);
@@ -274,72 +243,24 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		0C1AD7852A28D34B003108DF /* Information */ = {
+		0C2E0F262B13199A00B497A7 /* ElbrusRegion */ = {
 			isa = PBXGroup;
 			children = (
-				0C46D0B72AF4A305002A2A11 /* BigWood */,
-				0C41BA392A29C10200E89A71 /* RosaKhutor */,
-				0C41BA322A29BFAE00E89A71 /* Arhyz */,
-				0C41BA292A29BD4F00E89A71 /* Dombai */,
-				0C1AD7882A28D3A3003108DF /* Sheregesh */,
+				0C7B4EC72B9DD89900042A83 /* ElbrusSkiResort.swift */,
+				0C2E0F272B1319B100B497A7 /* ElbrusRegionPrice.swift */,
+				0C2E0F292B1319BC00B497A7 /* ElbrusRegionTimeWork.swift */,
+				0C2E0F2D2B1319D200B497A7 /* ElbrusRegionHotels.swift */,
+				0C2E0F2F2B1319DB00B497A7 /* ElbrusRegionRent.swift */,
 			);
-			path = Information;
-			sourceTree = "<group>";
-		};
-		0C1AD7882A28D3A3003108DF /* Sheregesh */ = {
-			isa = PBXGroup;
-			children = (
-				0C1AD7862A28D39C003108DF /* SheregeshInfoController.swift */,
-				0CD447562A6639D600021DD4 /* SheregeshPriceControllerTableController.swift */,
-				0C1AD78B2A28D41E003108DF /* SheregeshTimeWorkController.swift */,
-			);
-			path = Sheregesh;
-			sourceTree = "<group>";
-		};
-		0C41BA292A29BD4F00E89A71 /* Dombai */ = {
-			isa = PBXGroup;
-			children = (
-				0C41BA2A2A29BD7100E89A71 /* DombaiInfoController.swift */,
-				0C41BA2C2A29BD8A00E89A71 /* DombaiPriceController.swift */,
-				0C41BA2E2A29BDA400E89A71 /* DombaiTimeWorkController.swift */,
-			);
-			path = Dombai;
-			sourceTree = "<group>";
-		};
-		0C41BA322A29BFAE00E89A71 /* Arhyz */ = {
-			isa = PBXGroup;
-			children = (
-				0C41BA332A29BFE500E89A71 /* ArhyzInfoController.swift */,
-				0C41BA352A29C00000E89A71 /* ArhyzPriceController.swift */,
-				0C41BA372A29C01700E89A71 /* ArhyzTimeWorkController.swift */,
-			);
-			path = Arhyz;
-			sourceTree = "<group>";
-		};
-		0C41BA392A29C10200E89A71 /* RosaKhutor */ = {
-			isa = PBXGroup;
-			children = (
-				0C41BA3A2A29C12700E89A71 /* RosaKhutorInfoController.swift */,
-				0C41BA3C2A29C13F00E89A71 /* RosaKhutorPriceController.swift */,
-				0C41BA3E2A29C15C00E89A71 /* RosaKhutorTimeWorkController.swift */,
-			);
-			path = RosaKhutor;
-			sourceTree = "<group>";
-		};
-		0C46D0B72AF4A305002A2A11 /* BigWood */ = {
-			isa = PBXGroup;
-			children = (
-				0C46D0B82AF4A329002A2A11 /* BigWoodInfoViewController.swift */,
-			);
-			path = BigWood;
+			path = ElbrusRegion;
 			sourceTree = "<group>";
 		};
 		0C46D0BC2AF4B216002A2A11 /* BigWood */ = {
 			isa = PBXGroup;
 			children = (
+				0C7B4EC52B9DD75500042A83 /* BigWoodSkiResort.swift */,
 				0C46D0BF2AF4B23D002A2A11 /* BigWoodPrice.swift */,
 				0C46D0C12AF4C720002A2A11 /* BigWoodTimeWork.swift */,
-				0C46D0C52AF4CBAD002A2A11 /* BigWoodInfoCV.swift */,
 				0CA5FC132B01014700FD2B21 /* BigWoodHotels.swift */,
 				0CA5FC152B01015700FD2B21 /* BigWoodRent.swift */,
 			);
@@ -391,12 +312,14 @@
 				0C87395F29BDB61B0007CFC3 /* LoginUserRequest.swift */,
 				0CFDA63629BE223A00B7C6C4 /* User.swift */,
 				0C87396129BDDCF00007CFC3 /* Validator.swift */,
+				0C25D3A62B9770BF0067183A /* ModelSkiResort.swift */,
 				0C0BF46F2ACFF7FF00FBE18B /* AllHotels.swift */,
 				0C0BF4732ACFF9A200FBE18B /* AllRents.swift */,
 				0CA5FC0F2B0100D000FD2B21 /* AllTimeWork.swift */,
 				0CA5FC112B0100DC00FD2B21 /* AllPrice.swift */,
+				0CFF06902B9C8FA000D0DD42 /* InfoGroup.swift */,
+				0C7B4EBD2B9DB98300042A83 /* AllInfo.swift */,
 				0CD447532A6633A500021DD4 /* Ski */,
-				0CBC54B32A10BC2800B1B6A9 /* NetworkModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -414,7 +337,7 @@
 				0C0BF4712ACFF89600FBE18B /* RentViewController.swift */,
 				0CA5FC0B2B0100A100FD2B21 /* TimeTableViewController.swift */,
 				0CA5FC0D2B0100AF00FD2B21 /* PriceTableViewController.swift */,
-				0C030F392A08F50A00ED5DFD /* SkiResort */,
+				0C25D39B2B97095F0067183A /* SkiResotViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -445,6 +368,7 @@
 			isa = PBXGroup;
 			children = (
 				0CF2F41529E1429800C82D57 /* SkiResorts.swift */,
+				0C2E0F262B13199A00B497A7 /* ElbrusRegion */,
 				0C46D0BC2AF4B216002A2A11 /* BigWood */,
 				0C0CD1472AB43E350098696C /* Arhyz */,
 				0C0CD1462AB43E150098696C /* Dombai */,
@@ -457,6 +381,7 @@
 		0CF770BE2A19334800B8730D /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				0CBC54B32A10BC2800B1B6A9 /* NetworkModel.swift */,
 				0CBC54B72A10C2DB00B1B6A9 /* API.swift */,
 				0CBC54B52A10C15100B1B6A9 /* NetworkManager.swift */,
 				0CE882FA2AD685800087C3EA /* NetworkTest.swift */,
@@ -615,87 +540,78 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C41BA3D2A29C13F00E89A71 /* RosaKhutorPriceController.swift in Sources */,
 				0CA5FC0C2B0100A100FD2B21 /* TimeTableViewController.swift in Sources */,
-				0C41BA312A29BF8600E89A71 /* ArhyzTabBarController.swift in Sources */,
+				0CFF06932B9C8FF500D0DD42 /* SheregeshSkiResort.swift in Sources */,
+				0C2E0F282B1319B100B497A7 /* ElbrusRegionPrice.swift in Sources */,
 				0CA5FC122B0100DC00FD2B21 /* AllPrice.swift in Sources */,
 				0CA5FC0E2B0100AF00FD2B21 /* PriceTableViewController.swift in Sources */,
 				0CA5FC142B01014700FD2B21 /* BigWoodHotels.swift in Sources */,
 				0CBC54B62A10C15100B1B6A9 /* NetworkManager.swift in Sources */,
-				0C46D0B92AF4A329002A2A11 /* BigWoodInfoViewController.swift in Sources */,
 				0C899C792A03E8820038542E /* HomeViewController.swift in Sources */,
 				0CD0FABF29AB49F2000E76E8 /* LoginController.swift in Sources */,
-				0C41BA362A29C00000E89A71 /* ArhyzPriceController.swift in Sources */,
+				0CFF06912B9C8FA000D0DD42 /* InfoGroup.swift in Sources */,
 				0C0BF4742ACFF9A200FBE18B /* AllRents.swift in Sources */,
 				0C850E8C29AE446E00C6AB10 /* WebViewerController.swift in Sources */,
+				0C7B4EC62B9DD75500042A83 /* BigWoodSkiResort.swift in Sources */,
 				0C1DC26F29ABB802004F3FDC /* CustomButtons.swift in Sources */,
 				0C61E3362A6D093C0088372E /* TimeWorkTableViewCell.swift in Sources */,
 				0CBC54B82A10C2DB00B1B6A9 /* API.swift in Sources */,
 				0CD0FAC129AB4A20000E76E8 /* ForgotPasswordController.swift in Sources */,
-				0C46D0C62AF4CBAD002A2A11 /* BigWoodInfoCV.swift in Sources */,
+				0C2E0F2E2B1319D200B497A7 /* ElbrusRegionHotels.swift in Sources */,
+				0C25D3A72B9770BF0067183A /* ModelSkiResort.swift in Sources */,
+				0C7B4EC42B9DD58D00042A83 /* ArhyzSciResot.swift in Sources */,
 				0C48538E2A67945100B245FC /* RosaKhutorTimeWork.swift in Sources */,
 				0C753A002ACBB9F800651FA0 /* MapViewController.swift in Sources */,
 				0CA5FC102B0100D000FD2B21 /* AllTimeWork.swift in Sources */,
 				0CFDA63729BE223A00B7C6C4 /* User.swift in Sources */,
+				0C7B4EC82B9DD89900042A83 /* ElbrusSkiResort.swift in Sources */,
+				0C7B4EC02B9DB9E900042A83 /* RosaKhutorSkiResort.swift in Sources */,
 				0CE7A2F12AB209F500A9AA91 /* InfrastructureInformationCell.swift in Sources */,
 				0CA50CB429D2E6330094C74C /* CustomLabel.swift in Sources */,
-				0C41BA3B2A29C12700E89A71 /* RosaKhutorInfoController.swift in Sources */,
 				0C0BF46E2ACFEF9D00FBE18B /* HotelsViewController.swift in Sources */,
 				0C1250282AC29499008D4BCF /* ArhyzRent.swift in Sources */,
 				0CFC68902ACD39B800AA38EB /* RosaKhutorHotels.swift in Sources */,
 				0CABCB6B2A113B4400620FE4 /* extension.swift in Sources */,
-				0CE7A2F32AB20B2800A9AA91 /* SheregeshInfoCV.swift in Sources */,
-				0C1AD78C2A28D41E003108DF /* SheregeshTimeWorkController.swift in Sources */,
 				0CD447552A66342100021DD4 /* SheregeshPrice.swift in Sources */,
+				0C25D39C2B97095F0067183A /* SkiResotViewController.swift in Sources */,
 				0C87396029BDB61B0007CFC3 /* LoginUserRequest.swift in Sources */,
-				0CD447572A6639D600021DD4 /* SheregeshPriceControllerTableController.swift in Sources */,
 				0C0CD1492AB43E780098696C /* SheregeshHotels.swift in Sources */,
 				0C8FC4102A68E9F0002FDD45 /* ArhyzTimeWork.swift in Sources */,
 				0C7539FE2ACA790200651FA0 /* YBaseMapView.swift in Sources */,
-				0C341B0F2ABC35AF00A7595F /* ArhyzInfoCV.swift in Sources */,
-				0C41BA342A29BFE500E89A71 /* ArhyzInfoController.swift in Sources */,
+				0C2E0F2A2B1319BC00B497A7 /* ElbrusRegionTimeWork.swift in Sources */,
 				0CDBE0EF2AB97611009EAF9F /* SheregeshRent.swift in Sources */,
-				0C1AD7872A28D39C003108DF /* SheregeshInfoController.swift in Sources */,
 				0CD0FAB929AB36F5000E76E8 /* RegiserUserRequest.swift in Sources */,
+				0C7B4EC22B9DD34D00042A83 /* DombaiSciResort.swift in Sources */,
 				0C46D0C22AF4C720002A2A11 /* BigWoodTimeWork.swift in Sources */,
-				0C46D0B62AF4A2CC002A2A11 /* BigWoodTabBarController.swift in Sources */,
 				0C43E8D229FD3B6400C3980D /* ChoiceOfSkiResortCell.swift in Sources */,
 				0C584F8C29B4C89100A5A8EC /* AlertManager.swift in Sources */,
 				0C87396229BDDCF00007CFC3 /* Validator.swift in Sources */,
-				0C41BA2D2A29BD8A00E89A71 /* DombaiPriceController.swift in Sources */,
-				0C41BA3F2A29C15C00E89A71 /* RosaKhutorTimeWorkController.swift in Sources */,
 				0C341B0D2ABC22FB00A7595F /* DombaiRent.swift in Sources */,
 				0CD0FAC529AB4A4F000E76E8 /* RegisterController.swift in Sources */,
 				0C4853922A67B1E400B245FC /* DombaiPrice.swift in Sources */,
 				0CBC54B42A10BC2800B1B6A9 /* NetworkModel.swift in Sources */,
-				0CFC688A2ACD38D600AA38EB /* RosaKhutorInfoCV.swift in Sources */,
 				0C1DC26D29AB92DF004F3FDC /* CustomTextField.swift in Sources */,
 				0CD0FACC29AB4CAA000E76E8 /* AuthHeaderView.swift in Sources */,
-				0C41BA282A29BBF700E89A71 /* DombaiTabBarViewController.swift in Sources */,
 				0CD0FABB29AB3739000E76E8 /* AuthService.swift in Sources */,
 				0C8FC40C2A68E50E002FDD45 /* DombaiTimeWork.swift in Sources */,
-				0C41BA2B2A29BD7100E89A71 /* DombaiInfoController.swift in Sources */,
 				0CE882FB2AD685800087C3EA /* NetworkTest.swift in Sources */,
 				0CD0FAA229AB3667000E76E8 /* AppDelegate.swift in Sources */,
 				0CD4475B2A666B9500021DD4 /* RosaKhutorPrice.swift in Sources */,
-				0C41BA2F2A29BDA400E89A71 /* DombaiTimeWorkController.swift in Sources */,
 				0C341B072ABC181D00A7595F /* DombaiHotelsVC.swift in Sources */,
 				0CD4475D2A66773300021DD4 /* SheregeshTimeWork.swift in Sources */,
 				0C341B132ABC37F900A7595F /* ArhyzHotels.swift in Sources */,
 				0C4853982A67B6C000B245FC /* ArhyzPrice.swift in Sources */,
 				0C0CD14C2AB45A220098696C /* HotelsCollectionViewCell.swift in Sources */,
 				0C8FC4142A6D069C002FDD45 /* PriceTableViewCell.swift in Sources */,
-				0C1AD7842A28D2D2003108DF /* SheregeshTabBarController.swift in Sources */,
-				0C41BA382A29C01700E89A71 /* ArhyzTimeWorkController.swift in Sources */,
 				0CFC68922ACD39FA00AA38EB /* RosaKhutorRent.swift in Sources */,
+				0C7B4EBE2B9DB98300042A83 /* AllInfo.swift in Sources */,
 				0C23022E2AC3CE5800074B48 /* SettingsViewController.swift in Sources */,
 				0CA5FC162B01015700FD2B21 /* BigWoodRent.swift in Sources */,
 				0C0BF4722ACFF89600FBE18B /* RentViewController.swift in Sources */,
 				0CD0FAA429AB3667000E76E8 /* SceneDelegate.swift in Sources */,
 				0C46D0C02AF4B23D002A2A11 /* BigWoodPrice.swift in Sources */,
-				0C41BA412A29C18000E89A71 /* RosaKhutorTabBarController.swift in Sources */,
-				0C341B092ABC203D00A7595F /* DombaiInfoCV.swift in Sources */,
 				0C0BF4702ACFF7FF00FBE18B /* AllHotels.swift in Sources */,
+				0C2E0F302B1319DB00B497A7 /* ElbrusRegionRent.swift in Sources */,
 				0CF2F41629E1429800C82D57 /* SkiResorts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

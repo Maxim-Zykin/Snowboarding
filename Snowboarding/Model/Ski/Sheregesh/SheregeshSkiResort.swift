@@ -12,7 +12,7 @@ let sheregeshInfo = ModelSkiResort(
     allTracks: "16",
     heightDifference: "630",
     totalLengthOfTracks: "35",
-    apiWeather: API.apiWeatherElbrusRegion,
+    apiWeather: API.apiWeatherSheregesh,
     imageSkiR: "sheregeshLogo",
     descroption: "Шерегеш находится на юге Кемеровской области, в Горной Шории — красивой и дикой гористой местности на стыке Саян, Алтая и Кузнецкого Алатау.",
     timeWorkModel: allTimeWorkSheregesh,

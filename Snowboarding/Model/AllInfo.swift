@@ -6,3 +6,9 @@
 //
 
 import Foundation
+import UIKit
+
+public struct AllInfo {
+    let name: String
+    let image: UIImage
+}

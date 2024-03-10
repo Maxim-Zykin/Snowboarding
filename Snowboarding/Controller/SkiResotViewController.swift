@@ -91,9 +91,9 @@ class SkiResotViewController: UIViewController {
     
     private let infoModel = InfoGroup.skiInfi()
     
-    private lazy var nameSkiResotLable = CustomLabel(text: "\(nameSkiResot)", size: 32, color: .white)
+    private lazy var nameSkiResotLable = CustomLabel(text: "\(nameSkiResot)", size: 32, color: .white, textFont: .boldSystemFont(ofSize: 32))
 
-    private let weather = CustomLabel(text: "ПОГОДА", color: .black, textFont: .systemFont(ofSize: 16, weight: .bold))
+    private let weather = CustomLabel(text: "ПОГОДА", size: 22, color: .black)
     
     private lazy var temps = CustomLabel(text: "", size: 40, color: .black)
     
@@ -150,12 +150,12 @@ class SkiResotViewController: UIViewController {
     
     // MARK: - Selectors
     @objc private func didTapPrice() {
-        let vc = TimeTableViewController(timeWorkModel: timeWorkModel)
+        let vc = PriceTableViewController(costModel: costModel)
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc private func didTapTime() {
-        let vc = PriceTableViewController(costModel: costModel)
+        let vc = TimeTableViewController(timeWorkModel: timeWorkModel)
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -283,7 +283,7 @@ class SkiResotViewController: UIViewController {
             imageSki.widthAnchor.constraint(equalTo: self.contentView.widthAnchor),
             
             nameSkiResotLable.centerXAnchor.constraint(equalTo: self.contentView.centerXAnchor),
-            nameSkiResotLable.topAnchor.constraint(equalTo: self.contentView.topAnchor, constant: 120),
+            nameSkiResotLable.topAnchor.constraint(equalTo: self.contentView.topAnchor, constant: 70),
             
             contentViewGeneral.topAnchor.constraint(equalTo: self.imageSki.bottomAnchor, constant: -50),
             contentViewGeneral.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor),
@@ -306,7 +306,7 @@ class SkiResotViewController: UIViewController {
             
             temps.topAnchor.constraint(equalTo: self.weather.bottomAnchor, constant: 15),
             temps.centerYAnchor.constraint(equalTo: self.contentViewWeatherInfo.centerYAnchor),
-            temps.leadingAnchor.constraint(equalTo: self.iconW.trailingAnchor, constant: 10),
+            temps.trailingAnchor.constraint(equalTo: self.contentViewWeatherInfo.trailingAnchor, constant: -15),
             
             descriptionWeather.topAnchor.constraint(equalTo: self.iconW.bottomAnchor, constant: 10),
             descriptionWeather.leadingAnchor.constraint(equalTo: self.contentViewWeatherInfo.leadingAnchor, constant: 20),

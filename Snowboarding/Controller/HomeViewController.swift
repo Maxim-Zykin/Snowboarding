@@ -181,25 +181,35 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         let allSki = allSkiResort[indexPath.row]
         
         switch allSki {
+            
         case .sheregesh:
             let model = sheregeshInfo
             let vc = SkiResotViewController(nameSkiResot: model.nameSkiResot, allTracks: model.allTracks, heightDifference: model.heightDifference, totalLengthOfTracks: model.totalLengthOfTracks, apiWeather: model.apiWeather, imageSkiR: model.imageSkiR, descroption: model.descroption, timeWorkModel: model.timeWorkModel, costModel: model.costModel, hotelModel: model.hotelModel, rentsModel: model.rentsModel, latitudeMap: model.latitudeMap, longitudeMap: model.longitudeMap)
-            //let vc = SheregeshTabBarController()
             self.navigationController?.pushViewController(vc, animated: true)
+            
         case .rosaKhutor:
-            let vc = RosaKhutorTabBarController()
+            let model = rosaKhutorInfo
+            let vc = SkiResotViewController(nameSkiResot: model.nameSkiResot, allTracks: model.allTracks, heightDifference: model.heightDifference, totalLengthOfTracks: model.totalLengthOfTracks, apiWeather: model.apiWeather, imageSkiR: model.imageSkiR, descroption: model.descroption, timeWorkModel: model.timeWorkModel, costModel: model.costModel, hotelModel: model.hotelModel, rentsModel: model.rentsModel, latitudeMap: model.latitudeMap, longitudeMap: model.longitudeMap)
             self.navigationController?.pushViewController(vc, animated: true)
+            
         case .arhyz:
-            let vc = ArhyzTabBarController()
+            let model = arhyzInfo
+            let vc = SkiResotViewController(nameSkiResot: model.nameSkiResot, allTracks: model.allTracks, heightDifference: model.heightDifference, totalLengthOfTracks: model.totalLengthOfTracks, apiWeather: model.apiWeather, imageSkiR: model.imageSkiR, descroption: model.descroption, timeWorkModel: model.timeWorkModel, costModel: model.costModel, hotelModel: model.hotelModel, rentsModel: model.rentsModel, latitudeMap: model.latitudeMap, longitudeMap: model.longitudeMap)
             self.navigationController?.pushViewController(vc, animated: true)
+            
         case .dombai:
-            let vc = DombaiTabBarViewController()
+            let model = dombaiInfo
+            let vc = SkiResotViewController(nameSkiResot: model.nameSkiResot, allTracks: model.allTracks, heightDifference: model.heightDifference, totalLengthOfTracks: model.totalLengthOfTracks, apiWeather: model.apiWeather, imageSkiR: model.imageSkiR, descroption: model.descroption, timeWorkModel: model.timeWorkModel, costModel: model.costModel, hotelModel: model.hotelModel, rentsModel: model.rentsModel, latitudeMap: model.latitudeMap, longitudeMap: model.longitudeMap)
             self.navigationController?.pushViewController(vc, animated: true)
+            
         case .bigWood:
-            let vc = BigWoodTabBarController()
+            let model = bigWoodInfo
+            let vc = SkiResotViewController(nameSkiResot: model.nameSkiResot, allTracks: model.allTracks, heightDifference: model.heightDifference, totalLengthOfTracks: model.totalLengthOfTracks, apiWeather: model.apiWeather, imageSkiR: model.imageSkiR, descroption: model.descroption, timeWorkModel: model.timeWorkModel, costModel: model.costModel, hotelModel: model.hotelModel, rentsModel: model.rentsModel, latitudeMap: model.latitudeMap, longitudeMap: model.longitudeMap)
             self.navigationController?.pushViewController(vc, animated: true)
+            
         case .elbrus:
-            let vc = ElbrusRegionTabBarController()
+            let model = elbrushInfo
+            let vc = SkiResotViewController(nameSkiResot: model.nameSkiResot, allTracks: model.allTracks, heightDifference: model.heightDifference, totalLengthOfTracks: model.totalLengthOfTracks, apiWeather: model.apiWeather, imageSkiR: model.imageSkiR, descroption: model.descroption, timeWorkModel: model.timeWorkModel, costModel: model.costModel, hotelModel: model.hotelModel, rentsModel: model.rentsModel, latitudeMap: model.latitudeMap, longitudeMap: model.longitudeMap)
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
