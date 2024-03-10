@@ -21,7 +21,7 @@ EN: Application with information about ski resorts. General information, prices 
 
 ![Image 5](https://github.com/Maxim-Zykin/Snowboarding/blob/main/Snowboarding_1_2_1.png)
 
-![Image 7](https://github.com/Maxim-Zykin/Snowboarding/blob/main/Snowboarding_6_2_1.png)
+![Image 7](https://github.com/Maxim-Zykin/Snowboarding/blob/main/Snowboarding_1_3_1.png)
 
 ![Image 8](https://github.com/Maxim-Zykin/Snowboarding/blob/main/Snowboarding_1_5.png)
 
