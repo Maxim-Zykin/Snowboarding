@@ -89,7 +89,6 @@ class HomeViewController: UIViewController {
         let ratio = footer.intrinsicContentSize.height / footer.intrinsicContentSize.width
         
         self.view.backgroundColor = .white
-        //self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Выйти", style: .plain, target: self, action: #selector(didTapLogout))
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Настройки", style: .plain, target: self, action: #selector(didTapSettings))
         
         self.navigationItem.backButtonTitle = "Назад"
@@ -131,7 +130,6 @@ class HomeViewController: UIViewController {
         vc.userNameLabel.text = label.text
         vc.userEmail.text = userEmail
         self.navigationController?.pushViewController(vc, animated: true)
-        //self.navigationController?.present(vc, animated: true)
     }
     
     @objc private func didTapLogout() {

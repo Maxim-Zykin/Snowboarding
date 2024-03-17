@@ -16,8 +16,8 @@ class ForgotPasswordController: UIViewController, UITextFieldDelegate {
     private let emailField = CustomTextField(filedTypr: .email)
     
     private let resetPasswordButton = CustomButtons(title: "Восстановить", hasBakground: true, fontSize: .big)
-    // MARK: - LifeCycle
     
+    // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -64,7 +64,6 @@ class ForgotPasswordController: UIViewController, UITextFieldDelegate {
     }
     
     // MARK: - Selectors
-    
     @objc private func didTapForgotPassword(){
         let email = emailField.text ?? ""
         
