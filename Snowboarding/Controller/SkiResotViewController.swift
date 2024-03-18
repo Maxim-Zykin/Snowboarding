@@ -60,6 +60,11 @@ class SkiResotViewController: UIViewController {
         return view
     }()
     
+    private lazy var activityIndicator: UIActivityIndicatorView = {
+        let view = UIActivityIndicatorView(frame: CGRect(x: 220, y: 220, width: 140, height: 140))
+        return view
+    }()
+    
     lazy var collection = UICollectionView(
         frame: .zero,
         collectionViewLayout: makeLayout()
@@ -140,6 +145,7 @@ class SkiResotViewController: UIViewController {
         tempFeach()
         setupButtons()
         setupCollectionView()
+        activityIndicator.startAnimating()
     }
     
     // MARK: - Buttons
@@ -173,6 +179,7 @@ class SkiResotViewController: UIViewController {
             }
             
             DispatchQueue.main.async {
+                self.activityIndicator.stopAnimating()
                 self.temps.text = "\(self.temp)°"
                 print(self.temp)
                 print(icon)
@@ -241,6 +248,7 @@ class SkiResotViewController: UIViewController {
         self.contentView.addSubview(imageSki)
         self.contentView.addSubview(contentViewGeneral)
         self.contentView.addSubview(contentViewWeatherInfo)
+        self.contentView.addSubview(activityIndicator)
         self.contentView.addSubview(contentViewSkiInfo)
         self.view.addSubview(nameSkiResotLable)
         self.view.addSubview(weather)
@@ -259,6 +267,7 @@ class SkiResotViewController: UIViewController {
         self.imageSki.translatesAutoresizingMaskIntoConstraints = false
         self.contentViewGeneral.translatesAutoresizingMaskIntoConstraints = false
         self.contentViewWeatherInfo.translatesAutoresizingMaskIntoConstraints = false
+        self.activityIndicator.translatesAutoresizingMaskIntoConstraints = false
         self.contentViewSkiInfo.translatesAutoresizingMaskIntoConstraints = false
         self.nameSkiResotLable.translatesAutoresizingMaskIntoConstraints = false
         self.weather.translatesAutoresizingMaskIntoConstraints = false
@@ -294,6 +303,9 @@ class SkiResotViewController: UIViewController {
             contentViewWeatherInfo.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 22),
             contentViewWeatherInfo.heightAnchor.constraint(equalToConstant: 165),
             contentViewWeatherInfo.widthAnchor.constraint(equalToConstant: 165),
+            
+            activityIndicator.centerXAnchor.constraint(equalTo: self.contentViewWeatherInfo.centerXAnchor),
+            activityIndicator.centerYAnchor.constraint(equalTo: self.contentViewWeatherInfo.centerYAnchor),
             
             weather.topAnchor.constraint(equalTo: self.contentViewWeatherInfo.topAnchor, constant: 10),
             weather.leadingAnchor.constraint(equalTo: self.contentViewWeatherInfo.leadingAnchor, constant: 20),
