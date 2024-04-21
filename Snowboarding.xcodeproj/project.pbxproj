@@ -13,6 +13,8 @@
 		0C0BF4742ACFF9A200FBE18B /* AllRents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0BF4732ACFF9A200FBE18B /* AllRents.swift */; };
 		0C0CD1492AB43E780098696C /* SheregeshHotels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0CD1482AB43E780098696C /* SheregeshHotels.swift */; };
 		0C0CD14C2AB45A220098696C /* HotelsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0CD14B2AB45A220098696C /* HotelsCollectionViewCell.swift */; };
+		0C0F18462B9DE4140009E020 /* ArhyzSkiResort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0F18452B9DE4140009E020 /* ArhyzSkiResort.swift */; };
+		0C0F18482B9DE4360009E020 /* DombaiSkiResort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0F18472B9DE4360009E020 /* DombaiSkiResort.swift */; };
 		0C1250282AC29499008D4BCF /* ArhyzRent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1250272AC29499008D4BCF /* ArhyzRent.swift */; };
 		0C1DC26D29AB92DF004F3FDC /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1DC26C29AB92DF004F3FDC /* CustomTextField.swift */; };
 		0C1DC26F29ABB802004F3FDC /* CustomButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1DC26E29ABB802004F3FDC /* CustomButtons.swift */; };
@@ -38,8 +40,6 @@
 		0C753A002ACBB9F800651FA0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7539FF2ACBB9F800651FA0 /* MapViewController.swift */; };
 		0C7B4EBE2B9DB98300042A83 /* AllInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B4EBD2B9DB98300042A83 /* AllInfo.swift */; };
 		0C7B4EC02B9DB9E900042A83 /* RosaKhutorSkiResort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B4EBF2B9DB9E900042A83 /* RosaKhutorSkiResort.swift */; };
-		0C7B4EC22B9DD34D00042A83 /* DombaiSciResort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B4EC12B9DD34D00042A83 /* DombaiSciResort.swift */; };
-		0C7B4EC42B9DD58D00042A83 /* ArhyzSciResot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B4EC32B9DD58D00042A83 /* ArhyzSciResot.swift */; };
 		0C7B4EC62B9DD75500042A83 /* BigWoodSkiResort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B4EC52B9DD75500042A83 /* BigWoodSkiResort.swift */; };
 		0C7B4EC82B9DD89900042A83 /* ElbrusSkiResort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B4EC72B9DD89900042A83 /* ElbrusSkiResort.swift */; };
 		0C850E8C29AE446E00C6AB10 /* WebViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C850E8B29AE446E00C6AB10 /* WebViewerController.swift */; };
@@ -94,6 +94,8 @@
 		0C0BF4732ACFF9A200FBE18B /* AllRents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllRents.swift; sourceTree = "<group>"; };
 		0C0CD1482AB43E780098696C /* SheregeshHotels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheregeshHotels.swift; sourceTree = "<group>"; };
 		0C0CD14B2AB45A220098696C /* HotelsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelsCollectionViewCell.swift; sourceTree = "<group>"; };
+		0C0F18452B9DE4140009E020 /* ArhyzSkiResort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArhyzSkiResort.swift; sourceTree = "<group>"; };
+		0C0F18472B9DE4360009E020 /* DombaiSkiResort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DombaiSkiResort.swift; sourceTree = "<group>"; };
 		0C1250272AC29499008D4BCF /* ArhyzRent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArhyzRent.swift; sourceTree = "<group>"; };
 		0C1DC26C29AB92DF004F3FDC /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		0C1DC26E29ABB802004F3FDC /* CustomButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtons.swift; sourceTree = "<group>"; };
@@ -120,8 +122,6 @@
 		0C7539FF2ACBB9F800651FA0 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		0C7B4EBD2B9DB98300042A83 /* AllInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllInfo.swift; sourceTree = "<group>"; };
 		0C7B4EBF2B9DB9E900042A83 /* RosaKhutorSkiResort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosaKhutorSkiResort.swift; sourceTree = "<group>"; };
-		0C7B4EC12B9DD34D00042A83 /* DombaiSciResort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DombaiSciResort.swift; sourceTree = "<group>"; };
-		0C7B4EC32B9DD58D00042A83 /* ArhyzSciResot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArhyzSciResot.swift; sourceTree = "<group>"; };
 		0C7B4EC52B9DD75500042A83 /* BigWoodSkiResort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigWoodSkiResort.swift; sourceTree = "<group>"; };
 		0C7B4EC72B9DD89900042A83 /* ElbrusSkiResort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElbrusSkiResort.swift; sourceTree = "<group>"; };
 		0C850E8B29AE446E00C6AB10 /* WebViewerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewerController.swift; sourceTree = "<group>"; };
@@ -210,8 +210,8 @@
 		0C0CD1462AB43E150098696C /* Dombai */ = {
 			isa = PBXGroup;
 			children = (
-				0C7B4EC12B9DD34D00042A83 /* DombaiSciResort.swift */,
 				0C4853912A67B1E400B245FC /* DombaiPrice.swift */,
+				0C0F18472B9DE4360009E020 /* DombaiSkiResort.swift */,
 				0C8FC40B2A68E50E002FDD45 /* DombaiTimeWork.swift */,
 				0C341B062ABC181D00A7595F /* DombaiHotelsVC.swift */,
 				0C341B0C2ABC22FB00A7595F /* DombaiRent.swift */,
@@ -223,7 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				0C4853972A67B6C000B245FC /* ArhyzPrice.swift */,
-				0C7B4EC32B9DD58D00042A83 /* ArhyzSciResot.swift */,
+				0C0F18452B9DE4140009E020 /* ArhyzSkiResort.swift */,
 				0C8FC40F2A68E9F0002FDD45 /* ArhyzTimeWork.swift */,
 				0C341B122ABC37F900A7595F /* ArhyzHotels.swift */,
 				0C1250272AC29499008D4BCF /* ArhyzRent.swift */,
@@ -559,7 +559,6 @@
 				0CD0FAC129AB4A20000E76E8 /* ForgotPasswordController.swift in Sources */,
 				0C2E0F2E2B1319D200B497A7 /* ElbrusRegionHotels.swift in Sources */,
 				0C25D3A72B9770BF0067183A /* ModelSkiResort.swift in Sources */,
-				0C7B4EC42B9DD58D00042A83 /* ArhyzSciResot.swift in Sources */,
 				0C48538E2A67945100B245FC /* RosaKhutorTimeWork.swift in Sources */,
 				0C753A002ACBB9F800651FA0 /* MapViewController.swift in Sources */,
 				0CA5FC102B0100D000FD2B21 /* AllTimeWork.swift in Sources */,
@@ -581,7 +580,6 @@
 				0C2E0F2A2B1319BC00B497A7 /* ElbrusRegionTimeWork.swift in Sources */,
 				0CDBE0EF2AB97611009EAF9F /* SheregeshRent.swift in Sources */,
 				0CD0FAB929AB36F5000E76E8 /* RegiserUserRequest.swift in Sources */,
-				0C7B4EC22B9DD34D00042A83 /* DombaiSciResort.swift in Sources */,
 				0C46D0C22AF4C720002A2A11 /* BigWoodTimeWork.swift in Sources */,
 				0C43E8D229FD3B6400C3980D /* ChoiceOfSkiResortCell.swift in Sources */,
 				0C584F8C29B4C89100A5A8EC /* AlertManager.swift in Sources */,
@@ -601,6 +599,7 @@
 				0CD4475D2A66773300021DD4 /* SheregeshTimeWork.swift in Sources */,
 				0C341B132ABC37F900A7595F /* ArhyzHotels.swift in Sources */,
 				0C4853982A67B6C000B245FC /* ArhyzPrice.swift in Sources */,
+				0C0F18482B9DE4360009E020 /* DombaiSkiResort.swift in Sources */,
 				0C0CD14C2AB45A220098696C /* HotelsCollectionViewCell.swift in Sources */,
 				0C8FC4142A6D069C002FDD45 /* PriceTableViewCell.swift in Sources */,
 				0CFC68922ACD39FA00AA38EB /* RosaKhutorRent.swift in Sources */,
@@ -608,6 +607,7 @@
 				0C23022E2AC3CE5800074B48 /* SettingsViewController.swift in Sources */,
 				0CA5FC162B01015700FD2B21 /* BigWoodRent.swift in Sources */,
 				0C0BF4722ACFF89600FBE18B /* RentViewController.swift in Sources */,
+				0C0F18462B9DE4140009E020 /* ArhyzSkiResort.swift in Sources */,
 				0CD0FAA429AB3667000E76E8 /* SceneDelegate.swift in Sources */,
 				0C46D0C02AF4B23D002A2A11 /* BigWoodPrice.swift in Sources */,
 				0C0BF4702ACFF7FF00FBE18B /* AllHotels.swift in Sources */,

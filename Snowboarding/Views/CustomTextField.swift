@@ -23,7 +23,6 @@ class CustomTextField: UITextField, UITextFieldDelegate {
         
         self.backgroundColor = .lightGray
         self.layer.cornerRadius = 10
-        
         self.returnKeyType = .done
         self.autocorrectionType = .no
         self.autocapitalizationType = .none

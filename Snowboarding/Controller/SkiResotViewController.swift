@@ -87,12 +87,12 @@ class SkiResotViewController: UIViewController {
     var apiWeather: String = ""
     var imageSkiR: String = ""
     var descroption: String = ""
-    var timeWorkModel: [AllTimeWork]
-    var costModel: [AllPrice]
-    var hotelModel: [AllHotels]
-    var rentsModel: [AllRents]
-    var latitudeMap: Double
-    var longitudeMap: Double
+    var timeWorkModel: [AllTimeWork] = []
+    var costModel: [AllPrice] = []
+    var hotelModel: [AllHotels] = []
+    var rentsModel: [AllRents] = []
+    var latitudeMap: Double = 0.0
+    var longitudeMap: Double = 0.0
     
     private let infoModel = InfoGroup.skiInfi()
     
@@ -117,26 +117,27 @@ class SkiResotViewController: UIViewController {
     private lazy var descroptionLable = CustomLabel(text: "\(descroption)", textAlignment: .left, size: 15, color: .black, numberOfLines: 0)
     
     // MARK: - Init
-    init(nameSkiResot: String, allTracks: String, heightDifference: String, totalLengthOfTracks: String, apiWeather: String, imageSkiR: String, descroption: String, timeWorkModel: [AllTimeWork], costModel: [AllPrice], hotelModel: [AllHotels], rentsModel: [AllRents], latitudeMap: Double, longitudeMap: Double) {
-        self.nameSkiResot = nameSkiResot
-        self.allTracks = allTracks
-        self.heightDifference = heightDifference
-        self.totalLengthOfTracks = totalLengthOfTracks
-        self.apiWeather = apiWeather
-        self.imageSkiR = imageSkiR
-        self.descroption = descroption
-        self.timeWorkModel = timeWorkModel
-        self.costModel = costModel
-        self.hotelModel = hotelModel
-        self.rentsModel = rentsModel
-        self.latitudeMap = latitudeMap
-        self.longitudeMap = longitudeMap
+    init(ski: ModelSkiResort?) {
+        self.nameSkiResot = ski?.nameSkiResot ?? ""
+        self.allTracks = ski?.allTracks ?? ""
+        self.heightDifference = ski?.heightDifference ?? ""
+        self.totalLengthOfTracks = ski?.totalLengthOfTracks ?? ""
+        self.apiWeather = ski?.apiWeather ?? ""
+        self.imageSkiR = ski?.imageSkiR ?? ""
+        self.descroption = ski?.descroption ?? ""
+        self.timeWorkModel = ski?.timeWorkModel ?? []
+        self.costModel = ski?.costModel ?? []
+        self.hotelModel = ski?.hotelModel ?? []
+        self.rentsModel = ski?.rentsModel ?? []
+        self.latitudeMap = ski?.latitudeMap ?? 0.0
+        self.longitudeMap = ski?.longitudeMap ?? 0.0
         super.init(nibName: nil, bundle: nil)
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
     
     // MARK: - LifeCycle
     override func viewDidLoad() {
@@ -147,7 +148,7 @@ class SkiResotViewController: UIViewController {
         setupCollectionView()
         activityIndicator.startAnimating()
     }
-    
+
     // MARK: - Buttons
     func setupButtons() {
         self.priceButton.addTarget(self, action: #selector(didTapPrice), for: .touchUpInside)
