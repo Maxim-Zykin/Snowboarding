@@ -185,7 +185,6 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             self.navigationController?.pushViewController(vc, animated: true)
             
         case .rosaKhutor:
-            
             let model = rosaKhutorInfo
             let vc = SkiResotViewController(ski: model)
             self.navigationController?.pushViewController(vc, animated: true)

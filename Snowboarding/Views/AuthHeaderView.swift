@@ -14,7 +14,7 @@ class AuthHeaderView: UIView {
     private let logoImageView: UIImageView = {
         let iv = UIImageView()
         iv.contentMode = .scaleAspectFit
-        iv.image = UIImage (named: "Snowboarding")
+        iv.image = UIImage (named: "snowLS")
         iv.tintColor = .white
         return iv
     }()

@@ -46,7 +46,7 @@ class ForgotPasswordController: UIViewController, UITextFieldDelegate {
         self.resetPasswordButton.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            headerView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 30),
+            headerView.topAnchor.constraint(equalTo: self.view.layoutMarginsGuide.topAnchor),
             headerView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
             headerView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
             headerView.heightAnchor.constraint(equalToConstant: 230),
