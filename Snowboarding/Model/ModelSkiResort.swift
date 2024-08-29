@@ -22,3 +22,16 @@ struct ModelSkiResort {
     let latitudeMap: Double
     let longitudeMap: Double
 }
+
+
+struct ModelSkiResortFB: Codable {
+    let nameSkiResot: String
+    let allTracks: String
+    let heightDifference: String
+    let totalLengthOfTracks: String
+    let apiWeather: String
+    let imageSkiR: String
+    let descroption: String
+    let latitudeMap: Double
+    let longitudeMap: Double
+}

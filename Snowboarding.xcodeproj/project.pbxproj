@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C03355D2C7B751500CCE0CB /* SkiResortTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C03355C2C7B751500CCE0CB /* SkiResortTest.swift */; };
+		0C03355F2C7B8C0600CCE0CB /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C03355E2C7B8C0600CCE0CB /* ImageManager.swift */; };
 		0C0BF46E2ACFEF9D00FBE18B /* HotelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0BF46D2ACFEF9D00FBE18B /* HotelsViewController.swift */; };
 		0C0BF4702ACFF7FF00FBE18B /* AllHotels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0BF46F2ACFF7FF00FBE18B /* AllHotels.swift */; };
 		0C0BF4722ACFF89600FBE18B /* RentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0BF4712ACFF89600FBE18B /* RentViewController.swift */; };
@@ -83,11 +85,12 @@
 		0CFDA63729BE223A00B7C6C4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFDA63629BE223A00B7C6C4 /* User.swift */; };
 		0CFF06912B9C8FA000D0DD42 /* InfoGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFF06902B9C8FA000D0DD42 /* InfoGroup.swift */; };
 		0CFF06932B9C8FF500D0DD42 /* SheregeshSkiResort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFF06922B9C8FF500D0DD42 /* SheregeshSkiResort.swift */; };
-		45E00DDD028B1DDCECD7B711 /* Pods_Snowboarding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE27C195ACA12952C53CB13 /* Pods_Snowboarding.framework */; };
+		FE3616039948CE99AC241D1C /* Pods_Snowboarding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF20CBD2D6A77472EC57EF91 /* Pods_Snowboarding.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		03384C66F0BC2A6CE49558D7 /* Pods-Snowboarding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snowboarding.release.xcconfig"; path = "Target Support Files/Pods-Snowboarding/Pods-Snowboarding.release.xcconfig"; sourceTree = "<group>"; };
+		0C03355C2C7B751500CCE0CB /* SkiResortTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkiResortTest.swift; sourceTree = "<group>"; };
+		0C03355E2C7B8C0600CCE0CB /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 		0C0BF46D2ACFEF9D00FBE18B /* HotelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelsViewController.swift; sourceTree = "<group>"; };
 		0C0BF46F2ACFF7FF00FBE18B /* AllHotels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllHotels.swift; sourceTree = "<group>"; };
 		0C0BF4712ACFF89600FBE18B /* RentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentViewController.swift; sourceTree = "<group>"; };
@@ -167,8 +170,9 @@
 		0CFDA63629BE223A00B7C6C4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0CFF06902B9C8FA000D0DD42 /* InfoGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoGroup.swift; sourceTree = "<group>"; };
 		0CFF06922B9C8FF500D0DD42 /* SheregeshSkiResort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheregeshSkiResort.swift; sourceTree = "<group>"; };
-		EA4EA49892A8661F70F1C27B /* Pods-Snowboarding.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snowboarding.debug.xcconfig"; path = "Target Support Files/Pods-Snowboarding/Pods-Snowboarding.debug.xcconfig"; sourceTree = "<group>"; };
-		EDE27C195ACA12952C53CB13 /* Pods_Snowboarding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snowboarding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EB7A360EB34C3B62C385F56 /* Pods-Snowboarding.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snowboarding.debug.xcconfig"; path = "Target Support Files/Pods-Snowboarding/Pods-Snowboarding.debug.xcconfig"; sourceTree = "<group>"; };
+		CF20CBD2D6A77472EC57EF91 /* Pods_Snowboarding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snowboarding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4DC1BA342D0A2FF7904D8C4 /* Pods-Snowboarding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snowboarding.release.xcconfig"; path = "Target Support Files/Pods-Snowboarding/Pods-Snowboarding.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,7 +180,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45E00DDD028B1DDCECD7B711 /* Pods_Snowboarding.framework in Frameworks */,
+				FE3616039948CE99AC241D1C /* Pods_Snowboarding.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +277,7 @@
 				0CD0FAA029AB3667000E76E8 /* Snowboarding */,
 				0CD0FA9F29AB3667000E76E8 /* Products */,
 				4F05A5A18E032C46E36A8DA1 /* Pods */,
-				EE27B593E9138EDCEEC7D024 /* Frameworks */,
+				59597EA272560267CB7D90B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -338,6 +342,7 @@
 				0CA5FC0B2B0100A100FD2B21 /* TimeTableViewController.swift */,
 				0CA5FC0D2B0100AF00FD2B21 /* PriceTableViewController.swift */,
 				0C25D39B2B97095F0067183A /* SkiResotViewController.swift */,
+				0C03355C2C7B751500CCE0CB /* SkiResortTest.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -385,6 +390,7 @@
 				0CBC54B72A10C2DB00B1B6A9 /* API.swift */,
 				0CBC54B52A10C15100B1B6A9 /* NetworkManager.swift */,
 				0CE882FA2AD685800087C3EA /* NetworkTest.swift */,
+				0C03355E2C7B8C0600CCE0CB /* ImageManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -392,16 +398,16 @@
 		4F05A5A18E032C46E36A8DA1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EA4EA49892A8661F70F1C27B /* Pods-Snowboarding.debug.xcconfig */,
-				03384C66F0BC2A6CE49558D7 /* Pods-Snowboarding.release.xcconfig */,
+				4EB7A360EB34C3B62C385F56 /* Pods-Snowboarding.debug.xcconfig */,
+				E4DC1BA342D0A2FF7904D8C4 /* Pods-Snowboarding.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		EE27B593E9138EDCEEC7D024 /* Frameworks */ = {
+		59597EA272560267CB7D90B5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EDE27C195ACA12952C53CB13 /* Pods_Snowboarding.framework */,
+				CF20CBD2D6A77472EC57EF91 /* Pods_Snowboarding.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -413,12 +419,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0CD0FAB229AB3668000E76E8 /* Build configuration list for PBXNativeTarget "Snowboarding" */;
 			buildPhases = (
-				06DECEC391CB213A12B842EC /* [CP] Check Pods Manifest.lock */,
+				BD00D12B65A83CB47435439B /* [CP] Check Pods Manifest.lock */,
 				0CD0FA9A29AB3667000E76E8 /* Sources */,
 				0CD0FA9B29AB3667000E76E8 /* Frameworks */,
 				0CD0FA9C29AB3667000E76E8 /* Resources */,
-				034926FB1869450B77C361FE /* [CP] Embed Pods Frameworks */,
-				321F7D331C81E097FC4B8C0A /* [CP] Copy Pods Resources */,
+				2B4C71AA66A157729225898C /* [CP] Embed Pods Frameworks */,
+				E8F474FEC31B4C63D91A30FF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -477,7 +483,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		034926FB1869450B77C361FE /* [CP] Embed Pods Frameworks */ = {
+		2B4C71AA66A157729225898C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -494,7 +500,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Snowboarding/Pods-Snowboarding-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		06DECEC391CB213A12B842EC /* [CP] Check Pods Manifest.lock */ = {
+		BD00D12B65A83CB47435439B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -516,7 +522,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		321F7D331C81E097FC4B8C0A /* [CP] Copy Pods Resources */ = {
+		E8F474FEC31B4C63D91A30FF /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -598,10 +604,12 @@
 				0C341B072ABC181D00A7595F /* DombaiHotelsVC.swift in Sources */,
 				0CD4475D2A66773300021DD4 /* SheregeshTimeWork.swift in Sources */,
 				0C341B132ABC37F900A7595F /* ArhyzHotels.swift in Sources */,
+				0C03355F2C7B8C0600CCE0CB /* ImageManager.swift in Sources */,
 				0C4853982A67B6C000B245FC /* ArhyzPrice.swift in Sources */,
 				0C0F18482B9DE4360009E020 /* DombaiSkiResort.swift in Sources */,
 				0C0CD14C2AB45A220098696C /* HotelsCollectionViewCell.swift in Sources */,
 				0C8FC4142A6D069C002FDD45 /* PriceTableViewCell.swift in Sources */,
+				0C03355D2C7B751500CCE0CB /* SkiResortTest.swift in Sources */,
 				0CFC68922ACD39FA00AA38EB /* RosaKhutorRent.swift in Sources */,
 				0C7B4EBE2B9DB98300042A83 /* AllInfo.swift in Sources */,
 				0C23022E2AC3CE5800074B48 /* SettingsViewController.swift in Sources */,
@@ -749,7 +757,7 @@
 		};
 		0CD0FAB329AB3668000E76E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA4EA49892A8661F70F1C27B /* Pods-Snowboarding.debug.xcconfig */;
+			baseConfigurationReference = 4EB7A360EB34C3B62C385F56 /* Pods-Snowboarding.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -782,7 +790,7 @@
 		};
 		0CD0FAB429AB3668000E76E8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03384C66F0BC2A6CE49558D7 /* Pods-Snowboarding.release.xcconfig */;
+			baseConfigurationReference = E4DC1BA342D0A2FF7904D8C4 /* Pods-Snowboarding.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

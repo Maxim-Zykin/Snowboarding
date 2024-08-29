@@ -89,6 +89,7 @@ class HomeViewController: UIViewController {
         let ratio = footer.intrinsicContentSize.height / footer.intrinsicContentSize.width
         
         self.view.backgroundColor = .white
+         
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Настройки", style: .plain, target: self, action: #selector(didTapSettings))
         
         self.navigationItem.backButtonTitle = "Назад"
@@ -181,7 +182,9 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             
         case .sheregesh:
             let model = sheregeshInfo
-            let vc = SkiResotViewController(ski: model)
+//            let vc = SkiResotViewController(ski: model)
+            let vc = SkiResortTest()
+            vc.skiID = "5yynSHSfQMI5dOxC7buM"
             self.navigationController?.pushViewController(vc, animated: true)
             
         case .rosaKhutor:

@@ -98,98 +98,6 @@
             endingLineNumber = "49"
             landmarkName = "SheregeshInfoController"
             landmarkType = "3">
-            <Locations>
-               <Location
-                  uuid = "00CD596A-BAF7-49F4-8222-04C6E26FBF26 - 3bf4d8729dbb0687"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Snowboarding.SheregeshInfoController.collection.getter : __C.UICollectionView"
-                  moduleName = "Snowboarding"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/maksimzykin/Desktop/Developer/My%20projects/Snowboarding/Snowboarding/Controller/SkiResort/Information/Sheregesh/SheregeshInfoController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "180">
-               </Location>
-               <Location
-                  uuid = "00CD596A-BAF7-49F4-8222-04C6E26FBF26 - 1ffa75a1487036f3"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Snowboarding.SheregeshInfoController.collection.setter : __C.UICollectionView"
-                  moduleName = "Snowboarding"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/maksimzykin/Desktop/Developer/My%20projects/Snowboarding/Snowboarding/Controller/SkiResort/Information/Sheregesh/SheregeshInfoController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "108">
-               </Location>
-               <Location
-                  uuid = "00CD596A-BAF7-49F4-8222-04C6E26FBF26 - 521a77b77c57aa84"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Snowboarding.SheregeshInfoController.collection.modify : __C.UICollectionView"
-                  moduleName = "Snowboarding"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/maksimzykin/Desktop/Developer/My%20projects/Snowboarding/Snowboarding/Controller/SkiResort/Information/Sheregesh/SheregeshInfoController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "0">
-               </Location>
-               <Location
-                  uuid = "00CD596A-BAF7-49F4-8222-04C6E26FBF26 - a03d811eb286a335"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Snowboarding.SheregeshInfoController.collection.modify : __C.UICollectionView with unmangled suffix &quot;.resume.0&quot;"
-                  moduleName = "Snowboarding"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/maksimzykin/Desktop/Developer/My%20projects/Snowboarding/Snowboarding/Controller/SkiResort/Information/Sheregesh/SheregeshInfoController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "20">
-               </Location>
-               <Location
-                  uuid = "00CD596A-BAF7-49F4-8222-04C6E26FBF26 - 632a844f90ff45e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Snowboarding.SheregeshInfoController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Snowboarding.SheregeshInfoController"
-                  moduleName = "Snowboarding"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/maksimzykin/Desktop/Developer/My%20projects/Snowboarding/Snowboarding/Controller/SkiResort/Information/Sheregesh/SheregeshInfoController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "1000">
-               </Location>
-               <Location
-                  uuid = "00CD596A-BAF7-49F4-8222-04C6E26FBF26 - ff5718545b681f03"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Snowboarding.SheregeshInfoController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Snowboarding.SheregeshInfoController&gt;"
-                  moduleName = "Snowboarding"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/maksimzykin/Desktop/Developer/My%20projects/Snowboarding/Snowboarding/Controller/SkiResort/Information/Sheregesh/SheregeshInfoController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "976">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -270,38 +178,38 @@
             endingLineNumber = "11"
             landmarkName = "unknown"
             landmarkType = "0">
-            <Locations>
-               <Location
-                  uuid = "E453BFCB-0154-46F5-A5A4-A7F5D76447FB - d93c7fac4f1b927a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "one-time initialization function for lesnayaRecreation"
-                  moduleName = "Snowboarding"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/maksimzykin/Desktop/Developer/Snowboarding/Snowboarding/Model/Ski/BigWood/BigWoodHotels.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "11"
-                  endingLineNumber = "11"
-                  offsetFromSymbolStart = "56">
-               </Location>
-               <Location
-                  uuid = "E453BFCB-0154-46F5-A5A4-A7F5D76447FB - 42e857066a1e7fb8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Snowboarding.lesnayaRecreation.unsafeMutableAddressor : Snowboarding.AllHotels"
-                  moduleName = "Snowboarding"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/maksimzykin/Desktop/Developer/Snowboarding/Snowboarding/Model/Ski/BigWood/BigWoodHotels.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "11"
-                  endingLineNumber = "11"
-                  offsetFromSymbolStart = "16">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E430D94B-5ABD-428B-88C6-F4FD263AD5A9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Snowboarding/Controller/SkiResotViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "181"
+            endingLineNumber = "181"
+            landmarkName = "tempFeach()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A5B8EC01-BFC0-4BE0-987D-AB5788659BF9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Snowboarding/Controller/LoginController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
+            landmarkName = "didTapNewUser()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
