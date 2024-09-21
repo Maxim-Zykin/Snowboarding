@@ -34,4 +34,5 @@ struct ModelSkiResortFB: Codable {
     let descroption: String
     let latitudeMap: Double
     let longitudeMap: Double
+    let timeWorkT: [String: String]
 }

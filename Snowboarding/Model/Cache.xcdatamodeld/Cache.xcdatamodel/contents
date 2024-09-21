@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22757" systemVersion="23G93" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="SkiCache" representedClassName="SkiCache" syncable="YES" codeGenerationType="class">
+        <attribute name="allTracks" optional="YES" attributeType="String"/>
+        <attribute name="apiWeather" optional="YES" attributeType="String"/>
+        <attribute name="descroption" optional="YES" attributeType="String"/>
+        <attribute name="heightDifference" optional="YES" attributeType="String"/>
+        <attribute name="imageSkiR" optional="YES" attributeType="String"/>
+        <attribute name="latitudeMap" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="longitudeMap" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="nameSkiResot" optional="YES" attributeType="String"/>
+        <attribute name="totalLengthOfTracks" optional="YES" attributeType="String"/>
+    </entity>
+</model>

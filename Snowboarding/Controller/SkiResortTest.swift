@@ -80,6 +80,8 @@ class SkiResortTest: UIViewController {
     
     var skiID: String = ""
     
+    private var timeWork = [String: String]()
+    
     private let priceButton = CustomButtons(title: "СКИ-ПАСС \nцены", hasBakground: true, fontSize: .med)
     private let timeButton = CustomButtons(title: "РЕЖИМ РАБОТЫ", hasBakground: true, fontSize: .med)
     
@@ -125,21 +127,50 @@ class SkiResortTest: UIViewController {
         setupSki(skiId: skiID)
     }
     
+//    private func setupSki(skiId: String) {
+//        let dispatchGroup = DispatchGroup()
+//        dispatchGroup.enter()
+//        fetchSki(documentId: skiId) { [self] ski in
+//            self.nameSkiResotLable.text = ski.nameSkiResot.uppercased()
+//                self.apiWeather = ski.apiWeather
+//                tempFeach(api: apiWeather)
+//                self.allTracksLable.text = "Всего трасс: \(ski.allTracks)"
+//                self.heightDifferenceLable.text = "Перепад высот: \(ski.heightDifference)м"
+//                self.totalLengthOfTracksLable.text = "Длина трасс: \(ski.totalLengthOfTracks)км"
+//                self.descroptionLable.text = ski.descroption
+//                self.latitudeMap = ski.latitudeMap
+//                self.longitudeMap = ski.longitudeMap
+//            guard let imageData = ImageManager.shared.fetchImage(from: URL(string: ski.imageSkiR)) else { return }
+//                self.imageSki.image = UIImage(data: imageData)
+//        }
+//        dispatchGroup.leave()
+//    }
+    
     private func setupSki(skiId: String) {
         let dispatchGroup = DispatchGroup()
         dispatchGroup.enter()
         fetchSki(documentId: skiId) { [self] ski in
             self.nameSkiResotLable.text = ski.nameSkiResot.uppercased()
-                self.apiWeather = ski.apiWeather
-                tempFeach(api: apiWeather)
-                self.allTracksLable.text = "Всего трасс: \(ski.allTracks)"
-                self.heightDifferenceLable.text = "Перепад высот: \(ski.heightDifference)м"
-                self.totalLengthOfTracksLable.text = "Длина трасс: \(ski.totalLengthOfTracks)км"
-                self.descroptionLable.text = ski.descroption
-                self.latitudeMap = ski.latitudeMap
-                self.longitudeMap = ski.longitudeMap
-            guard let imageData = ImageManager.shared.fetchImage(from: URL(string: ski.imageSkiR)) else { return }
-                self.imageSki.image = UIImage(data: imageData)
+            self.apiWeather = ski.apiWeather
+            tempFeach(api: apiWeather)
+            self.allTracksLable.text = "Всего трасс: \(ski.allTracks)"
+            self.heightDifferenceLable.text = "Перепад высот: \(ski.heightDifference)м"
+            self.totalLengthOfTracksLable.text = "Длина трасс: \(ski.totalLengthOfTracks)км"
+            self.descroptionLable.text = ski.descroption
+            self.latitudeMap = ski.latitudeMap
+            self.longitudeMap = ski.longitudeMap
+            self.timeWork = ski.timeWorkT
+            print("dscds \(timeWork.count)")
+            for time in timeWork.keys {
+                print("Курорт: \(time), время \(timeWork[time])")
+            }
+            
+            DispatchQueue.global().async {
+                guard let imageData = ImageManager.shared.fetchImage(from: URL(string: ski.imageSkiR)) else { return }
+                DispatchQueue.main.async {
+                    self.imageSki.image = UIImage(data: imageData)
+                }
+            }
         }
         dispatchGroup.leave()
     }
@@ -164,8 +195,9 @@ class SkiResortTest: UIViewController {
               let description = data?["descroption"] as? String ?? ""
               let latitudeMap = data?["latitudeMap"] as? Double ?? 0.0
               let longitudeMap = data?["longitudeMap"] as? Double ?? 0.0
+              let timeWork = data?["timeWork"] as? [String: String] ?? ["Нет данных": "Нет данных"]
               
-              let ski = ModelSkiResortFB(nameSkiResot: name, allTracks: all, heightDifference: height, totalLengthOfTracks: total, apiWeather: weather, imageSkiR: image, descroption: description, latitudeMap: latitudeMap, longitudeMap: longitudeMap)
+              let ski = ModelSkiResortFB(nameSkiResot: name, allTracks: all, heightDifference: height, totalLengthOfTracks: total, apiWeather: weather, imageSkiR: image, descroption: description, latitudeMap: latitudeMap, longitudeMap: longitudeMap, timeWorkT: timeWork)
               completion(ski)
           }
         }
