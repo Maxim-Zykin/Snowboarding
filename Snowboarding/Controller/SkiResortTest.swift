@@ -199,6 +199,7 @@ class SkiResortTest: UIViewController {
               
               let ski = ModelSkiResortFB(nameSkiResot: name, allTracks: all, heightDifference: height, totalLengthOfTracks: total, apiWeather: weather, imageSkiR: image, descroption: description, latitudeMap: latitudeMap, longitudeMap: longitudeMap, timeWorkT: timeWork)
               completion(ski)
+        
           }
         }
       }
@@ -459,3 +460,19 @@ extension SkiResortTest: UICollectionViewDelegate, UICollectionViewDataSource {
         }
     }
 }
+
+
+//extension SkiResortTest {
+//    
+//    private var items: [Item] = []
+//    
+//    func fetchCache() {
+//        StorageManager.shared.fetchData { result in
+//            switch result {
+//            case .success(let ski):
+//                let skiFromeRecens = ski.filter { $0.relateTo == "Recents" }
+//                items
+//            }
+//        }
+//    }
+//}

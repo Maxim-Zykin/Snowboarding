@@ -21,7 +21,7 @@ class HomeViewController: UIViewController {
         let label = UILabel()
         label.textColor = .label
         label.textAlignment = .left
-        label.font = .systemFont(ofSize: 26, weight: .semibold)
+        label.font = .systemFont(ofSize: 23, weight: .semibold)
         label.text = "Привет"
         label.numberOfLines = 2
         label.textColor = .black
@@ -39,7 +39,7 @@ class HomeViewController: UIViewController {
     private var userEmail = ""
 
     //Choose a ski resort
-    private let skiResort = CustomLabel(text: "Выбери горнолыжный курорт:", size: 20, color: .black)
+    private let skiResort = CustomLabel(text: "Выбери горнолыжный курорт:", size: 18, color: .black)
     
     enum AllSkiResort: CaseIterable {
         case sheregesh, rosaKhutor, arhyz, dombai, bigWood, elbrus
@@ -58,13 +58,13 @@ class HomeViewController: UIViewController {
     private func makeLayout() -> UICollectionViewLayout {
         let spacing: CGFloat = 15
         let itemSize = NSCollectionLayoutSize(
-            widthDimension: .absolute(160),
+            widthDimension: .fractionalWidth(0.5),
             heightDimension: .fractionalHeight(1.0))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         
         let groupSize = NSCollectionLayoutSize(
             widthDimension: .fractionalWidth(1.0),
-            heightDimension: .absolute(105))
+            heightDimension: .estimated(105))
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, repeatingSubitem: item, count: 2)
         group.interItemSpacing = .fixed(spacing)
         
@@ -94,15 +94,10 @@ class HomeViewController: UIViewController {
         
         self.navigationItem.backButtonTitle = "Назад"
         
-        self.view.addSubview(footer)
-        self.view.addSubview(label)
-        self.view.addSubview(skiResort)
-        self.view.addSubview(collection)
-        
-        self.label.translatesAutoresizingMaskIntoConstraints = false
-        self.skiResort.translatesAutoresizingMaskIntoConstraints = false
-        self.collection.translatesAutoresizingMaskIntoConstraints = false
-        self.footer.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addView(footer)
+        self.view.addView(label)
+        self.view.addView(skiResort)
+        self.view.addView(collection)
 
         NSLayoutConstraint.activate([
             label.topAnchor.constraint(equalTo: self.view.layoutMarginsGuide.topAnchor),
@@ -114,8 +109,8 @@ class HomeViewController: UIViewController {
             skiResort.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -30),
             
             collection.topAnchor.constraint(equalTo: skiResort.bottomAnchor, constant: 30),
-            collection.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 15),
-            collection.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -15),
+            collection.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+            collection.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
             collection.heightAnchor.constraint(equalTo: self.view.heightAnchor),
 
             footer.leftAnchor.constraint(equalTo: self.view.leftAnchor),

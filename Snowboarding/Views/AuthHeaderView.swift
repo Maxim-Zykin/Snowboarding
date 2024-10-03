@@ -61,6 +61,7 @@ class AuthHeaderView: UIView {
     
     // MARK: - UI Setup
     private func setupUI() {
+        self.addView(logoImageView)
         self.addSubview(logoImageView)
         self.addSubview(appLabel)
         self.addSubview(titleLabel)

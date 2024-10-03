@@ -37,13 +37,9 @@ class ForgotPasswordController: UIViewController, UITextFieldDelegate {
     private func setupUI() {
         self.view.backgroundColor = .white
         
-        self.view.addSubview(headerView)
-        self.view.addSubview(emailField)
-        self.view.addSubview(resetPasswordButton)
-        
-        self.headerView.translatesAutoresizingMaskIntoConstraints = false
-        self.emailField.translatesAutoresizingMaskIntoConstraints = false
-        self.resetPasswordButton.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addView(headerView)
+        self.view.addView(emailField)
+        self.view.addView(resetPasswordButton)
         
         NSLayoutConstraint.activate([
             headerView.topAnchor.constraint(equalTo: self.view.layoutMarginsGuide.topAnchor),
