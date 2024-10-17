@@ -246,43 +246,25 @@ class SkiResotViewController: UIViewController {
         
         self.imageSki.image = UIImage(named: "\(imageSkiR)")
         
-        self.contentView.addSubview(imageSki)
-        self.contentView.addSubview(contentViewGeneral)
-        self.contentView.addSubview(contentViewWeatherInfo)
-        self.contentView.addSubview(activityIndicator)
-        self.contentView.addSubview(contentViewSkiInfo)
-        self.view.addSubview(nameSkiResotLable)
-        self.view.addSubview(weather)
-        self.view.addSubview(temps)
-        self.view.addSubview(descriptionWeather)
-        self.view.addSubview(iconW)
-        self.view.addSubview(allTracksLable)
-        self.view.addSubview(heightDifferenceLable)
-        self.view.addSubview(totalLengthOfTracksLable)
-        self.contentView.addSubview(contentViewSkiAbout)
-        self.view.addSubview(descroptionLable)
-        self.view.addSubview(priceButton)
-        self.view.addSubview(timeButton)
-        self.contentView.addSubview(collection)
-        
-        self.imageSki.translatesAutoresizingMaskIntoConstraints = false
-        self.contentViewGeneral.translatesAutoresizingMaskIntoConstraints = false
-        self.contentViewWeatherInfo.translatesAutoresizingMaskIntoConstraints = false
-        self.activityIndicator.translatesAutoresizingMaskIntoConstraints = false
-        self.contentViewSkiInfo.translatesAutoresizingMaskIntoConstraints = false
-        self.nameSkiResotLable.translatesAutoresizingMaskIntoConstraints = false
-        self.weather.translatesAutoresizingMaskIntoConstraints = false
-        self.temps.translatesAutoresizingMaskIntoConstraints = false
-        self.descriptionWeather.translatesAutoresizingMaskIntoConstraints = false
-        self.iconW.translatesAutoresizingMaskIntoConstraints = false
-        self.allTracksLable.translatesAutoresizingMaskIntoConstraints = false
-        self.heightDifferenceLable.translatesAutoresizingMaskIntoConstraints = false
-        self.totalLengthOfTracksLable.translatesAutoresizingMaskIntoConstraints = false
-        self.contentViewSkiAbout.translatesAutoresizingMaskIntoConstraints = false
-        self.descroptionLable.translatesAutoresizingMaskIntoConstraints = false
-        self.priceButton.translatesAutoresizingMaskIntoConstraints = false
-        self.timeButton.translatesAutoresizingMaskIntoConstraints = false
-        self.collection.translatesAutoresizingMaskIntoConstraints = false
+        self.contentView.addView(imageSki)
+        self.contentView.addView(contentViewGeneral)
+        self.contentView.addView(contentViewWeatherInfo)
+        self.contentView.addView(activityIndicator)
+        self.contentView.addView(contentViewSkiInfo)
+        self.view.addView(nameSkiResotLable)
+        self.view.addView(weather)
+        self.view.addView(temps)
+        self.view.addView(descriptionWeather)
+        self.view.addView(iconW)
+        self.view.addView(allTracksLable)
+        self.view.addView(heightDifferenceLable)
+        self.view.addView(totalLengthOfTracksLable)
+        self.contentView.addView(contentViewSkiAbout)
+        self.view.addView(descroptionLable)
+        self.view.addView(priceButton)
+        self.view.addView(timeButton)
+        self.contentView.addView(collection)
+
         
         NSLayoutConstraint.activate([
             

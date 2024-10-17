@@ -69,21 +69,15 @@ class RegisterController: UIViewController, UITextFieldDelegate {
     private func setupUI() {
         self.view.backgroundColor = .white
         
-        self.view.addSubview(headerView)
-        self.view.addSubview(userNameField)
-        self.view.addSubview(emailField)
-        self.view.addSubview(passwordField)
-        self.view.addSubview(signUpButton)
-        self.view.addSubview(termsTextView)
-        self.view.addSubview(signInButton)
-
-        self.headerView.translatesAutoresizingMaskIntoConstraints = false
-        self.userNameField.translatesAutoresizingMaskIntoConstraints = false
-        self.emailField.translatesAutoresizingMaskIntoConstraints = false
-        self.passwordField.translatesAutoresizingMaskIntoConstraints = false
-        self.signUpButton.translatesAutoresizingMaskIntoConstraints = false
-        self.termsTextView.translatesAutoresizingMaskIntoConstraints = false
-        self.signInButton.translatesAutoresizingMaskIntoConstraints = false
+        
+        
+        self.view.addView(headerView)
+        self.view.addView(userNameField)
+        self.view.addView(emailField)
+        self.view.addView(passwordField)
+        self.view.addView(signUpButton)
+        self.view.addView(termsTextView)
+        self.view.addView(signInButton)
 
         NSLayoutConstraint.activate([
             headerView.topAnchor.constraint(equalTo: self.view.layoutMarginsGuide.topAnchor),

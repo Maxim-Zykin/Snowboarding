@@ -51,8 +51,7 @@ class RentViewController: UIViewController {
     }
     
     private func setupUI() {
-        self.view.addSubview(collection)
-        collection.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addView(collection)
         
         NSLayoutConstraint.activate([
             collection.leadingAnchor.constraint(equalTo: view.leadingAnchor),

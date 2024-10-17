@@ -53,15 +53,10 @@ class SettingsViewController: UIViewController {
     private func setupUI() {
         view.backgroundColor = UIColor(red: 231/255, green: 242/255, blue: 250/234, alpha: 255/255)
 
-        self.view.addSubview(userNameLabel)
-        self.view.addSubview(userEmail)
-        self.view.addSubview(logoutButton)
-        self.view.addSubview(deleteAccountButton)
-
-        self.userNameLabel.translatesAutoresizingMaskIntoConstraints = false
-        self.userEmail.translatesAutoresizingMaskIntoConstraints = false
-        self.logoutButton.translatesAutoresizingMaskIntoConstraints = false
-        self.deleteAccountButton.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addView(userNameLabel)
+        self.view.addView(userEmail)
+        self.view.addView(logoutButton)
+        self.view.addView(deleteAccountButton)
 
         NSLayoutConstraint.activate([
             userNameLabel.topAnchor.constraint(equalTo: self.view.layoutMarginsGuide.topAnchor, constant: 20),

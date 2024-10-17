@@ -24,9 +24,7 @@ class MapViewController: UIViewController {
     private func setupUI() {
         self.view.backgroundColor = .white
         
-        self.view.addSubview(mapView)
-        
-        mapView.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addView(mapView)
         
         NSLayoutConstraint.activate([
             mapView.topAnchor.constraint(equalTo: self.view.topAnchor),

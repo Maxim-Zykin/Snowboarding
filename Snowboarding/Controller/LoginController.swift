@@ -44,19 +44,13 @@ class LoginController: UIViewController, UITextFieldDelegate {
     private func setupUI() {
         self.view.backgroundColor = .white
         
-        self.view.addSubview(headerView)
-        self.view.addSubview(emailField)
-        self.view.addSubview(passwordField)
-        self.view.addSubview(signInButton)
-        self.view.addSubview(newUserButton)
-        self.view.addSubview(forgotPasswordButton)
-        
-        headerView.translatesAutoresizingMaskIntoConstraints = false
-        emailField.translatesAutoresizingMaskIntoConstraints = false
-        passwordField.translatesAutoresizingMaskIntoConstraints = false
-        signInButton.translatesAutoresizingMaskIntoConstraints = false
-        newUserButton.translatesAutoresizingMaskIntoConstraints = false
-        forgotPasswordButton.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addView(headerView)
+        self.view.addView(emailField)
+        self.view.addView(passwordField)
+        self.view.addView(signInButton)
+        self.view.addView(newUserButton)
+        self.view.addView(passwordField)
+        self.view.addView(forgotPasswordButton)
 
         NSLayoutConstraint.activate([
             headerView.topAnchor.constraint(equalTo: self.view.layoutMarginsGuide.topAnchor),
