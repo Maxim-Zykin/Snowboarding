@@ -264,7 +264,6 @@ class SkiResotViewController: UIViewController {
         self.view.addView(priceButton)
         self.view.addView(timeButton)
         self.contentView.addView(collection)
-
         
         NSLayoutConstraint.activate([
             

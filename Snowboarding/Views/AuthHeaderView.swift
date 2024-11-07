@@ -62,15 +62,9 @@ class AuthHeaderView: UIView {
     // MARK: - UI Setup
     private func setupUI() {
         self.addView(logoImageView)
-        self.addSubview(logoImageView)
-        self.addSubview(appLabel)
-        self.addSubview(titleLabel)
-        self.addSubview(subTitleLabel)
-            
-        logoImageView.translatesAutoresizingMaskIntoConstraints = false
-        appLabel.translatesAutoresizingMaskIntoConstraints = false
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        subTitleLabel.translatesAutoresizingMaskIntoConstraints = false
+        self.addView(appLabel)
+        self.addView(titleLabel)
+        self.addView(subTitleLabel)
         
         NSLayoutConstraint.activate([
             logoImageView.topAnchor.constraint(equalTo: self.topAnchor, constant: 30),

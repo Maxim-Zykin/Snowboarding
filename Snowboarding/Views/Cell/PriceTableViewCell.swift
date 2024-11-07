@@ -43,7 +43,7 @@ class PriceTableViewCell: UITableViewCell {
         contentView.addSubview(costLabel)
         contentView.backgroundColor = .white
         
-        liftNameLabel.frame = CGRect(x: 15, y: 0, width: 200, height: contentView.frame.size.height)
+        liftNameLabel.frame = CGRect(x: 15, y: 0, width: 300, height: contentView.frame.size.height)
         costLabel.frame = CGRect(x: contentView.frame.size.height+100, y: 5, width: 300, height: contentView.frame.size.height-10)
     }
 }

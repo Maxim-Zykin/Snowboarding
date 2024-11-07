@@ -11,7 +11,7 @@ import FirebaseFirestore
 class SkiResortTest: UIViewController {
 
     // MARK: - UI Components
-    
+        
    private var imageSki: UIImageView = {
         var image = UIImageView()
         image.frame.size = CGSize(width: 393, height: 396)
@@ -19,6 +19,14 @@ class SkiResortTest: UIViewController {
         image.layer.masksToBounds = true
         return image
    }()
+    
+    private var image: UIImage? {
+        didSet {
+            imageSki.image = image
+        }
+    }
+    
+    var dataImage: DataCache!
     
     private var scrollView: UIScrollView = {
         let view = UIScrollView()
@@ -80,7 +88,9 @@ class SkiResortTest: UIViewController {
     
     var skiID: String = ""
     
-    private var timeWork = [String: String]()
+    private var timeWork = [String]()
+    private var skiPassPrice = [String]()
+    private var hotels = [String]()
     
     private let priceButton = CustomButtons(title: "СКИ-ПАСС \nцены", hasBakground: true, fontSize: .med)
     private let timeButton = CustomButtons(title: "РЕЖИМ РАБОТЫ", hasBakground: true, fontSize: .med)
@@ -127,25 +137,6 @@ class SkiResortTest: UIViewController {
         setupSki(skiId: skiID)
     }
     
-//    private func setupSki(skiId: String) {
-//        let dispatchGroup = DispatchGroup()
-//        dispatchGroup.enter()
-//        fetchSki(documentId: skiId) { [self] ski in
-//            self.nameSkiResotLable.text = ski.nameSkiResot.uppercased()
-//                self.apiWeather = ski.apiWeather
-//                tempFeach(api: apiWeather)
-//                self.allTracksLable.text = "Всего трасс: \(ski.allTracks)"
-//                self.heightDifferenceLable.text = "Перепад высот: \(ski.heightDifference)м"
-//                self.totalLengthOfTracksLable.text = "Длина трасс: \(ski.totalLengthOfTracks)км"
-//                self.descroptionLable.text = ski.descroption
-//                self.latitudeMap = ski.latitudeMap
-//                self.longitudeMap = ski.longitudeMap
-//            guard let imageData = ImageManager.shared.fetchImage(from: URL(string: ski.imageSkiR)) else { return }
-//                self.imageSki.image = UIImage(data: imageData)
-//        }
-//        dispatchGroup.leave()
-//    }
-    
     private func setupSki(skiId: String) {
         let dispatchGroup = DispatchGroup()
         dispatchGroup.enter()
@@ -159,12 +150,26 @@ class SkiResortTest: UIViewController {
             self.descroptionLable.text = ski.descroption
             self.latitudeMap = ski.latitudeMap
             self.longitudeMap = ski.longitudeMap
-            self.timeWork = ski.timeWorkT
-            print("dscds \(timeWork.count)")
-            for time in timeWork.keys {
-                print("Курорт: \(time), время \(timeWork[time])")
+            self.timeWork = ski.timeWork
+            self.skiPassPrice = ski.skiPassPrice
+            self.hotels = ski.hotels
+            
+            print("dscds \(self.hotels.count)")
+            for time in timeWork {
+                print("К")
             }
             
+//            DispatchQueue.global().async { [self] in
+//                let image = ski.imageSkiR
+//                let urlImafe = URL(string: image)!
+//                dataImage.cacheImage(url: urlImafe) { image in
+//                    self.image = image
+////                    DispatchQueue.main.async {
+////
+////                    }
+//                }
+//            }
+//            
             DispatchQueue.global().async {
                 guard let imageData = ImageManager.shared.fetchImage(from: URL(string: ski.imageSkiR)) else { return }
                 DispatchQueue.main.async {
@@ -177,7 +182,8 @@ class SkiResortTest: UIViewController {
     
     func fetchSki(documentId: String, completion: @escaping (_ ski: ModelSkiResortFB)->()) {
 
-      let docRef = Firestore.firestore().collection("SkiResorts").document(documentId)
+        let docRef = Firestore.firestore().collection("SkiResorts").document(documentId)
+        let hotelsResort = Firestore.firestore().collection("hotels").document(documentId)
 
         docRef.getDocument { document, error in
         if let error = error as NSError? {
@@ -195,14 +201,16 @@ class SkiResortTest: UIViewController {
               let description = data?["descroption"] as? String ?? ""
               let latitudeMap = data?["latitudeMap"] as? Double ?? 0.0
               let longitudeMap = data?["longitudeMap"] as? Double ?? 0.0
-              let timeWork = data?["timeWork"] as? [String: String] ?? ["Нет данных": "Нет данных"]
-              
-              let ski = ModelSkiResortFB(nameSkiResot: name, allTracks: all, heightDifference: height, totalLengthOfTracks: total, apiWeather: weather, imageSkiR: image, descroption: description, latitudeMap: latitudeMap, longitudeMap: longitudeMap, timeWorkT: timeWork)
+              let timeWork = data?["timeWork"] as?  [String] ?? ["Нет данных"]
+              let skiPassPrice = data?["skiPassPrice"] as? [String] ?? ["Нет данных"]
+            
+              let ski = ModelSkiResortFB(nameSkiResot: name, allTracks: all, heightDifference: height, totalLengthOfTracks: total, apiWeather: weather, imageSkiR: image, descroption: description, latitudeMap: latitudeMap, longitudeMap: longitudeMap, timeWork: timeWork, skiPassPrice: skiPassPrice, hotels: self.hotels)
               completion(ski)
         
           }
         }
       }
+
     }
     
     
@@ -214,12 +222,12 @@ class SkiResortTest: UIViewController {
     
     // MARK: - Selectors
     @objc private func didTapPrice() {
-        let vc = PriceTableViewController(costModel: costModel)
+        let vc = TimeTableViewTest(timeWorkModel: skiPassPrice)
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc private func didTapTime() {
-        let vc = TimeTableViewController(timeWorkModel: timeWorkModel)
+        let vc = TimeTableViewTest(timeWorkModel: timeWork)
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -301,43 +309,24 @@ class SkiResortTest: UIViewController {
             contentView.widthAnchor.constraint(equalTo: self.scrollView.widthAnchor),
         ])
         
-        self.contentView.addSubview(imageSki)
-        self.contentView.addSubview(contentViewGeneral)
-        self.contentView.addSubview(contentViewWeatherInfo)
-        self.contentView.addSubview(activityIndicator)
-        self.contentView.addSubview(contentViewSkiInfo)
-        self.view.addSubview(nameSkiResotLable)
-        self.view.addSubview(weather)
-        self.view.addSubview(temps)
-        self.view.addSubview(descriptionWeather)
-        self.view.addSubview(iconW)
-        self.view.addSubview(allTracksLable)
-        self.view.addSubview(heightDifferenceLable)
-        self.view.addSubview(totalLengthOfTracksLable)
-        self.contentView.addSubview(contentViewSkiAbout)
-        self.view.addSubview(descroptionLable)
-        self.view.addSubview(priceButton)
-        self.view.addSubview(timeButton)
-        self.contentView.addSubview(collection)
-        
-        self.imageSki.translatesAutoresizingMaskIntoConstraints = false
-        self.contentViewGeneral.translatesAutoresizingMaskIntoConstraints = false
-        self.contentViewWeatherInfo.translatesAutoresizingMaskIntoConstraints = false
-        self.activityIndicator.translatesAutoresizingMaskIntoConstraints = false
-        self.contentViewSkiInfo.translatesAutoresizingMaskIntoConstraints = false
-        self.nameSkiResotLable.translatesAutoresizingMaskIntoConstraints = false
-        self.weather.translatesAutoresizingMaskIntoConstraints = false
-        self.temps.translatesAutoresizingMaskIntoConstraints = false
-        self.descriptionWeather.translatesAutoresizingMaskIntoConstraints = false
-        self.iconW.translatesAutoresizingMaskIntoConstraints = false
-        self.allTracksLable.translatesAutoresizingMaskIntoConstraints = false
-        self.heightDifferenceLable.translatesAutoresizingMaskIntoConstraints = false
-        self.totalLengthOfTracksLable.translatesAutoresizingMaskIntoConstraints = false
-        self.contentViewSkiAbout.translatesAutoresizingMaskIntoConstraints = false
-        self.descroptionLable.translatesAutoresizingMaskIntoConstraints = false
-        self.priceButton.translatesAutoresizingMaskIntoConstraints = false
-        self.timeButton.translatesAutoresizingMaskIntoConstraints = false
-        self.collection.translatesAutoresizingMaskIntoConstraints = false
+        self.contentView.addView(imageSki)
+        self.contentView.addView(contentViewGeneral)
+        self.contentView.addView(contentViewWeatherInfo)
+        self.contentView.addView(activityIndicator)
+        self.contentView.addView(contentViewSkiInfo)
+        self.view.addView(nameSkiResotLable)
+        self.view.addView(weather)
+        self.view.addView(temps)
+        self.view.addView(descriptionWeather)
+        self.view.addView(iconW)
+        self.view.addView(allTracksLable)
+        self.view.addView(heightDifferenceLable)
+        self.view.addView(totalLengthOfTracksLable)
+        self.contentView.addView(contentViewSkiAbout)
+        self.view.addView(descroptionLable)
+        self.view.addView(priceButton)
+        self.view.addView(timeButton)
+        self.contentView.addView(collection)
         
         NSLayoutConstraint.activate([
             
